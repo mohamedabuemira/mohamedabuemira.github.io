@@ -675,13 +675,7 @@ small {
   #experience span.card-title a {
     margin: 0;
   }
-   #certifications span.card-title {
-    text-align: center;
-    display: block;
-  }
-  #certifications span.card-title a {
-    margin: 0;
-  }
+
   i.mdi-navigation-close.right {
     position: relative;
     bottom: 15px;
@@ -700,4 +694,23 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+ #certifications .card.large {
+  height: 360px;
+}
+
+#certifications h4 {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+#certifications .col img.responsive-img {
+  margin: 0 auto;
+  max-height: 100px;
+  padding-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
 }
