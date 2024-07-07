@@ -424,7 +424,19 @@ h3 {
   display: block;
 }
 
-#experience .card .col.s12.m2 a img {
+#education .card .col.s12.m2 a img {
+  max-height: 60px;
+}
+#education .card-action {
+  background-color: rgba(0, 0, 0, 0.02);
+  border: none;
+}
+
+#education .card .col.s12.m2 a {
+  display: block;
+}
+
+#education .card .col.s12.m2 a img {
   max-height: 60px;
 }
 
