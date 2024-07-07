@@ -675,6 +675,13 @@ small {
   #experience span.card-title a {
     margin: 0;
   }
+   #certifications span.card-title {
+    text-align: center;
+    display: block;
+  }
+  #certifications span.card-title a {
+    margin: 0;
+  }
   i.mdi-navigation-close.right {
     position: relative;
     bottom: 15px;
