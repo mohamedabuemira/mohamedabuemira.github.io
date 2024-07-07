@@ -424,56 +424,10 @@ h3 {
   display: block;
 }
 
-#education .card .col.s12.m2 a img {
+#experience .card .col.s12.m2 a img {
   max-height: 60px;
 }
-#education .card-action {
-  background-color: rgba(0, 0, 0, 0.02);
-  border: none;
-}
 
-#education .card .col.s12.m2 a {
-  display: block;
-}
-
-#education .card .col.s12.m2 a img {
-  max-height: 60px;
-}
-#education .card .col.s12.m2 a img {
-  max-height: 60px;
-}
-#education .card-action {
-  background-color: rgba(0, 0, 0, 0.02);
-  border: none;
-}
-
-#education .card .col.s12.m2 a {
-  display: block;
-}
-
-#education .card .col.s12.m2 a img {
-  max-height: 60px;
-}
-.page-title-container {
-  background-color: teal;
-  width: 100%;
-}
-
-.page-title {
-  margin: 0;
-  padding: 20px;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.section {
-  padding: 20px 0;
-}
-
-.container {
-  margin-top: 20px;
-}
 .card-action span {
   font-size: 85%;
   color: #666;
