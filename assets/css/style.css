@@ -6,12 +6,12 @@
   height: auto;
   overflow: hidden;
   /* display: inline-block; */
-
-
+  
+  
   /* background-size: cover;  */
-  margin: -31px;
+  margin: -31px; 
   margin-left:-7px;
-  border: 6px solid rgba(0, 77, 64, 0.4);
+  border: 6px solid rgba(0, 77, 64, 0.4); 
   border-radius: 50% !important;
 }
 
@@ -24,7 +24,7 @@
   /* visibility: hidden; */
   position: fixed;
   /* margin-inline-end: auto;  */
-  bottom: 0;
+  bottom: 0; 
   right: 0;
 }
 
@@ -414,7 +414,7 @@ h3 {
 }
 
 #experience .card-action {
-  background-color: rgba(113, 75, 103, 0.02);
+  background-color: rgba(0, 0, 0, 0.02);
   border: none;
 }
 
