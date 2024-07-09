@@ -40,6 +40,8 @@
 ✔️ Projects \
 ✔️ Skills \
 ✔️ Education\
+✔️ certifications\
+✔️ Services\
 ✔️ Contact Info\
 ✔️ Resume
 
