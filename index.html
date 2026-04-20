@@ -1,1354 +1,720 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Essam Abu Emira | Odoo Project Manager & ERP Consultant</title>
+<meta name="description" content="Personal portfolio of Mohamed Essam Abu Emira — Odoo Expert & ERP Operations Manager. Self-Employed. 8+ years ERP experience across Egypt & GCC.">
+<meta property="og:title" content="Mohamed Essam Abu Emira | Odoo PM & ERP Consultant">
+<meta property="og:description" content="Personal portfolio — Odoo 16·17·18 Certified · LinkedIn Top ERP Voice · Google PM Certified">
+<meta name="author" content="Mohamed Essam Abu Emira">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#017E84; --teal-dark:#015a5e; --teal-light:#e6f4f5; --teal-mid:#029fa7;
+  --navy:#0d1b2e; --navy-700:#1a2f4a; --navy-600:#1e3a5f; --navy-500:#1d5091;
+  --gold:#d4a843; --gold-lt:#f5d98a;
+  --white:#fff; --gray-50:#f8fafc; --gray-100:#f1f5f9; --gray-200:#e2e8f0;
+  --gray-400:#94a3b8; --gray-600:#475569; --gray-800:#1e293b; --text:#0f172a;
+  --r:12px; --rl:18px;
+  --sh:0 4px 24px rgba(13,27,46,.09); --sh-lg:0 12px 48px rgba(13,27,46,.16);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Plus Jakarta Sans",sans-serif;font-size:15px;color:var(--text);background:var(--gray-50);line-height:1.7}
+h1,h2,h3,h4,h5{font-family:"Sora",sans-serif;line-height:1.25}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
-  <!-- End Google Tag Manager -->
+/* ── NAV ── */
+.nav{position:sticky;top:0;z-index:200;background:rgba(13,27,46,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:62px}
+.nav-brand{display:flex;align-items:center;gap:10px;font-family:"Sora",sans-serif;font-size:15px;font-weight:700;color:#fff}
+.nav-brand-photo{width:34px;height:34px;border-radius:50%;overflow:hidden;border:2px solid rgba(212,168,67,.5);flex-shrink:0}
+.nav-brand-photo img{width:100%;height:100%;object-fit:cover}
+.nav-brand-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.nav-links{display:flex;gap:2px}
+.nav-links a{font-size:12px;font-weight:600;color:rgba(255,255,255,.65);padding:6px 13px;border-radius:20px;transition:all .18s}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.09)}
+.nav-cta{background:var(--gold)!important;color:var(--navy)!important;font-weight:700!important}
+.nav-cta:hover{background:var(--gold-lt)!important}
 
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <title>Mohamed Essam Abu Emira | Financial Manager | ERP Consultant</title>
+/* ── HERO ── */
+.hero{background:linear-gradient(140deg,var(--navy) 0%,var(--navy-700) 50%,#0d2a40 100%);padding:70px 40px 56px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-180px;right:-100px;width:580px;height:580px;border-radius:50%;background:radial-gradient(circle,rgba(1,126,132,.15) 0%,transparent 68%);pointer-events:none}
+.hero::after{content:"";position:absolute;bottom:-90px;left:-70px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(212,168,67,.08) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:auto 1fr;gap:52px;align-items:center;position:relative;z-index:1}
+.hero-photo-wrap{display:flex;flex-direction:column;align-items:center;gap:14px;flex-shrink:0}
+.hero-photo{width:155px;height:155px;border-radius:50%;overflow:hidden;border:4px solid rgba(212,168,67,.5);box-shadow:0 0 0 8px rgba(212,168,67,.08),var(--sh-lg)}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
-    gtag('config', 'UA-126939217-2');
-  </script>
 
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Mohamed Essam Abu Emira |  Financial Manager | ERP Consultant" />
-  <meta property="og:description" content="Financial Manager | ERP Consultant" />
-  <meta property="og:url" content="https://mohamendabuemira.github.io/" />
-  <meta property="og:site_name" content="Mohamed Essam Abu Emira |  Financial Manager | ERP Consultant" />
-  <meta property="article:publisher" content="https://mohamedabuemira.github.io/" />
-  <meta property="og:image" content="https://mohamedabuemira.github.io/examples/preview.jpg" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@MohamedAbuemira" />
-  <meta name="twitter:title" content="Mohamed Essam Abu Emira | SaaS | ERP | Odoo | Explorer | Humane" />
-  <meta name="twitter:description" content="Financial Manager | ERP Consultant | Product Owner" />
-  <meta name="twitter:url" content="https://twitter.com/MohamedAbuemira" />
-  <meta name="author" content="Mohamed Essam Abu Emira" />
-    <meta name="description" content="Experienced ERP Consultant and Product Owner with a robust background in financial management and ERP systems implementation. Skilled in gathering and documenting business requirements, analyzing and optimizing business processes, and providing detailed functional specifications for ERP systems. Proficient in collaborating with development teams, conducting user acceptance testing, training end-users, and offering ongoing support. Demonstrates strong project management abilities, ensuring ERP systems meet organizational needs and deliver exceptional value to stakeholders.">
-    <!-- Favicon and Touch Icons -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="robots" content="index, follow" />
 
-</head>
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
+.hero-name{font-size:38px;font-weight:800;color:#fff;letter-spacing:-.5px;margin-bottom:6px}
+.hero-name span{color:var(--gold)}
+.hero-roles{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.role-pill{font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;background:rgba(1,126,132,.15);color:var(--teal-mid);border:1px solid rgba(1,126,132,.3)}
+.role-pill.gold{background:rgba(212,168,67,.12);color:var(--gold-lt);border-color:rgba(212,168,67,.3)}
+.hero-badges{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
+.hbadge{font-size:11px;font-weight:700;letter-spacing:.03em;padding:4px 12px;border-radius:20px;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.82);background:rgba(255,255,255,.07)}
+.hbadge.gold{border-color:rgba(212,168,67,.4);color:var(--gold-lt);background:rgba(212,168,67,.1)}
+.hero-phone-box{display:inline-flex;align-items:center;gap:10px;background:rgba(1,126,132,.2);border:1px solid rgba(1,126,132,.45);border-radius:10px;padding:10px 18px;margin-bottom:18px}
+.hero-phone-num{font-family:"Sora",sans-serif;font-size:17px;font-weight:800;color:#fff;letter-spacing:.02em}
+.hero-phone-lbl{font-size:10px;color:rgba(255,255,255,.5);margin-top:2px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:22px}
+.hm{display:flex;align-items:center;gap:6px;font-size:13px;color:rgba(255,255,255,.68)}
+.hm a{color:var(--gold-lt);font-weight:600}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-gold{display:inline-flex;align-items:center;gap:7px;background:var(--gold);color:var(--navy);font-family:"Sora",sans-serif;font-size:13px;font-weight:700;padding:12px 24px;border-radius:var(--r);transition:all .2s;cursor:pointer;border:none;text-decoration:none}
+.btn-gold:hover{background:var(--gold-lt);transform:translateY(-1px);box-shadow:var(--sh)}
+.btn-ghost{display:inline-flex;align-items:center;gap:7px;background:transparent;color:#fff;font-family:"Sora",sans-serif;font-size:13px;font-weight:600;padding:12px 24px;border-radius:var(--r);border:1px solid rgba(255,255,255,.22);transition:all .2s;cursor:pointer;text-decoration:none}
+.btn-ghost:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+
+/* ── STATS ── */
+.stats-bar{background:var(--white);border-bottom:1px solid var(--gray-200);box-shadow:var(--sh)}
+.stats-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr)}
+.stat{padding:22px 16px;text-align:center;border-right:1px solid var(--gray-200)}
+.stat:last-child{border-right:none}
+.stat-n{font-family:"Sora",sans-serif;font-size:28px;font-weight:800;color:var(--teal);line-height:1}
+.stat-l{font-size:11px;color:var(--gray-600);margin-top:5px;font-weight:600;letter-spacing:.03em}
+
+/* ── LAYOUT ── */
+.container{max-width:1100px;margin:0 auto;padding:0 40px}
+.section{padding:64px 0}
+.alt{background:var(--white)}
+.sec-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);background:var(--teal-light);padding:4px 12px;border-radius:20px;margin-bottom:10px;border:1px solid rgba(1,126,132,.2)}
+.sec-title{font-size:27px;font-weight:800;color:var(--text);letter-spacing:-.3px;margin-bottom:32px}
+.sec-title span{color:var(--teal)}
+.divider{height:1px;background:var(--gray-200);margin:32px 0}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:3fr 2fr;gap:40px;align-items:start}
+.about-text p{font-size:14px;color:var(--gray-600);line-height:1.88}
+.about-text p+p{margin-top:14px}
+.kpi-row{display:flex;gap:12px;margin:24px 0}
+.kpi{flex:1;background:var(--white);border:1px solid var(--gray-200);border-radius:var(--r);padding:16px;text-align:center;border-top:3px solid var(--teal);box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.kpi-n{font-family:"Sora",sans-serif;font-size:24px;font-weight:800;color:var(--teal)}
+.kpi-l{font-size:11px;color:var(--gray-600);margin-top:3px;font-weight:600}
+.hl-list{display:flex;flex-direction:column;gap:10px;margin-top:20px}
+.hl-item{display:flex;align-items:flex-start;gap:11px;padding:13px 16px;background:var(--teal-light);border-radius:var(--r);border-left:3px solid var(--teal)}
+.hl-ico{font-size:17px;flex-shrink:0;margin-top:1px}
+.hl-body strong{font-size:13px;font-weight:700;color:var(--text);display:block;margin-bottom:2px}
+.hl-body span{font-size:12px;color:var(--gray-600);line-height:1.55}
+.mod-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin:24px 0 12px}
+.mod-wrap{display:flex;flex-wrap:wrap;gap:7px}
+.mod-chip{font-size:12px;font-weight:500;padding:5px 14px;border-radius:20px;background:var(--white);color:var(--gray-600);border:1px solid var(--gray-200);transition:all .18s;cursor:default}
+.mod-chip.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+.skills-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:26px;box-shadow:var(--sh)}
+.sk-row{margin-bottom:15px}
+.sk-label{display:flex;justify-content:space-between;font-size:12px;color:var(--gray-600);margin-bottom:6px;font-weight:600}
+.sk-pct{color:var(--teal);font-weight:800}
+.sk-bar{height:5px;background:var(--gray-100);border-radius:3px;overflow:hidden}
+.sk-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--teal-dark),var(--teal-mid));transition:width 1.2s ease}
+.tool-wrap{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.tool-chip{font-size:11px;font-weight:500;padding:4px 11px;border-radius:20px;background:var(--gray-100);color:var(--gray-600);border:1px solid var(--gray-200)}
+
+
+.nx-badge.gold{border-color:rgba(212,168,67,.38);color:var(--gold-lt);background:rgba(212,168,67,.1)}
+
+
+.nx-card h4{font-size:14px;font-weight:700;color:#fff;margin-bottom:13px;display:flex;align-items:center;gap:8px}
+.nx-card p{font-size:13px;color:rgba(255,255,255,.62);line-height:1.72}
+.nx-card ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.nx-card ul li{font-size:12px;color:rgba(255,255,255,.75);display:flex;align-items:flex-start;gap:8px}
+.nx-card ul li::before{content:"✓";color:var(--teal-mid);font-weight:700;flex-shrink:0;margin-top:1px}
+
+
+.nx-role-list li{font-size:12px;color:rgba(255,255,255,.82);display:flex;align-items:flex-start;gap:7px}
+.nx-role-list li::before{content:"→";color:var(--gold);font-weight:700;flex-shrink:0}
+
+
+
+
+
+
+
+
+
+.nx-ind span{font-size:10px;font-weight:600;padding:3px 10px;border-radius:20px;background:rgba(255,255,255,.08);color:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.13)}
+
+/* ── SERVICES ── */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.svc-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:24px;transition:all .22s;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.svc-card:hover{border-color:var(--teal);transform:translateY(-3px);box-shadow:var(--sh-lg)}
+.svc-icon{width:46px;height:46px;border-radius:11px;background:var(--teal-light);border:1px solid rgba(1,126,132,.2);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px}
+.svc-title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:7px}
+.svc-desc{font-size:12px;color:var(--gray-600);line-height:1.65}
+.svc-link{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:var(--teal);margin-top:13px;transition:gap .18s}
+.svc-card:hover .svc-link{gap:9px}
+
+/* ── EXPERIENCE ── */
+.exp-line{display:flex;flex-direction:column;position:relative;padding-left:30px}
+.exp-line::before{content:"";position:absolute;left:6px;top:14px;bottom:14px;width:2px;background:var(--gray-200)}
+.exp-item{position:relative;padding-bottom:26px}
+.exp-item:last-child{padding-bottom:0}
+.exp-dot{position:absolute;left:-27px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--white);border:3px solid var(--teal);box-shadow:0 0 0 4px var(--teal-light)}
+.exp-dot.cur{background:var(--teal)}
+.exp-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:22px 24px;box-shadow:0 2px 8px rgba(0,0,0,.04);transition:all .2s}
+.exp-card:hover{border-color:rgba(1,126,132,.3);box-shadow:var(--sh)}
+.exp-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:6px;margin-bottom:4px}
+.exp-role{font-size:15px;font-weight:700;color:var(--text)}
+.exp-date{font-size:11px;color:var(--teal);font-weight:700;background:var(--teal-light);padding:3px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+.exp-co{font-size:13px;color:var(--teal);font-weight:600;margin-bottom:10px}
+.exp-co a{color:var(--teal)}
+.exp-desc{font-size:13px;color:var(--gray-600);line-height:1.72}
+.exp-bullets{list-style:none;display:flex;flex-direction:column;gap:6px;margin-top:11px}
+.exp-bullets li{font-size:12px;color:var(--gray-600);display:flex;align-items:flex-start;gap:7px;line-height:1.5}
+.exp-bullets li::before{content:"·";color:var(--teal);font-weight:700;font-size:17px;flex-shrink:0;margin-top:-2px}
+.exp-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.etag{font-size:10px;padding:2px 9px;border-radius:10px;background:var(--gray-100);color:var(--gray-600);border:1px solid var(--gray-200)}
+
+
+
+
+
+/* ── PROJECTS ── */
+.filter-bar{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
+.fbtn{font-size:11px;font-weight:700;padding:6px 15px;border-radius:20px;background:var(--white);color:var(--gray-600);border:1px solid var(--gray-200);cursor:pointer;transition:all .18s}
+.fbtn.active,.fbtn:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.proj-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:18px;transition:all .22s;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.proj-card:hover{border-color:rgba(1,126,132,.3);transform:translateY(-2px);box-shadow:var(--sh)}
+.proj-cat{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:2px 9px;border-radius:10px;display:inline-block;margin-bottom:8px}
+.c-mfg{background:#fef3c7;color:#92400e}.c-con{background:#fee2e2;color:#991b1b}.c-food{background:#d1fae5;color:#065f46}
+.c-log{background:#ede9fe;color:#4c1d95}.c-ret{background:#fce7f3;color:#9d174d}.c-hot{background:#e0f2fe;color:#0c4a6e}
+.c-gov{background:#f3f4f6;color:#374151}.c-npo{background:#dcfce7;color:#14532d}.c-re{background:#fff7ed;color:#7c2d12}
+.proj-ver{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:6px;background:var(--teal-light);color:var(--teal);border:1px solid rgba(1,126,132,.2);margin-bottom:8px}
+.proj-name{font-size:13px;font-weight:700;color:var(--text);margin-bottom:5px;line-height:1.3}
+.proj-mods{font-size:11px;color:var(--gray-400);line-height:1.55}
+
+/* ── CERTIFICATIONS ── */
+.cert-hl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:36px}
+.cert-hl{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:18px 20px;display:flex;align-items:center;gap:14px;box-shadow:0 2px 10px rgba(0,0,0,.04);transition:all .2s}
+.cert-hl:hover{border-color:var(--teal);transform:translateY(-2px);box-shadow:var(--sh)}
+.cert-hl-icon{width:46px;height:46px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-family:"Sora",sans-serif;font-size:12px;font-weight:800;flex-shrink:0}
+.ci-teal{background:var(--teal-light);color:var(--teal);border:1px solid rgba(1,126,132,.25)}
+.ci-gold{background:rgba(212,168,67,.12);color:#8a6a10;border:1px solid rgba(212,168,67,.3)}
+.ci-blue{background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe}
+.ci-ibm{background:#e8f0fe;color:#1a56db;border:1px solid #c5d5f8}
+.ci-green{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0}
+.ci-navy{background:#eff6ff;color:#1e3a8a;border:1px solid #bfdbfe}
+.cert-hl-name{font-size:13px;font-weight:700;color:var(--text);margin-bottom:2px;line-height:1.3}
+.cert-hl-issuer{font-size:11px;color:var(--gray-400)}
+.certs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.cert-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--r);padding:14px 16px;display:flex;align-items:center;gap:13px;transition:all .2s;box-shadow:0 2px 6px rgba(0,0,0,.03)}
+.cert-card:hover{border-color:var(--teal);box-shadow:var(--sh)}
+.cert-card:hover .cert-link{opacity:1}
+.cert-logo{width:38px;height:38px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:"Sora",sans-serif;font-size:10px;font-weight:800}
+.cert-name{font-size:12px;font-weight:700;color:var(--text);margin-bottom:2px;line-height:1.3}
+.cert-iss{font-size:11px;color:var(--gray-400)}
+.cert-yr{color:var(--teal);font-weight:700}
+.cert-link{font-size:10px;font-weight:700;color:var(--teal);margin-left:auto;opacity:0;transition:opacity .2s;white-space:nowrap;flex-shrink:0;padding:3px 8px;border-radius:6px;background:var(--teal-light);border:1px solid rgba(1,126,132,.2)}
+.award-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.award-card{border-radius:var(--rl);padding:24px;color:#fff}
+.award-card.teal{background:linear-gradient(135deg,var(--teal-dark),var(--teal))}
+.award-card.navy{background:linear-gradient(135deg,var(--navy),var(--navy-600))}
+.award-card h4{font-size:16px;font-weight:700;margin-bottom:8px}
+.award-card p{font-size:13px;opacity:.8;line-height:1.6}
+.award-year{font-size:11px;font-weight:700;opacity:.65;margin-top:10px}
+
+/* ── TESTIMONIALS ── */
+.test-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.test-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:26px;position:relative;box-shadow:0 2px 10px rgba(0,0,0,.04);transition:all .22s}
+.test-card:hover{border-color:rgba(1,126,132,.25);box-shadow:var(--sh)}
+.test-qmark{font-family:"Sora",sans-serif;font-size:60px;line-height:1;color:var(--teal-light);font-weight:800;position:absolute;top:10px;right:16px}
+.test-text{font-size:13px;color:var(--gray-600);line-height:1.76;font-style:italic;margin-bottom:18px;position:relative;z-index:1}
+.test-author-row{display:flex;align-items:center;gap:11px}
+.test-av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--teal-dark),var(--teal-mid));display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff;flex-shrink:0;font-family:"Sora",sans-serif}
+.test-name{font-size:13px;font-weight:700;color:var(--text)}
+.test-role{font-size:11px;color:var(--gray-400);margin-top:1px}
+
+/* ── EDUCATION ── */
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.edu-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:22px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.edu-deg{font-size:14px;font-weight:700;color:var(--text);margin-bottom:3px}
+.edu-sch{font-size:13px;color:var(--teal);font-weight:600;margin-bottom:4px}
+.edu-yr{font-size:11px;color:var(--gray-400)}
+.edu-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.edu-tag{font-size:10px;padding:2px 9px;border-radius:20px;background:var(--gray-100);color:var(--gray-600);border:1px solid var(--gray-200)}
+
+/* ── CONTACT ── */
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.contact-info{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:28px;box-shadow:var(--sh)}
+.phone-hl{display:flex;align-items:center;gap:12px;background:var(--teal-light);border:1px solid rgba(1,126,132,.3);border-radius:var(--r);padding:14px 18px;margin-bottom:18px}
+.phone-num{font-family:"Sora",sans-serif;font-size:19px;font-weight:800;color:var(--teal)}
+.c-row{display:flex;align-items:center;gap:13px;padding:13px 0;border-bottom:1px solid var(--gray-100)}
+.c-row:last-child{border-bottom:none}
+.c-ico{width:36px;height:36px;border-radius:9px;background:var(--teal-light);border:1px solid rgba(1,126,132,.2);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.c-lbl{font-size:10px;color:var(--gray-400);font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px}
+.c-val{font-size:13px;font-weight:700;color:var(--text)}
+.c-val a{color:var(--teal)}
+.contact-cta{background:linear-gradient(140deg,var(--navy),var(--navy-700));border-radius:var(--rl);padding:30px;display:flex;flex-direction:column;gap:24px}
+.contact-cta h3{font-size:20px;font-weight:700;color:#fff;margin-bottom:8px}
+.contact-cta p{font-size:13px;color:rgba(255,255,255,.65);line-height:1.7}
+.avail-list{list-style:none;display:flex;flex-direction:column;gap:7px}
+.avail-list li{font-size:13px;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:8px}
+.avail-list li::before{content:"✓";color:var(--gold);font-weight:700}
+.soc-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.soc-btn{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);color:#fff;font-size:12px;font-weight:600;padding:8px 16px;border-radius:var(--r);border:1px solid rgba(255,255,255,.18);transition:all .2s;cursor:pointer;text-decoration:none}
+.soc-btn:hover{background:rgba(255,255,255,.2)}
+
+/* ── FOOTER ── */
+.footer{background:var(--navy);padding:28px 40px}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.footer-logo-row{display:flex;align-items:center;gap:10px}
+
+
+.footer-text{font-size:12px;color:rgba(255,255,255,.42)}
+.footer-links{display:flex;gap:18px}
+.footer-links a{font-size:11px;color:rgba(255,255,255,.42);transition:color .18s}
+.footer-links a:hover{color:var(--gold)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;text-align:center}
+  .hero-photo-wrap{align-items:center}
+  .hero-roles,.hero-badges,.hero-meta,.hero-btns,.hero-phone-box{justify-content:center}
+  .about-grid,.contact-wrap{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .proj-grid{grid-template-columns:1fr 1fr}
+  .certs-grid,.test-grid,.edu-grid{grid-template-columns:1fr}
+  .cert-hl-grid{grid-template-columns:1fr 1fr}
   
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
+  .stats-inner{grid-template-columns:repeat(3,1fr)}
+  .award-row{grid-template-columns:1fr}
+  .container,.footer{padding-left:20px;padding-right:20px}
+  .hero{padding:44px 20px}
+  .section{padding:48px 0}
+  .nav-links{display:none}
+}
+@media(max-width:600px){
+  .hero-name{font-size:26px}
+  .svc-grid,.proj-grid,.cert-hl-grid{grid-template-columns:1fr}
+  .stats-inner{grid-template-columns:repeat(2,1fr)}
+  .kpi-row{flex-direction:column}
+}
+</style>
+</head>
+<body>
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/passport-new.png" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="nav-brand">
+    <div class="nav-brand-photo"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAEFARgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDynWdZfzDa2+FTu3rVbRULalGx5Ct+dRG3W4gDL98da0rGA2wTAyzEVwygow5Ymx2Cxea0kYHBTP6Vwt3pdu7yu5ZX3HFejafA3l7j3jP8q4W4RwbnzSSGc7a4sLNuUrAZ3hS+fRtVjmU/KW2t9K9budt1bR3ceHVh27V4+sW3grkD1rsfBniQWsLWd6cRgfLn+VTmFCVT95DcqL5dCf4kTwppMVpbviaTrg1w2n2GFZZRye9aHia6FxqLXO/euflHoKiiyYg65wa6MNTdKmkS3djYilmGtFTLsetWbe2SWZcrk5HHaobX/j73su4t8tdBplo4lVwvyqc0VaigtBW1HTQrkIAAFGcVzTxT/wBpO6r05BrptZmFukk5yDjAFU9A23ayNLjdjiuak2oObHLcdGFmgB3Yk71mX8UsZS4XiWJsqw71tG0HJT5WBqpIc7kkUHFRTi5v3QuW9R8SRSaVFMjZuSoDexrn45/tF/5rkkhc5pTYBZWcAeWevtSadbb5WVFJ68j0r0KFGNJbbiVzQ2b13kdKjZRtOABmqupamlnEYYnhLj75bOQPQDHNY0mpSTPveZtp6DOOPoBXWoNjua7QXEbpKsTNEW6gdKytQhLzEbSpBzyMVFbTSzuwSdkIHDOxrTTUZ41+zXLKyE8Fk/rUypiauVpdKl8mO5jO4EZyKv2FuTF05A5q5pFzBGotj5XlMeeOQfXH/wCqrQ02UpIbaVJgzdACrD8O/wCFYwU4uzKUV0KNtaC9ySCgTpjvWdrt1Ja77VBxjqOtdTbr5EQjAz61lXFlHcXzu67geKtilqcxbTtPafZ5E78Mad/ZsjkKoXZnkit+awtV1S3tUUbcZarJ0yO2mZ4dxBOdtS7iUe4W9strYBI03nHT1rL0zTriW+dgpiGTxXQwyo1wimNlx7davRiZp9sNsNvUn2pobiVtHs7oOxuoxlfuMO9bthbLJPtkfnP3c1VutUWJFtoYS0xO3JHANJb2epw6rFdTsiqeuOmKGxo9B8HoI9bt1CAIGXn8a+prgZ0p8Z5h/pXyp4PnEuuw/NxvUcfWvqucK+kMDnBh9cdqUF7shS3R4F4wvtMsdYs7t4vNvYI5Ai4IC56H8P615Jqt/Z2srXeoT7VLbto5L98AfWvUfH1hDEVu/MdZGVxuJyOteAeMl8vUC7kSBht3DkAVw0LynZjrSamX/DHizVNR+J/he1tLY2dq+tWY9WdPPTvRTPhxbXMvjrwvK0G1BrNm0fPIHnpnNFelCCSsY3uc3GzQDzE69xV7Tbk3GHJPXpVRgV6LkEVY8OxiO/w5ATO7FJS0ZVzuXvli0MtnbLjArir27jjUqTu7mtyfOovKyZEcYwBXM6jYSrbNIQSc1xYeMaTa6svoQQTfaZ8L90VZW3aSXCjjvUel2/lSHeMEjiuj0uzYjdt71pWlyaiRnPpe+EKF7VditI1txGUHAqzrDNbNE5ICdDT1KmPKnIIreg1KCbBmUtgouFKnHNadtclbgwhgAvWomD7htIyazYFuJ9RcKOYz270qlGD1aGmbt3a/bEdsZB4Gao+HbOS3vZoTya6fTbdVjUMuBjLZqlBuj1Z3ULsfivEdVy5oR2KaG/Z9s7ZPBrKu7U/aSe1dJdp5LrIQClZGqQSmVZYD8p6iry1ydR32HJK2hlX0Xl2+FHMhCqPrSazay6RobToJFBcxJNtG1yB8w9eCRUsTm71mOCNPMKHCLnq1WPGmgazfMzyfaobWEBI4GGPu/KT9DjJHc17vNFblQpyktEeXXUrvLufHPfuKh8wgj95n0FdLD4O1m9OYLVmXOASf8anm8C6zAAz25J/ugda0+sQWlwWGqPoct5uGGzcp6GrKXk0ihJcMvYnqK0rnw7qcb4a2284wvJrQ0/wxeuAJLYoMjGepodWI1h59jESRwcPnd2Nb+jX94xjUlX2EENIx4/Grg8IX75KRHcvQH0qhPomp6dv823kEY+Y7eePY1k6kZaDlQnHodmLn+1dPuJmgjiubOLe7J0lUe3qMk571zRupp7hzaBQuMk56CiDUJ7bTWslDBJwVk3gEqPqPWqUsEtjM5ts7ZABtzkispXTMZpom062mkme7aOSSRW+UjpWvHeJBg3EWwtxV7SJ7YaWkcZxIvDL3zUOo6b/aCBQxRj0b0qxWM3XbmV5UWyXJxk4HSrkVvetPBJZ3TsSgDj0p2kwCxmlSU+Y+NoYjrWjpE0Vvc/YslZH5B9alaBYq3Mk+myJHOFbzTyzdvelvzfwPHFNKWib5gfapfE+lXd/eRxxHKjqT2rUnitp7KGxnWQPGAN+3+tQ7saV2db8NfKDwOQCSy819WMQ2lexh/pXyj4IVLS5jgLfIGUr719Vqqy6KoYZDQDj8Kun8MhTVmjwfx9B9rW3t1njjd/MChnCjI5wc1896qobUpzc4RIWIY9OR2r6U1PSrKXVbCWa3jdvNk4Zcg4HA5rxLxRbk6rdyywrGxmbKYGFGeAK5qcUmmViF71zP+H0UjfEHw5Ik8jL/AGran2I85KKl8FOqePvDkazwA/2vaZQ/KceelFd8djnOJuHKxHoMCnaajfZvNJO5qv3lkJrZyvUA0yyt2jslQ5z9Kzw0k0ynudVpkUcGhGRiMsKyZYvNQq2dpqdPNTTljbJXrS6YwktTuZc56elclSjKL5luaLYoGBS4Qjp0NbmjIVUwsMhuhNYmsNJBNGYx1bmuj0tMqhfjiumdNVYcrFcqa1aRyqY5lbaOhrE0Wd3vJrZhhR90muyuvmjZQmR61zklilte+dniQ8Edq0pw5IqI2h4tysrOQNtP0y3jXUy+3Abqaty2rtDtLEMBwfWqOkmd5jG4O9TjNKouaLiFi34h1JrZUtrfjecFquWEW6GNn6+tZHiuBkSKRBnawzmtjTLgXFohQfKMHPrXlYjDxo09BlrUBtQxgBgRxWDr9yYLOOGMZkbjAroLyRECyyAhVFYmk28d/cXN6w3AE7AecV04Kmo079TRHW/AbwjDqGrzarewh47JNwLDguen5V3XjZ7STU3hWFCqfeJH3ie9bHwetEtvh1d3Axl7gbyB2ArlNRdp7yWbdnc5OTUYqXRHsZbBNtsqiGFcbEVR1yBVeQQyMwGMehq0vKkbTn1qLysc4rlPZSSVjNXSbMzeayBn96sJaWcbBvJXI4GBVnGM0qrzk5waTk+4uSPYsWVraH5ggBNE+m2kqMjxKyvwcinWyMPmGRWhHCDCrHqQaxcmnoyJqPY8B+IOiro2sskYHlMQyjtyelUXcvJZXxjwNuGx0Jz/AIV6L8ZrLdaWsgA3uxAz2GK5TR4Y5LG3aQKUjLZXHOa9alJzpq583jKajUaiIEtrS9+0DIeYD5fetSzimlBaXKKBWD4gDXF1G6Hywh4x2rc0nUVfSn35dgNoIroTucdraMn0m2geRnb5yCcVA97ZJrZWe3IkT7jAcUvhuz1CESNJgLIdyn0FbcOj2skTyzsMnkvnpQ0BJ5lvs80P5jHrjnFZ+raoY7cpGgUZxnFT25tYftP2MmUY+92FVvEsTx6EpWDe0h5frjNZSc27FJrlNzwhdRGW3aL978y7mPY5r65tSDosTE4/cD+VfI3hZobO1tLVYiJCVLZr62sMSaDb7hkG3XP/AHzWtPZmc+h454g1C0tJLRpLiJZFuXAUtzypxXgvjTzDqtxZmZkMkjS5P93Gc5r2b4mQCLRHuILeMeXcbmlI5TBwMetfOXjfUZpb7czLu2bCVPauSnrJBiH7wzwAs8nxS8MLI2dutWbZ3ZB/fp3oqp8MhO/xL8KzMCEOt2W3Pf8AfpRXoxWhgdRZafezA+VayMo7hadNZSRf6yMrj1Fei2+o20MOICgQDjFVbm8trhG82JZR1PHT8a8uhXlTk1YzVd9jlRbeZYkAdulZFtoFzIUuInlGH5AHBrvdCvNM84wRJGSW+XK5wa2bnULazfy3MSpkYKgYwetbVMW4uyiOde3Q88n0xpwFkXBVh1FblpZgbIiOgxW1e6jpd2Io2MMbeUWVwfSqEGoaekyku2B7VtRrKcbtWZrTqRkhjaY+zANY+rWksELI0Ybuprszd2LqNt1D0/vCs/U4re4+Tz4x+Na3ub9LnNaLN9oj8qZcMvFW008W90Zo03KeoqjHbXGn6kzcPA7YBB6V0NmwL9sfWldCSbMTWYoLm0n5AwOlTWMKR6TCIwAOpOas+INNkn0Z59PKPIWwy7uRXKQR6lHawQfapPNlfZtxhV59fpXPWSqRcRyvFbGrqs0V0/k+cqogw/NbGjQ2sdniFkI2HOK5vVNCk0yeO1eP+0Ledx5ksZJZPXijwlpEN/4m1BU1SfT9JtI8eb97fLwqIM8csRminOMYWCnzTajFbn0L8HXM/gK4tnXahcnJPqMf0rzrxV4h0nRNUe0nlUSbj8ikHaPf0rtfC982ifDXUbmM5kVkgj4/i2gcj8c14T4oj8MWdw0mpvNeX7k7gp5yece569OaUoxm9T1aMqlFOx2Fv468NSyKjalbqzcYJxitOLULW5jEtvcJIh6EHINfPmotoN5f+VY2eoxSgFyqfNgDua7L4cQSrMsdvO8kDkn5qzq4eEY3R04fGzlLlep6d9sj2klwMetZupeLdI0tQb6+hjJ6IWyT+ArO8a2l1a+H5rqKXYi/exnIzXj1vpJ1S4uGhtri8a3RpZwrhdqqMnJJ647VnRoRnubYnFzp6JHtNr8TPD0rgQyPIB1wldro2rWOrWiy2MqyAjLLnkfhXzt4S1nw4JXWfw7IkULKj3PmB1Unpls8V7T4OsNIlWPUtCkK7OJIy3OR1GKdejCK0VjnoYmpN6sr/FGFZFtGYEoqkY+prhrC3EEzxEnYG3qh9SK9F8ewPcXFpFGpZpCcKOvGOKw7XR9NwtpeXX2fWLuN2st5bDFegPb2/OijUUYq5niKFSrJuBztvbCZJlkj2MeMkdqNMWKLTZYhzFHIBkdSagM+qxxutxAgyMYU81Y0G6sZEgsY2+YvmTd3Oa7lZHkNu+p1cEatChXgbQBmmvZG7KQNIViB+YDvVWXVCuvrpqwZj2Z3itmCPjPemNanI+MbuS0J0vSYtqIuZXXqBU15LcroVv5Y82NQCwYc1f1DSnhjYLl5rqXlvRasXF3ZWdytjIy7vK6np0qJMz2I9FvUvtRtnjB4AXHoa+vtLIXQLYuQALdcn8K+P/AdnJNrZnK7Yg+Rxx1r660mUf8ACNQP1xAP5UUuopLY8Y8dzWd7od7pqXkSTvMMdSVG7rxXzf4v0PUYdWltryB0A5DvHjeM8EZ5Ir6X1Fols55XCpnUI9znjA3569uK8d+OOu2l34yvJbW7julVEjRo2yoAHPP1rKii6+rOO+GmnW8fxD8NS3LTO41i08tdmFz56c0U/wCHurF/iN4biG5Q+sWYA35H+vSiu6L0OW49L5baR0aYNGHYKd/PWrEmvSCRbWHKg8u5HTHaqn/CPQR3zTbwk3PL/dBpl6Cb8LKoQ8Hg8GudxizNnbRa+0tlJDBtj3jgqAMnFY1pd77GS31UmFgpBLtwp7EetVImxFmMKwXjFUtavUmiKk7jtHB7GohTinoNIr20zNcNtaOaNAQp3eprTt90Sff3E8ls81z9lpKG7WRGkDn+6cA10bWZWNXSQL5RAdT3B71UrdC0rBc7pbZ9oJ4ztz1qIajCiu9um75cN5j8lvWqHia5eOzxbNJGQqqX7571h2mtWhszaTIFuVHDgY3itIXsRJs6wXN+IVLiMowyMPUy6ncWyBJRHGf4gZOn0rM8M2MkOkjU5HaTzmyIzzhKTVTNJlliVioAJb0o0L55dDZsdZdZgA0bKwwf3n9KnnkNxMscQjLBy4UsflyK5nSry3jul+1phVbJKVvzasEt5ZvJWI4Ijb++p4596zkknoipVG1uSR6hf6bMsoBGDjIOQR7+1SaLaSyS6hbmUNb30kM3lgfdbzMMR+YrGe5aTTSDksozkmtn4duk1zJfSzfvQmxUJ6DIJP6VjVilFnZl1RxxMO1z2W+t0n+FdifmRXvGkBHBxyqn8gK8vvPDWkx3q372lw94pJWZGO5PcY6V6vZt53gOwtXAHk2wLBuobP8A+uuUuhhSeEHc5rmcmndH0UKSndM80l0DfqM01hpflSTk+dK52789ckda6fw3o0WnALEka4+ZigwAabe62h1BbCxUO/HmORkL/wDXrbSOVUYY2tjGaJzk1qa0aFOL0LE9ol/p89rIgZHHIPeuAk8K3NjcuLKK3mQneUxhxn3/AMa9C0vMm9VcsduTjkkVgeK76XRIIL1IdwlmKOD1x1zWcJSTsjStThJXZk6DodqsoS50Ndp4YFQV/H1rrNG0i0tbndYWq2cRxuiQnHFVdL1W1voEmiYDcOQK6vTokaFGDbi3THWlUlKW7Mo0IRV0R6rDGlzZ3cgJWKTLYHYqRmuRnns/EFpZalZKwuLbUElVX4IRiFxx24Fegai0NvbI8+BGhDOSOgAJP8q8/wDDenT2NzeXrwtFalXeNW7g5IwKSWqRrSlGKlJnPSRyTX7vIPlMjHA+tUn0+2bU5LpdsKRDk5xk1vQxhUaXPAGa4zXhcXTyRWzlpHf7g+teu9D5Cb1udDpN4n9oieUoFf5Vdu9dcJIoofNkdVTGdxPFeTXiah5sdrcLsEa/Ko9aYmp308sVhfzyC1DY9PwqVO7sZxmeoT63YNFuhkSUqcBuwNc5q2luJ11DUZwYW+ZSO1VtbEMejQ2lkgQOwBI6mmaj/a1zYQaaYsxIuS/tSepbdzqfDV5PeyQWtku2JcZcLjivq/QUC+F7ZCCSLcZ468V8meCriNIYbcubfnAbH3q+stAcp4WtHUeYRbg4HfiqpLcmT2PAPiesM+iT2+y8EguVKGNSV78H1rwrxJptxp1yINQsZLdmQMisMM/vmvffEt20msjfZyzN9rGxVb7uM8AepqP4q3unyeEJJNY8NHzkQLatJcIJFY9MAc49qypLQusrs8E+HOngfETwzM0aoP7asznPT9+mBRU/gqWWf4m+GFEbJGutWfbjidKK7I7HLY6BnQu2AHYjoeg+vvXSeA/AlvrqvqWoPL5SNtjA43//AFq7jS/hzpMAXzEeTBydzda7TT9PhtYY4Yo1jjQYVQMYrx6mJ0tE9CjgmpXmebXfw1hiMv2S7fa7blRhnbXJ33wuu0v2lF3Gydvlr3u4UbhuHFQS26PwR+lZRxM11Oh4Sk+h4nN4HngSJoT86n5ielB8G6hccqFbjBDccV7FLp6dqdb2caHOOnrS+szQ/qdPseP2XwvvJoZZtQudoJyEGDkVzPj/AOGeiW9oLi3mMDR8kMcFj6CvoHV5BBbjA4xXiXxDuZdW1JbaNwAp4Xrt9ya66FadQ5sRCnRhsc1p8ErRxrHMEWMbREFJwPaqn2m3nv7mySUmaNcuDxzW/DBcxMI47r733vl6fSsS+sWsri8eNomcx53lPnBrsi1c80p3VjHI5L/LjkkDFU9WW4g0xojPHsDhsMcEfSrWlvd+WjXzh2zyuMcVV1y1ivGWIBtigkbz0NWgsWNF8y8s13j5SMA+tXtCujpeoiZxuVPvr/eQjB/SuW8GXl8l1LZ3CfulchGHBAH8629SljkjFzG4YM207ewrOcHexdOTg1Jbo928R6gbHwtZIsjbZY1xIWyWTHBOPUYrgtY1eU2hKEncMDFLpF5JqHgzyXcyfZ7gxgE8hGAK/wAj+VQ2lgE0zEr7tjFh7elcMtHY+pw+I9pBSXUqaNDHaxzCQ77hsM5B6H/61NvPEOqaUkn2qVpISMKVXJArlx4hurDV2T+zmmWeYRiZjiOM56sewrr7yDxHO/kFdMkVmVRsZepXOeR07Vs0krsUakm9HZlTR/H5sZS9paTXtztxgjag+p/+tWxql/f+KdIRL+2hhdCTFHEpCr7knkmqFjp3iNRFIYre3V3K5OwAYB5PHQkVHq3iLX9OWytodHttVe7iV5PJ4MAbsSOCam8W9AlKbXvMyfD08tpetbfMqluB6eor2Hwfcg2wEhy6449M15l4ftXuLpPPjCTb2L49zXfaDbrHepsBDSKNxz6dKxna5cZtR1Ou1GLzrZFIyJG2YIzuJ/ya5PxjfRGM2Fs6PIPkmdT2ByEH9atfE68Fppum2wMoIczMUPJxwAfzrhJrxygcQNtPc1tSorSbODE4uVvZrqT3LMmnOqjczcD3qGwtbe2iWdoQJj14piTS3BESKFYHNDzGK8SK6l27vukdK7DzTJ16JjrsE27GRngVBaxx6y0lmIljnVsg10i2CSaikxG5QMVl6ppM2navHqliGZCfnQelFkLlSNG20gx2cUc4y6nPNaN1BvttinGRiqM2r3LQiSLT5ZB6gVLaaoLm3cSwyQSKOA4xQ9h3NXQDYx3VvpxQSOvOcdK+ovDZx4XtcL0g6CvlvwLawRXDXlzOhmc/KCegr6l8LEN4YtCOf3Pb6UUnqyamyPmn4u6y2mag8lrbyRXiyFy+/jBB4+vPWvILq5m1W4M0yySDPzO0hbn8a9a+MEcK65cXMkaybZPuOMg15XqMIikNxBIYVJIeNR8uaxw7vEeI0kWPh2zn4k+HjcMVRdWtFjUc5Pnp1NFd18AL7wlpes2t3rWp2zaneX8VtY27LuZMuoVsY4JJHNFdMWYWPeoAO/SnjgjjjNRwHkgmpjx0r56575DeqMZFRoueamuhkfhUcSY96VwF8umFMMcVacZ5qA/ePPFIaMbxDbtLYttHI9K+cvGx1PTNeNxABJE2S8Z7fSvqKVVaMhgMHivOfEPgBdV8Q/aHnSOy2biB94n0rswtVRepxY2lKpH3TzTQtTttRtBNDIpkLAPGThlb0qt4jMYYyshVthB461h6poMFr4imFtdzQ3BlKKy8YOe9U9dtL2aYwXWo3EpRDyzEDI+leoqeujPIem4oaRsEFgMVBczCPd5i9PujPJNYeiLNYXsjXd8ZIW+785JBrTt0DWpuyuQzZDE/rWjjZ6gXdKEc77sBWYjn09aIdKvP7Ve2gTekkmUA9DVC4v4tOkQlVE0nKL610/ge/uZ9fglfBd+GXHAFQC1Z2/hvQpLHQriOcbpZMMwz0x6VVSTzEa3HDYPauutnG0ggENx9a57V7b7Ne7gADncp6bl9K5K8LanuYCokuQq2ml2QsmgmhBAG4/LnJ9cVi3d5punSY2xNzgMRj8K6a0vbZ4lZmwehBOai1Wx068jZXWJsjIbFZQdtz1nO0fdauczba5bXcogjWNVDDO5zj8q7vTLezTTg6eW0mONq4AzXPafpej27fLEGYHq3NdZpMVs8IAIUdMDGKmrK+iCFSVvfaMOxsG/tC4uUUhMj6E113hy1LvvUEsxxyO1OitbcKttDgZOWxV/Upjp2h3d1bbVdFEUZx0ZuM/lmsYO8kjCvUSi2jjvHF0l/rU4En7qFREp6g7ev65rktZvfMs3t4YHwBgN2rdgSNnIYAn0NUdfwNkaoFTBJxXrRjaNjwZtydzlNIv5rPUI4pMuxHOa2dZVb61HIV1O5T71jNHFFcHVA29VO0j0robZYLqxaYEcjIxSjoiE9bF/R/MEUBbliADW6YkIwyg8dKzNMAXyvQAYrZxlsnoapFlc+RY2klxKQsY5Oa5TVri91aAzwW4jtlPB24LCup1LS21GSOOd/9HTnaO9XWtIhbiCNAqbcYApSV0KzZx3hiwvGuh5gKtjcuT1FfXPggN/whungDn7OB+NeCWltFFaQphd3Cg96+gfBg2+GLJemIwKKMbMiorI8C+I3hq61jW2XzUije52Fj2PJyfwFeH+LCum3NxaxyCZTIyh+zjOMj0r6Z8cRu4mjjbEr321fqVIr5T8ZefHq81vMrI0blGX3B5rGhHSxWJ3J/AWJfiJ4WBYK41qyJIPA/wBIT5aKg+HoE3xK8J4dRjWrMhR0H79OvvRXdE5j6H0n4kxHwYde1W0FvMZTHHFG2fMI9K1PBfjhde0S+1S6tTYw2r4LFshhjNeSXMIXw3ZM7A29tthTPTcfmZv6Vu+I723sPhZbQWzCObUZC2xRztzjpXmTw8LaLdnqKszr7H4pWs5Nx/ZNwdMSURNdBvuknHSvQ45IpESSN9yuNyn1B6V478P/AApcal4HsXvLy2g0vzmnmCA+Y+DwP0r1TRHM1mr7VVOkajso6Vy4iEIu0TejOUlqaR+5UEijipwDimyx7u+K5jYqXe4oSK53V9Qe1jdgV3j7oJxXUPGNpya5LxtaK9o0ikZ2kE+nFXDcippFnkd3ayC6uHigiJlkMhbdkgk9s1z+vR3jIm2CPcNwyG61rWmom0drS/O7n93KOgHvVTxPe2kNmSs+9mIClfrXrwb0Pnp6tnm2oTvAzwywbSOGJFS6VYS3EUNxc+attGxKgtgH6j0qz4jdY7rEp/cMwLY5OK0Lu+RrJRAwkhEfylV7ejCumTIuR6pax3Nut60al4jwQM4Brf8ACckeliG4SEzyEAnkAnPYVgaPcC4tPI6h/lb2q9ZyhJEskDyuXCoqjOW7Ljvms22iob3PVdD1E3+1Fs7mKQtwGXj86XWZ7bUtFW7tJVmWCaWIso4JRsNg+mQRSeJ7LU/CPwq1HV76Yx6hNEIYoVI/0ZMDOf8AbPT2rzz4M60s2kal4fnfLRXcksR9VfB/z9ayrwfs+Y9fBS/eaj9Vu5YHLIdhzx6Gsu51y8UhUzj06jmug17T2EjDGecg+lcteWkkRJHY1jTaaOuopJ6Fi01i7BGSxB7967XwvqUpiUsWIz61wNkz+aAyHr9K7vw8YhEm5fpmpqWCm5PdneaPcsFLj/WOMKT2rZ8U27P4RCxqW2zIxA6ng9u9ZHhuHzpvMYfIvQelc18ePFv9kaLpemWM+29l1KGVSh5QJk5/MiuekuaqrGuIX7tlGGdVvCCwxniqPiW/Xa0eQuF5JrR8c6dd2qaF4j0+3Y2WrojnaOIpSMsh9O5FZ2v2i3V9DC3/AC0X5sdq76smtjx46mTocUMun3MTMGWQ5qzoUNxb288G3cq/d+lQWemzaZqD2vJhfla6SyiMcbcdqum7xJitS7pKEwxtjHFbBOFHes3RHV4BjsTmr8ZDyFemK0RaRaRtwzzT1qNBgEVKoyQKCkWrRQ9/Ch5VBn8a968GHPhq0P8AsV4NpWWuJX7ZwK928DnPhi0/3adN6szrbI8y8aQzvqKCG5EH+njLFc44PNfO/jWC2ufEd1PCoZHmYo5TlueWI7V9E/EB5IzdzQqpeG7DgseM4PFeJ6xC6RXFysKhs7o3PUk9U9x1rjhO0tCMTLZHLeBEt7b4h+Go0ttznWLP94idMzp19qKseDrm5h+JXhuGKzYD+17VS4HBQzJx+FFd8XdGCPcbz4cWMng6DQEvZFeGQyLcbRksepxS23w10yPwu2kTXMk855W5cZKntgdhXdho27jNObGAcZFeB7eoup7fs4XOC8L+CdTsEjtdV103Gnwn93awrsV/9413FugTsBxxgcAVN5YIB/Kjyzg8cVE6jnqy1FRWgA96GY4NIFAIB4PvQehBHNSBRvJWjjY57Vwvji7kbTLhUJyUPSu21RN1u46HHFcjqdibkMh5DDBxVw01FNNpo8PkZQZDMx2H5umefSqE7Xd8yiALvP3EdeBium8S6U1hqslszHGA2PY1J4d8I+INWvFnstLeC1UjF1cHy0PrjPJ/AV61OV0rHhyg7tHAXUcf2pkuolLh/mBXoatwkOrW9rC0ryLsVY0ySPoK9kj+Fuhi4N94h1WW5fq0UAEaH8fvH8MVde80PQYDbeHbC3sBjBkiTMjfVzz+tdC1EqD6nlOnfDTXmube8u7mHRraVQDDMCZZBn+GMc5+pFep+GvBuleGLqC6jU3mtEAJJcAAQdsqn973OcVly6pcQ+IpEQLI0XKSEZIz/OrYv5W1I3MxzKxzktwPSq5TeNOMST47r9r8CXmmxnc8ds3vlsc18seC9Yl07XILpCQJo1Le5HDfyr6h1wy3umTlzueWNuvT6CvklFFrcSRHraXckZ9xu4/ka1jFSg4sblyTUj6QtLq31WyRwwyygj3rJvtOVWfeD+VYXgPUdqrau2UIGGP6V2k6sykEbhjgmvFnFwnY9+MlUjc5CSxZZf3fFb2jrIoXI4FAiTz8kHP1rTg8uKPdjGPWplIcaaRqS60dM015pXCIq9c9f/r14P411uXWPES3twxKQhpFXP3eMKPrkiut8dazNdHyA5CDjH9a81RheatbW6DP2i4GB/sLz+Wa7cHQs+ZnBjq+nIj7a8EpbTfDiw0y9CTRfY41ZTzyFHI964nXvDElnry3ENzb3EE64hEj7H9xzwSPQEGtrwrfPBoFsswClYwuQOOnep9TmttQtWsbuMopw0ci/wAD9mFauL5jhWhxurWM0Ei/aLd0I6Fh+maib91HvC/LjkV0Vpc3caGK4VXC5WSN23I+P4sGrL6do96MIGsZCONvzxn6r1H50PQDkvDsyyJIU6bq241LKWQ4YdPeqjeHtQ0eeWQxCazf5kuITvQezd1P1FW7Y/uweOaEyrjhP82yQbWHercbBULEjgGqcpDt81RTGSKEqjbg5xg9abGkbeknbAmeSxzXuPgJ8+GIPYGvBrKaOMRo25SMDmvc/h2VPhiI5ypz3ohuRV+E848dwfapp1+0Sxr9ujVlQ8MC2Oa4X4p+Gn0W2Gqadve2BCyq3zGPPf6Gt74s+ITpl1dW8CKxaZZN552lTkcV5R4r+KvizUNPu9ODWTRXK+UWEGDg9hXLStLUmtYy/BmpSv8AEbw5Ap2p/bNoCSeT+/Tge1Fc98NTdH4leGU8tht1qzDZHT9+lFehFKxzI9b0yS8l8deJxcWOq6nBasCkdvdlPLHsM11nwdl1G5k1C8a/lOmu2ILK4l8yaHnncT0rt9O0TTbHUJ9QtrWOK4uf9c69X+tFtoGkWupSaja2ohuZfvshwG+orw51oyjZI9qNNp3NePhc/lR97nPFCY2HmlQgKc9K5jRjSmTk02QAHNSjvUUxCrvYgKOTmhb2C9jPvzhW+lZxtwybvlVf7zdKg1PxFYpCxRS7BmTafY96wYtbe5V5JGJ28DsAK76ODnL4jCddJ6Gpc2WiW2ovq7W0c96UCCSUZVQPRfx69aytU192B2OJGA4HZRWZe3c92xYk7R26VmXYIBy3J44r04U1FWOOTu7j9Q1Ka5kw88m09ucVSYI6sSXxjIzTSX3fext60qO5DFSDkYwRWqSRN2W7W2CzTXcpwGwQfbFVQ6yXG8DIzxzVvUXAskQkncoBwcdqhiQIiBeNo4GKY7mg257Jt2flG4V8g+KY/L8Z6tECQFvnf8zX2AF2wHqeOMd6+R/iKgt/iHriDgLdnn2Kg1rR3Mq2x3fw7WS/0xJU+/E5jJHcDlf0r1TSt32fy5+eMV4v8HPEVtZakdKvZhHHdENC7fd39NpPbPGK9ytYtzZXgc5ryMbBxnZnt5e1Upqw2GyVpPMC/hUOrxFImG3Ax+da0KgLmoLhfNyccDpmuFHouGh4d8SboafDKHfE84O1R1C/54rC+GdtLdeKbOOchmhjAyT0JPNN+Jlw2reJNTdGXy4HMUf+4nb8810HwHtG1HxPNKkYAQxbvTGDX0FGPJR1Pl8RPnqs+kosR6VDF229PwrIhunaRrW4d1ZRtQ/wsO30Na1wqrtGMKBwPWuVvy+qeIVtIGkS102QPdOhI3yjBCZ7gZ5Gf6VlYZ0NghEwilPHOAecg+9Fs7CGN1GRjseaSwYJ5ZByFz15OBzUdm37mHIYZHTb70DNPTtUuLWXcm7HcE8VpP8A2XqKgywC2mb+OEbefUr0/rXNCXAO7K9eo9DVi2nzgZxmocOwFjUdEu7VHnixc268+ZHyVHuOorJt2E1+g5KoM10NhfSRshVmRs43Kf5+1TtHpd1K7TQi2uW+9LCAN3uV6H8MVLTGmZYwXAK5HvXs/wAOZSfByw+WRgNgg9a8pOk3QkxaSW92xPyqG2sO/Q/0zXsXw0gMPhOCJxhwzBuO+eRUxi5XSIrbHzb8WrWe41u6+1OwjEhwB1x9a87ubOzgVjs4A+8TzXvvxm020a41CRmWORGAiGcZJNeC6/p0qzyfap8xxH7idCfr3rnw8WlYmSstRPAUdsnxB8MSxSrE/wDa9oNrHr+/Tiio/AmnufiH4Zk80OF1izO09QPPQ0V6MdEYn11wV4pcHHIrzDxD8V7ax8Qw6Tp2nNfF5BG0m/aMk9vWtT4hfEO38MS2ljFZm71G6ICQBsYJ9a+e9hU003Pa9tHud5GeuBmpFG9duOK8q8T/ABRvNA1Ky0qfQkfULnYdqzgqN3Tt1r1C3MzRRu6iNyoLAHoTUzpzgrscZqT0JyOcVk+JZjBpUpBxlgM1pMzhwOvrXO+O59tlHAOrEueemKvDR5qiFU0izzOJj9tvI3Oct5q7ueDwasISsYQE4J/Co71DFeQTYIQgxP8AQ9P1qYr8yg54Ir6M8649OABgdcdOKjuIRJF7lic0XTbIeAOSeSanRM26gnt1FAjCu1ZVYe+OtSWUXUhjj3HfFWLmAZJXrikssgH3POfSgBJYhN5AYtt2j8xxUuMEArtH6mpVU+REx6RswIB61YEQYowAx/OgB8K4jCdD+pFfKPxksvsfxS1q2zwzxuM+hiU19boRvO3723GTXyx+0ApT4r3rEffggbnqfkA/pWlH4jKtscFHK6EoyA+v/wBava/hB4+N35WhapMGuFG23lc8yjsh/wBr0Pf6141JFvGM4Pao4meORSpaOVGDKwOMHtg1dejGrG3UeHxEqE1JH2MkokQFPzrnPH3iOz8NaBJeTNH57qVtos8yOfQeg6k1xvhD4l2yeD5L3VZA2oWuIXgB+ad8fKQPfHJ7YPtXlXirxDf+INWl1DUJTNMwwka/cjTsqjsB+teRRwMnU97ZHtYnMoql7u7KUV7IbmT7Tgmbcd2OjHJx+dew/st2Y/sm+vNvzG42g+uFHH4bjXhshkDBpDhuyelfTH7M+n+R4AiuSOZp5pSevAbbyO/3a9araMDw4+9LU9EmYGRRlgFHfioFGUkMgyCSTU06Bn3yZx69uKrIH8slWYbhxzkVyHQRwsVt7olgWEbEevIx/WpLYA20ZB6AUjkfZ5AyhTI6xhgOuOTU0SKi7Q6ccgGgVyk0hZ9mQDk/jU2nlnfb6e1U3ZfNYFwSG/rWnoiJJcrh+/502BdaNYz/AHcjPPWkwJB15Xjml1UlJ2jJBPY+tU4Xk3EABh+v0qRl/Tbpm1mygVzvQGT5e/b8Opr3rwm2/SVP8Qcg18/eDo2utaluV4XzNqcdFXj+eT+Ne2eErxkFxaqyg48xdw4HY/0oi1F3Iq7HEfFG1lutQube3sUupGkUjLAbMEHv61518QNCvdQg8+10JrOWNfmIkQqwHtV/46eONV0HVhLp7wee8mGVk3K2K8q1v4q+PNQV44ZLOyiIwWSD5iO/U8VyUHzaoUpxkkV/h5Iq/EXw8IlLK2rWuWx385e9FY/wrl1L/hZHh2MSuSNYtS6kZG0zJk0V2xRielXOharY/Fq1ZdBurmytmHlFFyDgcEnp1qfxj4V8UN49tvEV7FFMiTK6JvGxQP4fXNe9yArGdgyQOK8w/wCEhNrHqlxq1pc3Gtea0VparCSFTopHGOfWvJp13N3tsepKmonmEVne+I/jDAbC4F1fRzGSZ5AfKXb2+gr6as0u1hVbmRHlxyUGBXnXwW8HXmlPdeINbt1i1G+JIj/iRSe/ua9RCgNn2rHE1VUlyroaUY8t2QqhLfORXHeMpRLqU0Q6Roqg+/WuzcgMOK868QT77qWY5IkmJH06CtcBC87irv3TndQgMts+CASm4ex60sH71I5mBwyA9cDPHSrBWTbk8k5GB7VU08BlaNt2YXdTk8Y6j+de0cBDetm8gi4GeT+daaEPHlQCMY61jXzbdRWQgHBwPate0dvLfHbpzTAqXa43MVHpxTLeLaeRgfU1NL87E7j97BxSg4jYgNyemBU37gMsMmG4jxxv3jPQHGKntgxDAgHHIqO0Qec6EE7k3AY7g1chVmI4CqRwBRfsANzgknKnt0FfM37SyCP4pM+B+80+3fj6uP6V9NAKpIJ+Xpgda+bP2no2HxEtZuNsmmRAY/2ZJM/zFbUtzOrsecjHBpLkoQAe3NNJ+UUyZQwXJ9q6TAfCVkIClgFz5jZ5PpUT3DsSsH7tO2BRBkQjHVn/AEpY0HJK4IOKQCRJs5PLHua+tfgjbG3+GeiqF/1lv5pz33Et/Wvkx2CIzHqoJ/Kvs7wPZfYfCml2SjasFnFHn6IP8a58RtY1pbl25BJfbnc2B+VV9oU5RtnOc4qe5ceZhgR7rTFeNkILA5PeuY3RUun/ANMs4xt43SuB78D+tXNo2BhjuDzWYxD6rOeAI1WMc9xyf1JrWQebbEAg47ZoEYV0hS6ZlPcVu+HQPtigggc4+lYV8WW4IZQA3Q5Fa/hp2N0jq2QOuTTYDNTmYSsWywGSCKpzXQispLhT+8YYQdMk8D9ad4idre8Cqx64YHgnrVMnzrq2hGCIx5hyOCeg/maVgO2+H1qkKRLu+ZUGMd/rXoXh54m1uBZRuWVDGSfUjiuS8Oxpb2RcFc4wcN3Nb9pJ5N5ZTNn5ZVJ4+lQ1fQGcD8ddIsmvJhtRnibnjlRnivCLiyczMgjeVmOflXPFfRfxqMUWr6g0xAXzIu2c8j/69eReLvFDXINjpVr5duvDGOL5pfx7CuOnH2baRjNqJzXw/jC/ELw8u0xNFrVopzxn98nFFWPD+nNB428KyIshP9vWLO2TkKZ04P40V3U5XRClc+tB1FL5abt2xc+uKaDjFSrzXzp7wwkB9uOtO3c4pJMDkDLURYJPNKwFfUpRBZzSnjahrzfVCcoFPC9vWu68WOU0oqDy8gU/Tk/0rz+9W4R95zsPv0r1cvj7vMcmIetiqzSMxbYQS3eoLXCatdxEgFkWRcHv0qdxuVgcetUGlMWvWxGcTROn4jkfy/WvUOa5T1olbxVIIU8/5/KtnTS7W7MGAzj+WawfEj4lEhBJ4+8fxroNLcf2ahHGRz7UEkTb8k5PzEUBWZQF6FiTk9sf40TNyQcjBz0qeBFIxn+HOelS/MZEp23UB2qCPlJFW4lMbmVW3YqtOoUKQ2WX5hgVcwHBTOA6hgfXvTtYCIrmVmDjHUcd/SvAP2p4Amu6BOBy9pMpOOu2Rcf+hV7+jRLxuO4eteH/ALVULeV4cuf4Va4iz9drf0q6fxEVNjxNR8i5NNIyCOuKchyv0pgP7xSP4jiutnOSKm1o1HRRig9TUhGGJ9qi7UATWMAur+2tT0mnjjP0ZgD/ADr7cs4/ItVi/uAJx7cD+VfHHgG2a98daHaqPv38WfwOf6V9jmZvsG4k5Yk5rlrvVG1FaMqkMASozuPpxUfyCXc0fEYyee/Wp0chwM7gBg+tVL7H2SXYDuchB7Z/+sK5zYzbFwUeR9wLOWJI9TWpp8sfmlSWwxAHFMSNFQqA2CM0jRtG4Yb+RnmgRW8QwtFiTkLnG7HaobO+Nto+o3Kv/qo9w49xW9F5d5bG2l+8QcZ7VgaxpV1DomtW6/dl092U4P8AD839KdwY3xNMt01nMSR50KyZP6/yzT/Co88PcSR7mn+ZCG4A7fpg/jWNeTrceBNKvFYB3j+zhh1DE8/kMn8K6fwsqJ5CIRhVycdMdhSYrndaeipFHbjOYxukyf4u2a3bZGn8uPqS6Y/OuftnQuV3lixyzYrrvCsK3GrwKMELhjgelStxvY4342xn+0tSlwCBHGeRn0BrxDxLatp+syWUNzvRUUkgc8jPP0zXvvxvRUGpyGNnHkpwoyeor53+Jc9prXiES6JLNCyWqrMCmAzjiublTbbMa0VZMu+B9Rf/AITzRbWSTzN2rWi/LgqR5yYNFc38NrHV4viF4eLq0qrq1m7nPKj7QgPFFdFKNloYxeh9gxMMAE1OhJziqSHjIq3ATmvnz6EcwyMZ61DE21dp4I/Wpnzg1XYnt1HTNAIxPF8wKwW+epLkfpXJ3TmONvMZXyOnXFaniO5J1O4dydqYRRn2rCZXkLSM5x2Ne9hIctNI4K0ryIGC7WYFvYVzuu3Xkz2cxJHlzBj9M81s3MxBCGNtvdgQa5PxZMJElUfe25A/CuowZp+NDsw4Od2MV0elD/iS2xIyWjBIHvXHeIblbvSLO9H8UCtn04rt4AkFjbxHdhUVf0FFgW5UnT95gBsbgDmpxnLADjpjFLckIyqqyZ5Pt1pIXl2MwUg7SeaW4xkinBfGcrjkUkDeZDCcuAmYsAY6dM0kzMSoKqSR61Hak+XPEAMhhIu0fhSYFqCDcMgDLZxXkv7UcBPg/SZccx6iR+cZH9K9kthiElsgg4x3wa8s/aajVvhkWRcCHU7c8nnB3D/CiEveRM/hPmq35BHfH9KLc5ePuAc0W338ZwMUlr/rFHpmu85S1NxGT7VAvKinz/cIpqZ2j2FAztfgdaNcfFHSTt3LF5kp9PlQkfrivquYILZEwSijH5f/AF6+cf2aYFl8c3czIWEOntj2LOo/lmvpC7VlKqjBuAMDoe9cdd+8dFJWRmtJtUIyjc57npTbk7pYLbp8m85bHJOB+gNS7VllyxGV4xjuapwM8t5ctLAuY5diAL/CBxWJZYk2ofm9Om4HNM86LygADnPbP+FTPkBHVACeoC/X/Clui21EwQCCDxj3oAVVUBZYvMY4OdvOKuReZc6NqMc0bLKmn3BUOm0kCNjVezZ4nxgfd4yTWo8oTT9Ud8eWmlzHIOc7kk3fyFJgeNaLcNJFpumIxaK3TzWHo7DA/TP516n4ehEduHyc9uPSvI/AkjLtmkdA8uHIIzzjj9K9a0l82gyYmOMH5aua7Erc6fTc7ctJuyM9K7LwnMLfU4JONrny2/HpXC2RVI8DsuRjtXSaPcOpWTLcEEZ9azKlsQ/G+Ty7bVTjpZk49a+V7e8JvF887UYcYOBn+ea+m/je15Nd3MVpAs/m2PzKWCgA98189+LvC95pl+y3SLDNEwBXdlRkZB+lYpK7TMa70R0HgM2194t0N0mSG4XULYNt5MiiZGx+lFUvheIx400JoywkOpQLgDgfvFzmitYXscsND6IilYD5iBz0q3BOMg5HvXkHgbxre3aXh1FJrlhLlfKUEKp/Gsv4sePdSjsU0/R7O9gEqnzZSvPsBg968b6tPmsz3Hioez5ken+KviN4Y8OymC+vTJNj/VwDef8AAVS8C/EC38WSapPbWbQ2diFKM5+Zyc18t3A1WbLXFncKCzMC38XrzXpvwEmuxb6kqDZayoqyBu7Z4Ht0NdSwaSOOGNnKduh6RIZbyeW7lYbC5Jx/Ksu7kublvLiGxc8ZPSr167lfs8R2hcZ9vWolHlJkHcdvJxxXqQVlYct7mfdAafZjzZk8xvXvXEao4nkaSTB44wK6fV5HmuFIaMKo6E9DXK6tMd7ZbgAgBRVENlzS411Hw3pMXJAkFuTj+6+DXoN1FIRhEXCnK7m9K8++Fp+1aTbqSSIr+Vs59AG/ma9DZm2PwxJ/SmwQydXeU7kPH+1TbnCRkbl7YyalBXecA8fNnGKjnAMagEjJBPfNJlFZmCuMtH7YGaZbSBb5VI2718vj3zSynLEAHkY54qCchAJuCykNnPpS3A0vMcARIoXgA5rz39odA/wq1PGCUmgf6fPj+td/5YFyXdmy+GxnsRXFfH35/hPrzAABI4mH/f1R/WiHxEy2PlS265psHy3LA9s0QfK20Uif8fkn0rvOYlm6HmlzgL70ybhc0O3yBsfdNAHuf7KkAF9r93jP7uGMH0HznH6CvdL5FP3WKnv6Zrx39lO3caJq1wRxNeqgPssYP8ya9cv+XzuIya8+q/eOmn8JSnZ7W1mnP/LNd3sT0A/M1Da24S3Q4YsRuzvJyaj8QyMtpa2n8dxJ5jHuET+mf5Vf2kRouPlxzgVBbHqkb5/d9/7zf4017ZXgY7EOzJOS3+NLDLtVlByScj2NW3l2W7SE5DKxIPPakBU0yIPIAI15IGdoPX61e8RkW3hXWCGAX7HKhyMcbCKbpcLo0S7l3KATWd8WZ3tfh3rkyOu4WpII4wS6jpR1EeR+GpBH5Xy5AUfyr03Q5VMKbDjqa8u8MyszxY2knjrXodnJNbeU0kWUP8QI44rSRMTtbOYkYLZyK6TRpSykMdoHfNcbp90H6MMEeldRpJHzlCeFBANZlEfxMvlhRrmZiqS6eIgT3cHBH8jXF+JL/wAI+JTY3epzXsPkJsnMce5ZQANobuMHvWn8dp1t9A0md5PLXzpI3PXnaCBj3rwcawjamtvFdtAzKWcnDDPZPQ1goycjkq1JKVj1n4e+IPB9j47FhHO0sk2q2yWxWHgMSg/DmivM/A9jDJ8Q/C91aiZJI9ZtUu5WO5ZH89OVGOB2orphHQI1Loo6T4gi0yZXuYXlfOJIVYqTXV+JnsYoEkWIh5EDKJJD8p68DsPrXKavZ5eO5U43cl4wBuPXJ96g1BtR1CCKzV2AX5WLYyR65rnsm7k8z5bEGpeI0W5aOLEq8kM38JI5BHfmva/hbDHbeDoL1lAkvCZWwMA9h/I183a1p09jqAQ/MvHI75r6p8M2ktr4X0iz2FXitYlZenOwZH55roRpQWpNwec9/SsjW70hTFFn72Cc1q6rL5EBQAFiP79YhgeUlm8tct3NW2dTZUS2MdnJO43v245Fcbq9w7GY7SO2PwrsdfcRWTqk0fGeAMZ4rhL7cyP+8A6546U4ozkbfwNmWTTr4PwYbxz/AN9Ba9MmcCAt2wB9a81+BNm4t9blIISS7VU/4CuT/MV6dcoPI2nnkc+tNvUcdhQqCItkHjA4pjiEuqq5GB0/ClmVTGNu7GCeBSq4AV9wGP8ACgoz5lRpOGfOe5qldIvlFCp5rSlO8oxZcYyeRVG6ZVdcFTk0tgLlg3m2UcrD51TaxPqOP6VyPxtUS/CfxIAcgWiN+UqGuh0CXNxNCCrA4cDPbof6fnWR8Vod3wy8RRsRkWUnGPTn+gqY/EKWx8gQsWlpY+biQ96itzld/tToD+8c13o5SSXp+NBG5SM4yKH6fjSqfm4HemB9LfsrxsngKWZmILXk3H0wK9MuWSZkjXLNnClR0Y1wn7N8LQfDS0YDIknuJTj3c13QkWFZ75RlYImlAzgh8YX9T0rzqms2dUPhRzuqubjxPOqEvFbkW6Y9FHP65ratd2Y8klTwRjpXM6ZG4YMxyS2SScnP/wCvNdXpRSQLwevpUsoW5Ro5uQQGyeR14pTIfshRmAQgrnGcZ49ankdC+HyAgx6g8VXHleZGvmgq0gyo9jn+lK4zXh2k7wV69uK4j43zOvwz1UjOZDEmc9jIK7NHGwlQpJGc1wXx4Zl+GN823GZoF/8AH6I/ES9jyvw/cNHBDIuR0PBr2Pwq66romA376IHIIrxPw0ym1iJBIx+lei+Cru402786FnaE8MuTn8q2qIiLOtjE1vKVZhwOOK7Dw5efvElDIwKgMpFZ00cWpWMd3C/3l5DE8GqWmXUumXsYYApnjGMdaxLZ0vxX0jTdW+Hd+9xAJoYNlyq7iMOMrnP/AAI1wNn8P/D7Bb6wNhC8YR/9LG4KwwdoxzyP6V6P4tjk1X4aa3FYMVkmsnZNp5DLh8fiFNfNegeKtS0TU5/tN1LJbXLD7RzkgjgOKiaOPE36Hr9gLzTfGXhuxuNKj2SX6GIQqCFiMqnJ9MNyM880VhWUs+p6t4U1PS703QtNbtFn8tv+WbzICzHOT16UVrT2MKd7HntlIZFFs4DRtxj0qC5KxxSuqDcnQ0UVyvc3lsW/Dltb6t4j023uYIyksyBuM98/0r366Yxwkg8kf5FFFb0jejsznNSZnl5IH4UjR/uVJYkjBGRRRV9S2ct4ruWSExooGec1yRB3sWO4k5oorREM734QRLH4U8xesl3Mze/zkfyFdlMAVIAABYfzoooNI7DnRVUKQCCv5VHt4wTwO2KKKYyLYC69ACORiqGrYWeMY5Ck5/CiioYFPThs1GMKSN+5T9MZqH4gIJvAviFGP/MKuGJ9SImP9KKKI/EJ7HxnBxFjjgU+35Z6KK7zlHv0/GiE4PPODRRTA+t/gSpg+F2kBW5e3dycerE10niKQJpDhECmW4VWI7hVJH86KK82XxM6Y7IyLdAkgxzgZ5HqAa3NBcCcKUXaRnAGKKKllo0JYonuDhMHGfWq8AT7bsZAdgc5HGcYFFFSMLofZ5kI5DAcdMZNch8fB/xay9Y93hbHpiQUUVUPiJlseN+FTutQp6A12Oh3csEuEJ2k9M0UV0y6mSPVvA98ZbXy3hUow5BNaWo2cDgrsAAywwOlFFc3U0RpeApmkivtNbmGS1lz7YRjXzhcaVYXeiyS+S0VzCARIjnBGOhWiipe5z1dyj8LGkb4ieG4llkSMaxZ7lDHD/v16/lRRRW8dhRWh//Z" alt="MA"></div>
+    Mohamed <span style="color:var(--gold);margin-left:4px;">Abu Emira</span>
+  </div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a href="https://calendly.com/abuemira/30min" target="_blank" class="nav-cta">📅 Book Meeting</a>
+  </div>
+</nav>
 
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#certifications" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Certifications</span></a>
-      </li>
-         <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#services"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Our Services</span></a>
-      </li></span></a>
-      </li>
-
-      <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
-          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open abuemira's resume in a new tab" href="https://mohamedabuemira.github.io/assets/resume/abuemira_Resume.pdf" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Mohamed Essam
-        Abu Emira</a><span class="black-text">ERP Consultant</span>
-    </div>
-  </nav>
-
-  <!-- Nav class 3   services -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-         <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#certifications" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Certifications</span></a>
-      </li>
-            <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#services"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Our Services</span></a>
-      </li></span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open abuemira's Resume in a new tab"
-          href="https://drive.google.com/file/d/1ev6aRPAlBNzW-8gwqLB_ZEmln3Qopub1/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Mohamed Essam Abu Emira.</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#E4A900"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>
-"Transform your business vision with my specialized ERP consulting expertise. As a proactive professional, I resolve complex financial management challenges and drive operational efficiency. Partner with me to automate and elevate your ERP solutions, fueling transformative growth and sustained success."
-              </h5>
-            </div>
-            <div class="social">
-              <a href="http://linkedin.com/in/abuemira" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/mohamedabuemira/" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-                <a href="https://bento.me/abuemira" target="_blank" >
-                  <button class="icon-btn website" >
-                    <i class="fa fa-globe"></i>
-                  </button>
-                </a>
-                 <a href="https://linktr.ee/abuemira/" target="_blank" >
-                  <button class="icon-btn website" >
-                    <i class="fa fa-globe"></i>
-                  </button>
-                </a>
-                 <a href="https://api.whatsapp.com/send?phone=201005061349" target="_blank">
-                      <button class="icon-btn whatsapp">
-                        <i class="fa fa-whatsapp"></i>
-                      </button>
-                    </a>
-          </div>
-
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-                  <a href="https://calendly.com/abuemira/30min" target="_blank"  class="contactme">Booking A Meet ></a>
-            </div>
-
-          </div>
-        </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-photo-wrap">
+      <div class="hero-photo">
+        <img src="data:image/jpeg;base64,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" alt="Mohamed Essam Abu Emira">
       </div>
-    </section>
-
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-         <blockquote>
-          <h2>
-               ERP Consultant with Experience in Financial Management and ERP Systems Implementation .
-
-          </h2>
-        </blockquote>
-        <p>
-          Experienced ERP Consultant and Product Owner with a robust background in financial management and ERP systems implementation. Skilled in gathering and documenting business requirements, analyzing and optimizing business processes, and providing detailed functional specifications for ERP systems. Proficient in collaborating with development teams, conducting user acceptance testing, training end-users, and offering ongoing support. Demonstrates strong project management abilities, ensuring ERP systems meet organizational needs and deliver exceptional value to stakeholders.
-
-.
-        </p>
-        <p>
-          <ul>
-            <li><b>modules :</b> Accounting, Supply chain management, Inventory and Manufacturing, Sales & CRM  , POS, Project, Manufacturing</li>
-            <li><b>industries:</b> Food, Trade & Logistics, Manufacturing,Construction,Real estate,Logistics</li>
-<!--            <li><b>Libraries:</b> NumPy, Pandas, OpenCV</li>-->
-<!--            <li><b>Frameworks:</b> Flask, Django, Node.js, Keras, TensorFlow, PyTorch, Bootstrap, Apache Beam</li>-->
-            <li><b>Tools & Technologies:</b> trello , todoist, odoo Sh, project Management, JIRA</li>
-          </ul>
-          
-        </p>
-          
-        <!-- <p>
-          
-          Detail-oriented Software Developer with professional experience in Backend Development, Machine Learning, Computer Vision. I am adept in Python, Django, Flask, SQL, Machine Learning, Computer Vision.           
-        </p> -->
-        <p>
-            Looking for an opportunity to work in a challenging position combining my skills in ERP Consulting, which provides professional development, interesting experiences, and personal growth        </p>
-        <!-- <p>
-          Another Paragraph
-        </p>  -->
-        <!-- <p>
-        <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
-          href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
-          aria-label="Navigate to the Full Stack React homepage"
-          href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
-          aria-label='Navigate to the article "Scalable CSS"'
-          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
-        </p> -->
       </div>
-    </section>
-
-
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
-      <div class="container">
-
-        <!-- Latest Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.exp-sa.com/" target="_blank"><img alt="expert logo"
-                    src="/assets/img/expert.png" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://exp-sa.com/en_US/" target="_blank"
-                      class="teal-text hoverline">Expert</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">ERP Consultant | Product Owner</div>
-            <ul>
-              <li>
-                  Developed and managed the implementation of an ERP system using Odoo              </li>
-              <li>
-              Worked on three ERP modules targeting finance, supply chain, and human resources; built 50+ functional specifications with functionalities such as user authentication, transaction processing, inventory management, and payroll processing.
-              </li>
-              <li>Improved system performance by 70% by optimizing the ERP codebase and redesigning database structures and queries.</li>
-              <li>Implemented a bulk data upload feature, significantly reducing the manual effort required for data entry into the ERP system</li>
-              <li>
-                <b>Tools:</b> Odoo, Python, project management
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span> Jan,2023  -Present | Riyadh, Saudi Arabia</span>
-          </div>
-        </div>
-
+    <div>
+      <h1 class="hero-name">Mohamed Essam <span>Abu Emira</span></h1>
+      <div class="hero-roles">
         
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.odootec.com" target="_blank"><img alt="OdoTec logo"
-                    src="/assets/img/OdoTec.jpg" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="http://odootec.com" target="_blank"
-                      class="teal-text hoverline">Odoo Tec,</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Odoo Functional Consultant</div>
-            <ul>
-              <li>
-               Analyze clients’ business flows, processes, and gaps to align them effectively with Odoo
-              </li>
-              <li>
-               Define implementation or development requirements based on the analysis
-              </li>
-              <li>
-                Distribute project plans, gather feedback, and confirm milestones, scope, and project stories.
-              </li>
-              <li>Perform advanced implementation, configuration, studio customizations, and data migration.
-             .</li>
-              <li>
-                <b>Tools:</b> Python, odoo, odoo sh, studio customizations,
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>May, 2019 - Feb 2023  | Riyadh, Saudi Arabia</span>
-          </div>
-
-        <!-- Experience 2 -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.ultimatesolutionsportal.com" target="_blank"><img alt="Ultimate logo"
-                    src="/assets/img/Ultimate.png" class="responsive-img center-block" /></a>
-              </div>
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://ultimatesolutionsportal.com/" target="_blank"
-                      class="teal-text hoverline">Ultimate Solutions </a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">ERP implementation consultant</div>
-            <ul>
-              <li>
-               Provide technical and functional ERP system support, including administration, problem resolution, process mapping, testing, and training..
-              </li>
-              <li>
-              Develop and implement ERP project plans for functional support.
-              </li>
-              <li>
-                <b>Tools:</b> ONYX PRO ERP, MOTAKAMEL PLUS ERP
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>May 2019 - Feb 2021 | Cairo, Egypt</span>
-          </div>
-        </div>
-
-
-        <!-- Experience 4 -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.linkedin.com/company/nile-for-plastic-industries/" target="_blank"><img alt="NIP logo"
-                    src="/assets/img/nile.jpeg" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.linkedin.com/company/nile-for-plastic-industries/" target="_blank"
-                      class="teal-text hoverline">Nile for Plastic Industries,</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Chief Accountant</div>
-            <ul>
-              <li>
-	Examining accounting records, financial statements, or other financial reports to assess accuracy, completeness, and conformance to reporting and procedural standards              </li>
-              <li>
-Analyzing business operations, trends, costs, revenues, financial commitments, and obligations, to project future revenues and expenses to provide advice              </li>
-              <li>
-Assists in the development and implementation of goals, policies, priorities, and procedures relating to financial management, budget, accounting, and payroll.              </li>
-              <li>Preparing the financial statements (Balance Sheet - Income Statement -Cash Flows Statement - Statement of changes in Owners' Equity.
-             .</li>
-              <li>
-                <b>Tools:</b> Excel, ERP, microsoft-products,
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>Aug 2015   - Feb 2019  | Cairo, Egypt</span>
-          </div>
-        </div>
- <!-- Experience 3 -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.linkedin.com/company/nile-for-plastic-industries/" target="_blank"><img alt="NIP logo"
-                    src="/assets/img/nile.jpeg" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.linkedin.com/company/nile-for-plastic-industries/" target="_blank"
-                      class="teal-text hoverline">Nile for Plastic Industries,</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">General  Accountant</div>
-            <ul>
-              <li>
-              Preparing the daily entries (customers & Suppliers& Banks& cash& adjustments& salaries)
-              <li>
-              Posting in the registration books according to the American Accounting Methods
-              <li>
-              Editing and adjustment Banks statements
-              <li>Providing management with monthly, quarterly & annual financial data.
-             </li>
-              <li>
-                <b>Tools:</b> Excel, ERP, microsoft-products,
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>Nov, 2013  - Aug 2015  | Cairo, Egypt</span>
-          </div>
-        </div>
+        <span class="role-pill gold">Odoo Expert</span>
+        <span class="role-pill gold">ERP Operations Manager</span>
+        <span class="role-pill">Financial Manager</span>
+        <span class="role-pill">Product Owner</span>
+      </div>
+      <div class="hero-badges">
+        <span class="hbadge gold">Odoo 16 · 17 · 18 Certified</span>
+        <span class="hbadge gold">LinkedIn Top ERP Voice</span>
+        <span class="hbadge">Google PM Certified</span>
+        <span class="hbadge">IBM IT Project Manager</span>
+        <span class="hbadge">McKinsey Forward</span>
+        <span class="hbadge">500+ Connections</span>
+      </div>
+      <div class="hero-phone-box">
+        <span style="font-size:20px;">📞</span>
+        <div>
+          <div class="hero-phone-num">+20 100 506 1349</div>
+          <div class="hero-phone-lbl">Available via Phone & WhatsApp</div>
         </div>
       </div>
-    </section>
-<!-- Fourth Section: Projects -->
-    <!-- Fourth Section: Projects -->
-<section id="projects" class="section scrollspy">
-    <h3 class="page-title white-text teal">Projects</h3>
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <div class="card">
-                    <div class="card-content">
-                        <ul class="collection">
-                            <li class="collection-item">
-                                <strong>Implementation of ERP Odex (Odoo Community) at SOCPA</strong>
-                                <p><em>Date: January 2023 - March 2024 </em></p>
-                                <p>Description: Led the end-to-end deployment and customization of ERP Odex, significantly streamlining financial and administrative processes. The implementation resulted in a 30% reduction in processing time and enhanced accuracy in financial reporting.</p>
-                            </li>
-                            <li class="collection-item">
-                                <strong>Implementation of ERP Odex (Odoo Community) at Ensan</strong>
-                                <p><em>Date: January 2024 - </em></p>
-                                <p>Description: Successfully managed the implementation of ERP Odex, improving operational efficiency and data management. This project enabled Ensan to achieve better resource utilization, reducing operational costs by 25%.</p>
-                            </li>
-                            <li class="collection-item">
-                                <strong>Implementation of ERP Odoo 15 EE at Al-Qahtani & Sons Company</strong>
-                                <p><em>Date: July 2023 - September 2023</em></p>
-                                <p>Description: Executed the successful implementation of ERP Odoo 15 EE, enhancing resource planning and inventory management. The new system led to a 20% increase in inventory turnover and optimized supply chain processes.</p>
-                            </li>
-                            <li class="collection-item">
-                                <strong>Implementation of ERP Odoo 15 EE at Makkiyoon</strong>
-                                <p><em>Date: October 2023 - December 2023</em></p>
-                                <p>Description: Directed the installation and customization of ERP Odoo 15 EE, improving business processes and reporting capabilities. This implementation provided Makkiyoon with real-time data insights, leading to better decision-making and a 15% boost in productivity.</p>
-                            </li>
-                            <li class="collection-item">
-                                <strong>Implementation of ERP Odoo 14 EE at Eastern Yield</strong>
-                                <p><em>Date: January 2022 - March 2024</em></p>
-                                <p>Description: Oversaw the deployment of ERP Odoo 14 EE, optimizing operational workflows and financial tracking. The project resulted in a 25% improvement in operational efficiency and accurate financial analysis.</p>
-                            </li>
-                            <li class="collection-item">
-                                <strong>Implementation of ERP Odoo 15 EE at AbdulAziz Almodhy Law Firm</strong>
-                                <p><em>Date: April 2023 - December 2023</em></p>
-                                <p>Description: Led the implementation of ERP Odoo 15 EE, facilitating better case management and administrative efficiency. This project enhanced client management, streamlined legal processes, and improved overall firm productivity by 20%.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="hero-meta">
+        <span class="hm">📍 Kirdasa, Giza, Egypt</span>
+        <span class="hm">🕐 8+ Years Odoo ERP</span>
+        <span class="hm">✉️ abuemira91@gmail.com</span>
+        <span class="hm"><a href="https://abuemiraerp.github.io" target="_blank">abuemiraerp.github.io ↗</a></span>
+      </div>
+      <div class="hero-btns">
+        <a href="https://calendly.com/abuemira/30min" target="_blank" class="btn-gold">📅 Schedule a Meeting</a>
+        <a href="https://abuemiraerp.github.io/assets/MohamedEssamAbuEmira-Resume.pdf" target="_blank" class="btn-ghost">↓ Download CV</a>
+        <a href="https://linkedin.com/in/abuemira" target="_blank" class="btn-ghost">LinkedIn ↗</a>
+      </div>
     </div>
+  </div>
 </section>
 
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat"><div class="stat-n">8+</div><div class="stat-l">Years in ERP</div></div>
+    <div class="stat"><div class="stat-n">60+</div><div class="stat-l">Projects Delivered</div></div>
+    <div class="stat"><div class="stat-n">15+</div><div class="stat-l">Industries Served</div></div>
+    <div class="stat"><div class="stat-n">40+</div><div class="stat-l">Certifications</div></div>
+    <div class="stat"><div class="stat-n">28+</div><div class="stat-l">Recommendations</div></div>
+  </div>
+</div>
 
-    <!-- Fourth Section: Projects -->
-<!--    <section id="projects" class="section scrollspy">-->
-<!--      <h3 class="page-title white-text teal">Projects</h3>-->
-<!--      <div class="container">-->
-<!--        <div class="row">-->
-
-<!--          <div class="col s12 m6 l4">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="music streaming app" src="/assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">SOCPA Support ERP Odex (Odoo community)<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                 implementation ERP Odex (Odoo community)-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                &lt;!&ndash; TODO: change this &#45;&#45; only close button &ndash;&gt;-->
-<!--                &lt;!&ndash; <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> &ndash;&gt;-->
-<!--                <span class="card-title grey-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li><b>Tools:</b> Odex, ERP </li>-->
-<!--                  <li>Accounting.</li>-->
-<!--                  <li>Sales.</li>-->
-<!--                  <li>purchase.</li>-->
-<!--                  <li>HR.</li>-->
-
-
-<!--                </ul>-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"-->
-<!--                    data-tooltip="View Online"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-external-link"></i></a>-->
-<!--                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/mohamedabuemira"-->
-<!--                    target="_blank" data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          <div class="col s12 m6 l4">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="quiz app" src="/assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">Quiz Web-App<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                  A quiz playing web app based on Django-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                &lt;!&ndash; TODO: change this &#45;&#45; only close button &ndash;&gt;-->
-<!--                &lt;!&ndash; <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> &ndash;&gt;-->
-<!--                <span class="card-title grey-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, Heroku</li>-->
-<!--                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>-->
-<!--                  <li>Play Quiz and see the leaderboard</li>-->
-
-<!--                </ul>-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit " href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top"-->
-<!--                    data-tooltip="View Online"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-external-link"></i></a>-->
-<!--                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/QuizUp"-->
-<!--                    target="_blank" data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          &lt;!&ndash; 1. Django Project &ndash;&gt;-->
-<!--          &lt;!&ndash; <div class="col s12 m6 l6">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="django web app" src="/assets/img/project-library-logo.png" style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">Local Library Web-App<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                  A web-app that creates an online catalog for a small local library, where users can browse available books and manage their accounts.-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                <span class="card-title grey-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li><b>Tools:</b> HTML, CSS, Bootstrap, SQLite, Django, Heroku</li>-->
-<!--                  <li>Users can view list and detail information for books and authors.</li>-->
-<!--                  <li>Admin users can create and manage models.</li>-->
-<!--                  <li>Librarians can renew reserved books.</li>-->
-
-<!--                </ul>-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit " href="https://django-local-lib.herokuapp.com" target="_blank" data-position="top"-->
-<!--                    data-tooltip="View Online"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-external-link"></i></a>-->
-<!--                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/django-local-library"-->
-<!--                    target="_blank" data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div> &ndash;&gt;-->
-
-<!--          &lt;!&ndash; Flask Project &ndash;&gt;-->
-<!--          <div class="col s12 m6 l4">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="Screenshot of web app" src="/assets/img/project-blog-logo.jpg"-->
-<!--                style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">Blog Web-App<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                  A simple and extensible blog web-app based on Flask.-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                &lt;!&ndash; TODO: change this &#45;&#45; only close button &ndash;&gt;-->
-<!--                &lt;!&ndash; <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> &ndash;&gt;-->
-<!--                <span class="card-title teal-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li><b>Tools:</b> HTML, CSS, Bootstrap, Flask, SQLAlchemy, Postgresql, Python</li>-->
-<!--                  <li>Users can view posts and contact the admin via Contact Page.</li>-->
-<!--                  <li>Admin can Add, Delete, Update posts.</li>-->
-
-
-<!--                </ul>-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit Blog website" href="https://flask-heroku-blog.herokuapp.com/" target="_blank" data-position="top"-->
-<!--                    data-tooltip="View Online"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-external-link"></i></a>-->
-<!--                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/flask-blog"-->
-<!--                    target="_blank" data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          &lt;!&ndash; VQA &ndash;&gt;-->
-<!--          <div class="col s12 m6 l4">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="Screenshot of  web app" src="/assets/img/project-aim_bert-bias.png" style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">Visual Question Answering<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                  An attention-based classification model that aims at generating an answer for a given input image.-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                &lt;!&ndash; TODO: change this &#45;&#45; only close button &ndash;&gt;-->
-<!--                &lt;!&ndash; <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> &ndash;&gt;-->
-<!--                <span class="card-title teal-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li>Incorporated Convolution Neural Networks (CNN) for extracting image features and Long Short Term-->
-<!--                    Memory for extracting question-->
-<!--                    embeddings.</li>-->
-<!--                  <li>Tested the model on the COCO dataset, abstract scenes images, and got 69% overall accuracy on the-->
-<!--                    VQA evaluation metric.</li>-->
-
-<!--                </ul>-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit the GitHub repo for  project"-->
-<!--                    href="https://github.com/varadbhogayata/visual-question-answering" target="_blank"-->
-<!--                    data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          &lt;!&ndash; Video Summarizer &ndash;&gt;-->
-<!--          <div class="col s12 m6 l4">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="Screenshot of  web app" src="/assets/img/computer-vision-v2-04.png" style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">Video Summarizer<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                  A Seq2Seq model that generates a short summary of the given input video.-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                &lt;!&ndash; TODO: change this &#45;&#45; only close button &ndash;&gt;-->
-<!--                &lt;!&ndash; <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> &ndash;&gt;-->
-<!--                <span class="card-title brown-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li>Incorporated CNN to detect and classify objects in the video frames and Long Short Term Memory for-->
-<!--                    generating a summary.</li>-->
-<!--                  <li>Evaluated the model on MSVD (Microsoft Video Description Corpus) dataset; achieved 0.77, 0.71,-->
-<!--                    0.52 scores respectively on ROGUE,-->
-<!--                    BLEU, METEOR evaluation metrics.</li>-->
-
-<!--                </ul>-->
-<!--                &lt;!&ndash; TODO: UPLOAD THIS PROJECT ON GITHUB &ndash;&gt;-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/"-->
-<!--                    target="_blank" data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          &lt;!&ndash; Image Generator &ndash;&gt;-->
-<!--          <div class="col s12 m6 l4">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="Screenshot of  web app" src="/assets/img/gan.jpg" style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">Image Generator<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                  An image generator based on the concept of adversarial networks (GANs)-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                &lt;!&ndash; TODO: change this &#45;&#45; only close button &ndash;&gt;-->
-<!--                &lt;!&ndash; <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> &ndash;&gt;-->
-<!--                <span class="card-title brown-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li>Developed system was tested on a human-face database and loss was calculated by comparing the PCAs-->
-<!--                    of generated and original image.</li>-->
-<!--                  <li>Calculated difference in PCA was less than 10%, depicting the successful generation of an image by-->
-<!--                    the generator.</li>-->
-
-<!--                </ul>-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/"-->
-<!--                    target="_blank" data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          &lt;!&ndash; Head Counting System &ndash;&gt;-->
-<!--          <div class="col s12 m6 l4">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="Screenshot of  web app" src="/assets/img/Blog-Images-Forget-Machine-Learning-Humans-Still-Have-a-Lot-to-Learn-Part-II.jpg" style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">Head Counting System<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                  A system that calculates the attendance of the class from a panoramic image of a live classroom.-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                &lt;!&ndash; TODO: change this &#45;&#45; only close button &ndash;&gt;-->
-<!--                &lt;!&ndash; <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> &ndash;&gt;-->
-<!--                <span class="card-title brown-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li>Used Singular Value Decomposition for image compression; applied various image processing-->
-<!--                    techniques and morphological operations to-->
-<!--                    detect the number of heads.</li>-->
-
-<!--                </ul>-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit the GitHub repo for  project"-->
-<!--                    href="https://github.com/varadbhogayata/visual-question-answering" target="_blank"-->
-<!--                    data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          &lt;!&ndash; ************* &ndash;&gt;-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
-
-    <!-- Fifth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
-      <div class="container">
-        <!-- Modules -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Modules</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/financialaccounting.svg" class="responsive-img" />Accounting
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/Consolidation.svg" class="responsive-img" />Consolidation
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/Purchase.svg" class="responsive-img" />Purchase
-              </div>
-               <div class="col s4 m2">
-                <img alt="" src="/assets/img/CRM.svg" class="responsive-img" />CRM
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/Inventory.svg" class="responsive-img" />Inventory
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/Sales.svg" class="responsive-img" />Sales
-              </div>
-               <div class="col s4 m2">
-                <img alt="" src="/assets/img/Subscriptions.svg" class="responsive-img" />Subscriptions
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/Project.svg" class="responsive-img" />Project
-              </div>
-               <div class="col s4 m2">
-                <img alt="" src="/assets/img/Studio.svg" class="responsive-img" />Studio
-              </div>
-
-               <div class="col s4 m2">
-                <img alt="" src="/assets/img/Rental.svg" class="responsive-img" />Rental
-              </div>
-               <div class="col s4 m2">
-                <img alt="" src="/assets/img/Repair.svg" class="responsive-img" />Repair
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/pos.svg" class="responsive-img" />Point of Sale
-              </div>
-               <div class="col s4 m2">
-                <img alt="" src="/assets/img/Manufacturing.svg" class="responsive-img" />Manufacturing
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/hr.svg" class="responsive-img" />Human Resources
-              </div>
-                <div class="col s4 m2">
-                <img alt="" src="/assets/img/pos.svg" class="responsive-img" />Point of Sale
-              </div>
-               <div class="col s4 m2">
-                <img alt="" src="/assets/img/AssetsManagement.svg" class="responsive-img" />Assets Management
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/supplychainmanagement.svg" class="responsive-img" />Supply Chain
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Project Management</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/Agile.png" class="responsive-img" />Agile methodologies
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/task.jpeg" class="responsive-img" />Task management
-              </div>
-        <div class="col s4 m2">
-                <img alt="" src="/assets/img/quality-control-businessman-showing-cost-600nw-2397582829.webp" class="responsive-img" />Budgeting and Cost Control
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/Odoo-Implementation-Methodology.webp" class="responsive-img" />odoo methodologies
-              </div>
-               <div class="col s4 m2">
-                <img alt="" src="/assets/img/waterfall.jpg" class="responsive-img" />Waterfall
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/stakeholder-management-slide2.png" class="responsive-img" />Stakeholder Management
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Business Process -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Business Process</h4>
-            <div class="row text-center">
-                  <div class="col s4 m2">
-                <img alt="" src="/assets/img/bpr.jpg" class="responsive-img" />Business Process Reengineering
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/business_analysis.jpg" class="responsive-img" />Business Analysis
-              </div>
-
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/gap-analysis.webp" class="responsive-img" />Gap Analysis
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/data-analysis.jpg" class="responsive-img" />Data Analysis
-              </div>
-
-               <div class="col s4 m2">
-                <img alt="" src="/assets/img/data-migration.jpg" class="responsive-img" />Data Migration
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/process-improvement.jpg" class="responsive-img" />Process Improvement
-              </div>
-            </div>
-          </div>
-        </div>
-          <!-- Soft Skills -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Soft Skills</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/problem-solving.avif" class="responsive-img" />Problem-Solving
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/communication.jpeg" class="responsive-img" />Communication
-              </div>
-           <div class="col s4 m2">
-                <img alt="" src="/assets/img/business-training.avif" class="responsive-img" />Training and Support
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/leader.avif" class="responsive-img" />Leadership
-              </div>
-               <div class="col s4 m2">
-                <img alt="" src="/assets/img/customer-relationship-management.jpg" class="responsive-img" />Client Relationship Management
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/time-management.webp" class="responsive-img" />Time Management
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Other -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Other</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/git.png" class="responsive-img" />Git
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/odoo_logo.svg" class="responsive-img" />Odoo SH
-              </div>
-               <div class="col s4 m2">
-                <img alt="" src="/assets/img/microsoftoffice.svg" class="responsive-img" />Microsoft Office
-              </div>
-               <div class="col s4 m2">
-                <img alt="" src="/assets/img/python.svg" class="responsive-img" />Python
-              </div>
-               <div class="col s4 m2">
-                <img alt="" src="/assets/img/postgresql.svg" class="responsive-img" />postgresql
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
-      <div class="container">
-        <div class="row">
-          <!-- Education -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.coursera.org/programs/accountant-financial-management-l2-4vrr6?currentTab=CATALOG" target="_blank" class="teal-text hoverline">University of Illinois at Urbana-Champaign</a></span>
-                </p>
-                <p class="brown-text">Champaign, USA</p>
-                <p>
-                  <b>Degree: </b> ACCOUNTANT-FINANCIAL MANAGEMENT L2
-                  <br>
-                  <b>CGPA: </b>4.0/4.0
-                </p>
-
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Financial Accounting: Foundations</li>
-                    <li>Financial Accounting: Advanced Topics</li>
-                    <li>Investments</li>
-                      <li>Corporate Finance</li>
-                  </ul>
-                  </p>
-
-                </ul>
-              </div>
-            </div>
-
-
-          </div>
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://cu.edu.eg/ar/Home/" target="_blank" class="teal-text hoverline"> Faculty of commerce, Cairo University
-                      </a></span>
-                </p>
-                <p class="brown-text">Cairo, Egypt</p>
-                <p>
-                  <b>Degree: </b>Bachelor of Commerce,Accounting & Finance
-                  <br>
-                  <b>CGPA: </b>4.5/5
-                </p>
-
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Financial Accounting</li>
-                    <li>Managerial Accounting</li>
-                    <li>Business Law and Ethics</li>
-                    <li>Auditing</li>
-                    <li>Business Process</li>
-                  <li>Strategic Management</li>
-                  <li>Supply Chain Management</li>
-                     <li>ERP Systems</li>
-                  </ul>
-                  </p>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-      <!-- certifications -->
-   <section id="certifications" class="section scrollspy">
-    <h3 class="page-title white-text teal">Certifications</h3>
+<!-- ABOUT -->
+<section class="section" id="about">
   <div class="container">
-
-    <div class="row">
-
-      <!-- Certification 1 -->
-      <div class="col s12 m6 l6">
-        <div class="card">
-          <div class="card-content">
-            <p>
-              <span class="card-title"><a href="#" target="_blank" class="teal-text hoverline">Odoo Certification v17 & v16</a></span>
-            </p>
-            <div class="card-image">
-              <img src="/assets/img/Odoo17FunctionalCertification.jpg" alt="Odoo Certification v17 & v16">
-            </div>
-          </div>
+    <div class="sec-tag">About Me</div>
+    <h2 class="sec-title">Turning Business Complexity into <span>ERP Clarity</span></h2>
+    <div class="about-grid">
+      <div>
+        <div class="about-text">
+          <p>Odoo Expert and ERP Operations Manager with <strong>8+ years</strong> of progressive experience in end-to-end ERP deployment, configuration, and optimization. Currently <strong>self-employed</strong>, delivering high-impact Odoo solutions to clients across Egypt, Saudi Arabia, and the wider GCC region.</p>
+          <p>Proven ability to translate complex business and financial objectives into scalable Odoo solutions. Successfully led <strong>60+ ERP engagements</strong> across Construction, Manufacturing, Food & Beverage, Retail, Government, and Real Estate sectors. Deep expertise in business requirements gathering, GAP analysis, process reengineering, data migration, multi-company/multi-currency configuration, and post-go-live support.</p>
+          <p>Fluent in Arabic and English. Based in Egypt — actively serving clients across Egypt, Saudi Arabia, and the wider GCC market.</p>
+        </div>
+        <div class="kpi-row">
+          <div class="kpi"><div class="kpi-n">70%</div><div class="kpi-l">Avg. Performance Gain</div></div>
+          <div class="kpi"><div class="kpi-n">50+</div><div class="kpi-l">Functional Specs Built</div></div>
+          <div class="kpi"><div class="kpi-n">3</div><div class="kpi-l">ERP Platforms</div></div>
+        </div>
+        <div class="hl-list">
+          <div class="hl-item"><div class="hl-ico">🚀</div><div class="hl-body"><strong>Self-Employed ERP Expert</strong><span>Operating independently — delivering end-to-end Odoo implementations, financial systems, and process optimization for clients across Egypt, KSA, and GCC.</span></div></div>
+          <div class="hl-item"><div class="hl-ico">⚡</div><div class="hl-body"><strong>Measurable ERP Impact</strong><span>Improved system performance by 70% through codebase optimization on multiple client implementations. Reduced operational costs by up to 25%.</span></div></div>
+          <div class="hl-item"><div class="hl-ico">🌍</div><div class="hl-body"><strong>Multi-Market Delivery</strong><span>Active across Egypt, Saudi Arabia, UAE and GCC — with clients from government, manufacturing, logistics, hospitality, and non-profits.</span></div></div>
+        </div>
+        <div class="mod-label">Core Odoo Modules</div>
+        <div class="mod-wrap">
+          <span class="mod-chip active">Accounting</span><span class="mod-chip active">Supply Chain</span><span class="mod-chip active">Inventory</span><span class="mod-chip active">Manufacturing</span><span class="mod-chip active">Sales & CRM</span><span class="mod-chip active">HR & Payroll</span><span class="mod-chip active">Point of Sale</span><span class="mod-chip active">Projects</span><span class="mod-chip active">eCommerce</span><span class="mod-chip">Real Estate</span><span class="mod-chip">Fleet</span><span class="mod-chip">Maintenance</span><span class="mod-chip">BI & KPIs</span><span class="mod-chip">Data Migration</span><span class="mod-chip">Multi-Company</span><span class="mod-chip">Odoo Studio</span><span class="mod-chip">Odoo.sh</span><span class="mod-chip">Field Services</span>
         </div>
       </div>
-      <!-- Certification 2 -->
-      <div class="col s12 m6 l6">
-        <div class="card">
-          <div class="card-content">
-            <p>
-              <span class="card-title"><a href="#" target="_blank" class="teal-text hoverline">Foundations of Project Management</a></span>
-            </p>
-            <div class="card-image">
-              <img src="/assets/img/CourseraFoundationsofProjectManagement.jpeg" alt="Foundations of Project Management">
-            </div>
+      <div>
+        <div class="skills-card">
+          <h4 style="font-size:15px;font-weight:700;margin-bottom:18px;">Skills & Expertise</h4>
+          <div class="sk-row"><div class="sk-label"><span>Odoo ERP</span><span class="sk-pct">95%</span></div><div class="sk-bar"><div class="sk-fill" style="width:95%"></div></div></div>
+          <div class="sk-row"><div class="sk-label"><span>ERP Project Management</span><span class="sk-pct">93%</span></div><div class="sk-bar"><div class="sk-fill" style="width:93%"></div></div></div>
+          <div class="sk-row"><div class="sk-label"><span>Business Analysis & GAP</span><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill" style="width:90%"></div></div></div>
+          <div class="sk-row"><div class="sk-label"><span>Financial Reporting</span><span class="sk-pct">90%</span></div><div class="sk-bar"><div class="sk-fill" style="width:90%"></div></div></div>
+          <div class="sk-row"><div class="sk-label"><span>Budgeting & Forecasting</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" style="width:85%"></div></div></div>
+          <div class="sk-row"><div class="sk-label"><span>Data Migration</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" style="width:85%"></div></div></div>
+          <div class="sk-row"><div class="sk-label"><span>Leadership & COO</span><span class="sk-pct">88%</span></div><div class="sk-bar"><div class="sk-fill" style="width:88%"></div></div></div>
+          <div class="sk-row"><div class="sk-label"><span>Stakeholder Management</span><span class="sk-pct">85%</span></div><div class="sk-bar"><div class="sk-fill" style="width:85%"></div></div></div>
+          <div class="sk-row"><div class="sk-label"><span>System Integration</span><span class="sk-pct">80%</span></div><div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div></div>
+        </div>
+        <div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:18px;margin-top:16px;">
+          <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:11px;">Tools & Platforms</div>
+          <div class="tool-wrap">
+            <span class="tool-chip" style="background:var(--teal-light);color:var(--teal);border-color:rgba(1,126,132,.2);">Odoo 12–18</span>
+            <span class="tool-chip">Odoo.sh</span><span class="tool-chip">Odoo Studio</span><span class="tool-chip">Python</span><span class="tool-chip">JIRA</span><span class="tool-chip">Trello</span><span class="tool-chip">Todoist</span><span class="tool-chip">Excel</span><span class="tool-chip">PostgreSQL</span><span class="tool-chip">Shopify API</span><span class="tool-chip">eZee PMS</span><span class="tool-chip">MS Office</span>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </section>
 
- <!-- Third Section: Experience -->
-    <section id="services" class="section scrollspy">
-      <h3 class="page-title white-text teal">Our Services</h3>
-       <div class="container flow-text">
-         <blockquote>
-          <h2>
-              Odoo Functional Consultant services can be a valuable asset for businesses looking to optimize their workflows and leverage the full potential of Odoo's functionalities.
-              Here's a breakdown of what these services typically entail:
-               </h2>
-            <div  class="card-content">
-              <p>
-               <ul>
-               <li>
-               -  Detailed Business Process Analysis
-               </li>
-                     <li>
-               - Extensive Odoo Knowledge and Expertise
-               </li>
-                      <li>
-               -  Gap Analysis
-               </li>
-                    <li>
-               -  Configuration ||Customization (Optional)
-               </li>
-                    <li>
-              -  Efficient Data Migration and System Integration
-               </li>
-                    <li>
-              -  Training and Continuous Support
-               </li>
-                    </ul>
-              </p>
-            </div>
-                 Benefits of Odoo Functional Consultant Services
-By leveraging Odoo Functional Consultant services, you can ensure a successful Odoo implementation that meets your specific business needs and sets you on the path to improved efficiency and growth. Benefits include:. .
-          </blockquote>
-       </div>
- <div class="container">
-<div>
 
-        <!-- Latest Our Services -->
-        <div class="card">
-          <div class="card-content">
-               <div class="role brown-text text-darken-2">ERP IMPLEMENTATION</div>
-            <div class="row">
-              <div class="col s12 m2">
 
-                <a href="https://abuemira.netlify.app/" target="_blank"><img alt="ERP IMPLEMENTATION"
-                    src="/assets/img/erp_implementaion_process_v2.webp" class="responsive-img center-block" /></a>
-              </div>
-            </div>
-            <ul>
-              <li>
-                  provides customized business application solutions for businesses,
-                  ensuring essential operations are executed within their specific development.
-              </li>
-            </ul>
+<!-- SERVICES -->
+<section class="section alt" id="services">
+  <div class="container">
+    <div class="sec-tag">What I Do</div>
+    <h2 class="sec-title">Professional <span>Services</span></h2>
+    <div class="svc-grid">
+      <div class="svc-card"><div class="svc-icon">⚙️</div><div class="svc-title">ERP Project Management</div><div class="svc-desc">End-to-end ERP delivery — kick-off, scoping, UAT, go-live, post-launch support. On-time, on-budget, aligned with your business goals.</div><a href="https://calendly.com/abuemira/30min" target="_blank" class="svc-link">Book Consultation →</a></div>
+      <div class="svc-card"><div class="svc-icon">🔧</div><div class="svc-title">Odoo ERP Consulting</div><div class="svc-desc">Deployment, configuration, GAP analysis, and functional specs across Odoo v12–v18. From requirements to go-live.</div><a href="https://calendly.com/abuemira/30min" target="_blank" class="svc-link">Book Consultation →</a></div>
+      <div class="svc-card"><div class="svc-icon">💰</div><div class="svc-title">Financial Management</div><div class="svc-desc">Full-cycle financial planning, budgeting, and reporting. Balance Sheet, P&L, Cash Flow integrated with Odoo Accounting.</div><a href="https://calendly.com/abuemira/30min" target="_blank" class="svc-link">Book Consultation →</a></div>
+      <div class="svc-card"><div class="svc-icon">🔗</div><div class="svc-title">ERP Customization & Integration</div><div class="svc-desc">Studio customizations and third-party integrations — Shopify, eZee PMS, payment gateways, and custom modules.</div><a href="https://calendly.com/abuemira/30min" target="_blank" class="svc-link">Book Consultation →</a></div>
+      <div class="svc-card"><div class="svc-icon">📦</div><div class="svc-title">Data Migration</div><div class="svc-desc">Secure migration from SAP, ONYX PRO, OpenCart, and legacy systems to Odoo. Full data integrity guaranteed throughout.</div><a href="https://calendly.com/abuemira/30min" target="_blank" class="svc-link">Book Consultation →</a></div>
+      <div class="svc-card"><div class="svc-icon">🎓</div><div class="svc-title">Training & Support</div><div class="svc-desc">End-user and admin training, documentation, and ongoing technical support after system go-live.</div><a href="https://calendly.com/abuemira/30min" target="_blank" class="svc-link">Book Consultation →</a></div>
+      <div class="svc-card"><div class="svc-icon">📊</div><div class="svc-title">Financial Reporting & Audit</div><div class="svc-desc">Internal/external audit support, compliance checks, and custom KPI dashboards built directly inside Odoo.</div><a href="https://calendly.com/abuemira/30min" target="_blank" class="svc-link">Book Consultation →</a></div>
+      <div class="svc-card"><div class="svc-icon">🏭</div><div class="svc-title">Business Process Optimization</div><div class="svc-desc">Process mapping, reengineering, and Odoo best practices — measurable cost reduction and operational efficiency gains.</div><a href="https://calendly.com/abuemira/30min" target="_blank" class="svc-link">Book Consultation →</a></div>
+      <div class="svc-card"><div class="svc-icon">👑</div><div class="svc-title">COO / Operations Leadership</div><div class="svc-desc">Strategic operations management, P&L ownership, team building, and ERP company growth as Co-Founder at Self-Employed Odoo Expert</div><a href="https://calendly.com/abuemira/30min" target="_blank" class="svc-link">Book Consultation →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="sec-tag">Career Path</div>
+    <h2 class="sec-title">Professional <span>Experience</span></h2>
+    <div class="exp-line">
+
+      <div class="exp-item">
+        <div class="exp-dot cur"></div>
+        <div class="exp-card">
+          
           </div>
+          <div class="exp-top"><div><div class="exp-role">COO (Chief Operating Officer) & Co-Founder</div><div class="exp-co"><a href="https://www.abuemiraerp.github.io" target="_blank">Self-Employed Odoo Expert</a> · Egypt & Saudi Arabia</div></div><div class="exp-date">Sep 2024 – Present</div></div>
+          <ul class="exp-bullets">
+            <li>Leading end-to-end Odoo ERP operations and delivering solutions as a self-employed consultant across Egypt, Saudi Arabia, and GCC</li>
+            <li>Directed end-to-end Odoo ERP project lifecycles and internal SOPs, ensuring on-time, on-scope, and on-budget delivery across all client engagements</li>
+            <li>Led functional discovery, solution design, and configuration across Accounting, Sales, CRM, Purchasing, Inventory, Manufacturing, and Operations modules</li>
+            <li>Acted as primary liaison with Odoo — ensuring compliance with partner requirements and maintaining partner status and performance standards</li>
+            <li>Owned P&L, pricing models, and workforce allocation — optimising developer utilisation and project margins for sustainable profitability</li>
+            <li>Led executive-level account management and delivery quality assurance, driving high user adoption and strong client retention</li>
+            <li>Oversaw change management and user training, personally delivering key sessions to ensure operational continuity and ROI</li>
+          </ul>
+          <div class="exp-tags"><span class="etag">COO</span><span class="etag">Co-Founder</span><span class="etag">Odoo Partner</span><span class="etag">P&L Ownership</span><span class="etag">ERP Strategy</span><span class="etag">Team Leadership</span><span class="etag">Go-to-Market</span></div>
         </div>
       </div>
-      <div class="card">
-          <div class="card-content">
-               <div class="role brown-text text-darken-2">Efficient Data Migration and System Integration</div>
-            <div class="row">
-              <div class="col s12 m2">
 
-                <a href="https://abuemira.netlify.app/" target="_blank"><img alt="ERP IMPLEMENTATION"
-                    src="/assets/img/data-migration.jpeg" class="responsive-img center-block" /></a>
-              </div>
-            </div>
-            <ul>
-              <li>
-                  Data migration in the context of Odoo implementation includes a number of different things, such as financial records, product catalogues, customer information, inventory data, and more. A successful data migration maximizes Odoo's capabilities and establishes the groundwork for peak system performance..
-              </li>
-            </ul>
+      <div class="exp-item">
+        <div class="exp-dot cur"></div>
+        <div class="exp-card">
+          <div class="exp-top"><div><div class="exp-role">ERP Consultant | Product Owner</div><div class="exp-co"><a href="https://exp-sa.com" target="_blank">Expert Company (شركة خبير)</a> · Riyadh, Saudi Arabia</div></div><div class="exp-date">Jan 2023 – Sep 2024</div></div>
+          <ul class="exp-bullets">
+            <li>Gathered and documented business requirements; translated them into 50+ functional specifications for Odoo implementations</li>
+            <li>Performed advanced configuration, Studio customizations, and data migration across 30+ client engagements</li>
+            <li>Improved system performance by 70% through ERP codebase optimization and database restructuring</li>
+            <li>Managed UAT cycles, user training, product backlog, and post-go-live support across diverse industries</li>
+          </ul>
+          <div class="exp-tags"><span class="etag">Odoo 16/17/18 EE</span><span class="etag">Odoo Studio</span><span class="etag">Data Migration</span><span class="etag">Multi-Company</span><span class="etag">JIRA</span></div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-card">
+          <div class="exp-top"><div><div class="exp-role">Odoo Functional Consultant</div><div class="exp-co"><a href="https://www.odootec.com" target="_blank">OdooTec</a></div></div><div class="exp-date">Feb 2021 – Jan 2023</div></div>
+          <div class="exp-desc">Designed and optimized Odoo modules across 3+ large projects. Presented customized demos, analyzed client business flows, defined implementation plans, and delivered comprehensive user training. Proficient across Odoo v14, v15, v16, and v17.</div>
+          <div class="exp-tags"><span class="etag">Odoo v14–v17</span><span class="etag">Functional Consulting</span><span class="etag">UAT</span><span class="etag">Training</span></div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-card">
+          <div class="exp-top"><div><div class="exp-role">ERP Implementation Consultant</div><div class="exp-co"><a href="https://ultimate-eg.net/" target="_blank">Ultimate Solutions (Yemen Soft)</a> · Cairo, Egypt</div></div><div class="exp-date">May 2019 – Feb 2021</div></div>
+          <div class="exp-desc">Provided functional ERP support, system administration, process mapping, testing, and training. Developed project plans, coordinated development teams, and delivered client demos and POCs.</div>
+          <div class="exp-tags"><span class="etag">ONYX PRO ERP</span><span class="etag">MOTAKAMEL PLUS</span><span class="etag">Process Mapping</span><span class="etag">POC Demos</span></div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-card">
+          <div class="exp-top"><div><div class="exp-role">Accountant Manager</div><div class="exp-co">HMTO for Import, Export, Manufacturing & Packaging</div></div><div class="exp-date">Feb 2019 – May 2019</div></div>
+          <div class="exp-desc">Managed the full accounting team. Prepared and reviewed financial statements, handled tax authority dealings (VAT, Withholding, Stamp, Income Tax), performed budget vs. actual variance analysis, and coordinated with internal and external auditors.</div>
+          <div class="exp-tags"><span class="etag">Financial Statements</span><span class="etag">Tax Management</span><span class="etag">Team Management</span><span class="etag">Audit</span></div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-card">
+          <div class="exp-top"><div><div class="exp-role">Chief Accountant</div><div class="exp-co">Nile for Plastic Industries · Cairo, Egypt</div></div><div class="exp-date">Aug 2015 – Feb 2019</div></div>
+          <div class="exp-desc">Prepared Balance Sheet, Income Statement, Cash Flow, and Equity statements. Analyzed business trends, costs, and revenues. Managed payroll, customs clearance, cost variance analysis, and cash flow estimation for the full fiscal year.</div>
+          <div class="exp-tags"><span class="etag">Financial Reporting</span><span class="etag">Cost Analysis</span><span class="etag">Customs</span><span class="etag">Payroll</span><span class="etag">Budget Variance</span></div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-card">
+          <div class="exp-top"><div><div class="exp-role">General Accountant</div><div class="exp-co">Nile for Plastic Industries · Cairo, Egypt</div></div><div class="exp-date">Nov 2013 – Aug 2015</div></div>
+          <div class="exp-desc">Daily journal entries (customers, suppliers, banks, cash, salaries). Bank reconciliation, monthly/quarterly/annual financial data reporting under American Accounting Methods.</div>
+          <div class="exp-tags"><span class="etag">Journal Entries</span><span class="etag">Bank Reconciliation</span><span class="etag">Financial Reporting</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section alt" id="projects">
+  <div class="container">
+    <div class="sec-tag">Portfolio</div>
+    <h2 class="sec-title">ERP Projects <span>Delivered</span></h2>
+    <div class="filter-bar" id="fb">
+      <button class="fbtn active" data-filter="all">All (60+)</button>
+      <button class="fbtn" data-filter="c-con">Construction</button>
+      <button class="fbtn" data-filter="c-mfg">Manufacturing</button>
+      <button class="fbtn" data-filter="c-food">Food & Beverage</button>
+      <button class="fbtn" data-filter="c-log">Logistics</button>
+      <button class="fbtn" data-filter="c-ret">Retail & eCommerce</button>
+      <button class="fbtn" data-filter="c-hot">Hospitality</button>
+      <button class="fbtn" data-filter="c-gov">Government</button>
+      <button class="fbtn" data-filter="c-npo">Non-profit</button>
+      <button class="fbtn" data-filter="c-re">Real Estate</button>
+    </div>
+    <div class="proj-grid" id="pg">
+      <div class="proj-card" data-cat="c-con"><span class="proj-cat c-con">Construction</span><div class="proj-ver">Odoo 18 EE</div><div class="proj-name">BATEC Batiment Technique L.L.C</div><div class="proj-mods">Multi-Company · Accounting, Sales, Inventory, HR, CRM, Projects</div></div>
+      <div class="proj-card" data-cat="c-con"><span class="proj-cat c-con">Construction</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">Ornina Building Contracting</div><div class="proj-mods">Accounting, Petty Cash, Supply Chain, Inventory, Sales, HR, Projects</div></div>
+      <div class="proj-card" data-cat="c-con"><span class="proj-cat c-con">Construction</span><div class="proj-ver">Odoo EE</div><div class="proj-name">Construction & Engineering Systems Co.</div><div class="proj-mods">Project-based Accounting, Cost Tracking, Supply Chain, HR, Projects</div></div>
+      <div class="proj-card" data-cat="c-con"><span class="proj-cat c-con">Construction</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">ALAQ AL-EZDEHAR CO. (AECOM)</div><div class="proj-mods">Construction, Oil & Gas, Accounting, Maintenance, Operations, Projects</div></div>
+      <div class="proj-card" data-cat="c-con"><span class="proj-cat c-con">Construction</span><div class="proj-ver">Odoo 13 EE</div><div class="proj-name">Abdurahman Albader Sons</div><div class="proj-mods">Construction, Oil & Gas, Accounting, Maintenance & Operations</div></div>
+      <div class="proj-card" data-cat="c-con"><span class="proj-cat c-con">Construction</span><div class="proj-ver">Odex</div><div class="proj-name">Zuhair Fayez Partnership Consultants</div><div class="proj-mods">Accounting, HR, Inventory, Sales, CRM</div></div>
+      <div class="proj-card" data-cat="c-mfg"><span class="proj-cat c-mfg">Manufacturing</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">Ambiance Furniture</div><div class="proj-mods">Multi-Company, Accounting, Petty Cash, Manufacturing, Sales, CRM, HR, Projects</div></div>
+      <div class="proj-card" data-cat="c-mfg"><span class="proj-cat c-mfg">Manufacturing</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">Silver Tex</div><div class="proj-mods">Multi-Company · Accounting, Supply Chain, Inventory, Sales, CRM, HR</div></div>
+      <div class="proj-card" data-cat="c-mfg"><span class="proj-cat c-mfg">Manufacturing</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">Caryoka — Automotive Workshop</div><div class="proj-mods">Workshop Mgmt, Multi-Company, Inventory, Manufacturing, Sales, HR</div></div>
+      <div class="proj-card" data-cat="c-mfg"><span class="proj-cat c-mfg">Manufacturing</span><div class="proj-ver">Odoo v13→v16</div><div class="proj-name">IYA Investment Co. (ERP Upgrade)</div><div class="proj-mods">Feed & Poultry Manufacturing, Accounting, Supply Chain</div></div>
+      <div class="proj-card" data-cat="c-food"><span class="proj-cat c-food">Food & Beverage</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">Jedoudna Restaurant & Café</div><div class="proj-mods">Accounting, Manufacturing, Inventory, POS, Sales & CRM</div></div>
+      <div class="proj-card" data-cat="c-food"><span class="proj-cat c-food">Food & Beverage</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">Anasir Alghidha for Food Products</div><div class="proj-mods">Accounting, Supply Chain, Inventory, Manufacturing, Sales, CRM, POS</div></div>
+      <div class="proj-card" data-cat="c-food"><span class="proj-cat c-food">Food & Beverage</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">FAM FOOD Trading L.L.C</div><div class="proj-mods">Accounting, Supply Chain, Inventory, Manufacturing, Sales, CRM, HR</div></div>
+      <div class="proj-card" data-cat="c-food"><span class="proj-cat c-food">Food & Beverage</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">12 Cups — Coffee Chain (Saudi Arabia)</div><div class="proj-mods">Accounting, Manufacturing, Inventory, Sales, CRM, POS, HR, Maintenance</div></div>
+      <div class="proj-card" data-cat="c-food"><span class="proj-cat c-food">Food & Beverage</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">Reuof Alsham — Dessert Shop</div><div class="proj-mods">Accounting, Supply Chain, Inventory, Sales, POS, Branches, Real Estate</div></div>
+      <div class="proj-card" data-cat="c-log"><span class="proj-cat c-log">Logistics</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">Fast Forward Logistics</div><div class="proj-mods">Air/Ocean Freight, Warehousing, Accounting, Supply Chain, HR, Field Services</div></div>
+      <div class="proj-card" data-cat="c-log"><span class="proj-cat c-log">Logistics</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">TIBA 2000 — Security Solutions</div><div class="proj-mods">Accounting, Supply Chain, Inventory, Manufacturing, Sales, CRM, HR</div></div>
+      <div class="proj-card" data-cat="c-log"><span class="proj-cat c-log">Logistics</span><div class="proj-ver">Odex</div><div class="proj-name">Ensan</div><div class="proj-mods">Financial System, HR, Projects, Sales, CRM, Logistics, Inventory</div></div>
+      <div class="proj-card" data-cat="c-ret"><span class="proj-cat c-ret">Retail & eCommerce</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">Selaty AlMuhaseel Trading</div><div class="proj-mods">E-commerce Integration, Inventory, Sales & CRM</div></div>
+      <div class="proj-card" data-cat="c-ret"><span class="proj-cat c-ret">Retail & eCommerce</span><div class="proj-ver">Odoo EE</div><div class="proj-name">RicRac Shop</div><div class="proj-mods">Accounting, Sales, CRM, POS · Shopify Integration</div></div>
+      <div class="proj-card" data-cat="c-ret"><span class="proj-cat c-ret">Retail & eCommerce</span><div class="proj-ver">Odoo 16 EE</div><div class="proj-name">Qafa Arabia</div><div class="proj-mods">Accounting, Supply Chain, Inventory, Manufacturing, Sales, POS, E-Commerce, HR</div></div>
+      <div class="proj-card" data-cat="c-ret"><span class="proj-cat c-ret">Retail & eCommerce</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">INmart Store</div><div class="proj-mods">Accounting, Inventory, Manufacturing, Sales & POS</div></div>
+      <div class="proj-card" data-cat="c-ret"><span class="proj-cat c-ret">Retail & eCommerce</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">UltraMade Nutrition</div><div class="proj-mods">Accounting, Manufacturing, Inventory, Sales, CRM, HR</div></div>
+      <div class="proj-card" data-cat="c-hot"><span class="proj-cat c-hot">Hospitality</span><div class="proj-ver">Odoo 18 EE</div><div class="proj-name">Villa Misk Hotel</div><div class="proj-mods">PMS Integration (eZee) · Reservations, Housekeeping, POS, Accounting, HR</div></div>
+      <div class="proj-card" data-cat="c-gov"><span class="proj-cat c-gov">Government</span><div class="proj-ver">Odex</div><div class="proj-name">King Abdulaziz Public Library</div><div class="proj-mods">Data Migration, Finance, HR, Inventory, CRM, Project Mgmt, BI, KPIs</div></div>
+      <div class="proj-card" data-cat="c-gov"><span class="proj-cat c-gov">Government</span><div class="proj-ver">Odex</div><div class="proj-name">Officers Clubs — Ministry of Interior (KSA)</div><div class="proj-mods">HRMS, Finance, Supply Chain, Asset Mgmt, CRM, POS, Tickets, Fleet, BI</div></div>
+      <div class="proj-card" data-cat="c-npo"><span class="proj-cat c-npo">Non-profit</span><div class="proj-ver">Odex</div><div class="proj-name">Tarahem — Prisoner Care Committee</div><div class="proj-mods">Data Migration, Finance, HR, Inventory, Projects, BI, KPIs</div></div>
+      <div class="proj-card" data-cat="c-npo"><span class="proj-cat c-npo">Non-profit</span><div class="proj-ver">Odex</div><div class="proj-name">Tamakkon Association</div><div class="proj-mods">Data Migration, Financial System, HR, Inventory, Sales, CRM</div></div>
+      <div class="proj-card" data-cat="c-re"><span class="proj-cat c-re">Real Estate</span><div class="proj-ver">Odoo 14 EE</div><div class="proj-name">Al Rajhi Ekhwan</div><div class="proj-mods">Accounting, Real Estate, Industrial Dev, Stock Market Investments</div></div>
+      <div class="proj-card" data-cat="c-re"><span class="proj-cat c-re">Real Estate</span><div class="proj-ver">Odoo 17 EE</div><div class="proj-name">Hittin Union Real Estate Company</div><div class="proj-mods">Accounting, Supply Chain, Inventory, Sales, CRM, Real Estate</div></div>
+      <div class="proj-card" data-cat="c-re"><span class="proj-cat c-re">Real Estate</span><div class="proj-ver">Odoo 15 EE</div><div class="proj-name">Makkiyoon</div><div class="proj-mods">Accounting, Real Estate Development, Construction Management</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section" id="certifications">
+  <div class="container">
+    <div class="sec-tag">Credentials</div>
+    <h2 class="sec-title">Certifications & <span>Recognition</span></h2>
+    <div class="cert-hl-grid">
+      <div class="cert-hl"><div class="cert-hl-icon ci-teal">O18</div><div><div class="cert-hl-name">Odoo 16 · 17 · 18 Certified</div><div class="cert-hl-issuer">Odoo S.A. · 2023–2025</div></div></div>
+      <div class="cert-hl"><div class="cert-hl-icon ci-gold">🏆</div><div><div class="cert-hl-name">LinkedIn Top ERP Voice</div><div class="cert-hl-issuer">LinkedIn · 2024</div></div></div>
+      <div class="cert-hl"><div class="cert-hl-icon ci-blue">G</div><div><div class="cert-hl-name">Google Project Management</div><div class="cert-hl-issuer">Google · Jan 2026</div></div></div>
+      <div class="cert-hl"><div class="cert-hl-icon ci-ibm">IBM</div><div><div class="cert-hl-name">IBM IT Project Manager</div><div class="cert-hl-issuer">IBM · Dec 2025</div></div></div>
+      <div class="cert-hl"><div class="cert-hl-icon ci-green">MK</div><div><div class="cert-hl-name">McKinsey Forward Program</div><div class="cert-hl-issuer">McKinsey & Company · Nov 2023</div></div></div>
+      <div class="cert-hl"><div class="cert-hl-icon ci-navy">500+</div><div><div class="cert-hl-name">500+ LinkedIn Connections</div><div class="cert-hl-issuer">linkedin.com/in/abuemira</div></div></div>
+    </div>
+    <div class="certs-grid">
+      <a href="https://drive.google.com/file/d/1cY163fwb6yT8Gn01GPhkmzEMl1f_Q2A_/view" target="_blank" class="cert-card"><div class="cert-logo ci-teal">O18</div><div style="flex:1"><div class="cert-name">Odoo 18 Functional Certification</div><div class="cert-iss">Odoo S.A. · <span class="cert-yr">2025</span></div></div><div class="cert-link">View ↗</div></a>
+      <a href="https://drive.google.com/file/d/1Rvw0DoedrxI8KIHg_90SQTRE3WSpZQ4j/view" target="_blank" class="cert-card"><div class="cert-logo ci-teal">O17</div><div style="flex:1"><div class="cert-name">Odoo 17 Functional Certification</div><div class="cert-iss">Odoo S.A. · <span class="cert-yr">May 2024</span></div></div><div class="cert-link">View ↗</div></a>
+      <a href="https://drive.google.com/file/d/1PYWyQwf36lUxbmMTUwoB4TU0M7Juo9vb/view" target="_blank" class="cert-card"><div class="cert-logo ci-teal">O16</div><div style="flex:1"><div class="cert-name">Odoo 16 Functional Certification</div><div class="cert-iss">Odoo S.A. · <span class="cert-yr">July 2023</span></div></div><div class="cert-link">View ↗</div></a>
+      <a href="https://www.coursera.org/account/accomplishments/specialization/C7AJNVBLBB5K" target="_blank" class="cert-card"><div class="cert-logo ci-blue">G</div><div style="flex:1"><div class="cert-name">Google Project Management</div><div class="cert-iss">Google · <span class="cert-yr">Jan 2026</span></div></div><div class="cert-link">View ↗</div></a>
+      <a href="https://www.coursera.org/account/accomplishments/specialization/R6S7GBR6WKZT" target="_blank" class="cert-card"><div class="cert-logo ci-ibm">IBM</div><div style="flex:1"><div class="cert-name">IBM IT Project Manager</div><div class="cert-iss">IBM · <span class="cert-yr">Dec 2025</span></div></div><div class="cert-link">View ↗</div></a>
+      <a href="https://www.credly.com/badges/18980ea7-db63-4065-bd1b-bc39e736ffbd" target="_blank" class="cert-card"><div class="cert-logo ci-green">MK</div><div style="flex:1"><div class="cert-name">McKinsey Forward Program</div><div class="cert-iss">McKinsey & Company · <span class="cert-yr">Nov 2023</span></div></div><div class="cert-link">View ↗</div></a>
+      <a href="https://www.credly.com/badges/6683d5cb-8f17-46cc-879b-855fa138e091" target="_blank" class="cert-card"><div class="cert-logo" style="background:#fff7ed;color:#c2410c;border:1px solid #fed7aa;">PMI</div><div style="flex:1"><div class="cert-name">Gen AI for Project Managers</div><div class="cert-iss">PMI · <span class="cert-yr">Sep 2025</span></div></div><div class="cert-link">View ↗</div></a>
+      <a href="https://drive.google.com/file/d/1__-3N4adBIgh2krGKRHpQdpc8o/view" target="_blank" class="cert-card"><div class="cert-logo" style="background:#f0f9ff;color:#0369a1;border:1px solid #bae6fd;">DEP</div><div style="flex:1"><div class="cert-name">Digital Egypt Pioneers Program</div><div class="cert-iss">Min. of Comm. & IT · <span class="cert-yr">2024</span></div></div><div class="cert-link">View ↗</div></a>
+      <a href="https://learn.365financialanalyst.com/certificates/DD-94F896CA7F/" target="_blank" class="cert-card"><div class="cert-logo" style="background:#fdf4ff;color:#7e22ce;border:1px solid #e9d5ff;">365</div><div style="flex:1"><div class="cert-name">Certified Financial Analyst</div><div class="cert-iss">365 Financial Analyst · <span class="cert-yr">Oct 2025</span></div></div><div class="cert-link">View ↗</div></a>
+      <a href="https://coursera.org/share/b20c69338bfbcc99dabab3048e047b61" target="_blank" class="cert-card"><div class="cert-logo ci-navy">DA</div><div style="flex:1"><div class="cert-name">Strategic Leadership: Impact & Decision-Making</div><div class="cert-iss">Dartmouth College · <span class="cert-yr">Feb 2026</span></div></div><div class="cert-link">View ↗</div></a>
+      <a href="https://www.credly.com/badges/887bee78-4af1-4d38-9f79-cef8c1cb91d4" target="_blank" class="cert-card"><div class="cert-logo" style="background:#fefce8;color:#854d0e;border:1px solid #fef08a;">AI</div><div style="flex:1"><div class="cert-name">AI Fundamentals — IBM SkillsBuild</div><div class="cert-iss">IBM · <span class="cert-yr">Oct 2025</span></div></div><div class="cert-link">View ↗</div></a>
+      <a href="https://ibdl.net/certifications?Logbook=IBDLIPDE1004" target="_blank" class="cert-card"><div class="cert-logo ci-green">IPD</div><div style="flex:1"><div class="cert-name">International Diploma in Entrepreneurship (IPDE)</div><div class="cert-iss">Missouri State University · <span class="cert-yr">May 2025</span></div></div><div class="cert-link">View ↗</div></a>
+      <a href="https://www.coursera.org/account/accomplishments/specialization/X78E8GF7W753" target="_blank" class="cert-card"><div class="cert-logo" style="background:#f0fdf4;color:#166534;border:1px solid #bbf7d0;">FM</div><div style="flex:1"><div class="cert-name">Financial Management Specialization</div><div class="cert-iss">Univ. of Illinois Urbana-Champaign · <span class="cert-yr">Jun 2025</span></div></div><div class="cert-link">View ↗</div></a>
+      <a href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1082488" target="_blank" class="cert-card"><div class="cert-logo" style="background:#fff7ed;color:#c2410c;border:1px solid #fed7aa;">SFC</div><div style="flex:1"><div class="cert-name">Scrum Fundamentals Certified</div><div class="cert-iss">SCRUMstudy · <span class="cert-yr">2024</span></div></div><div class="cert-link">View ↗</div></a>
+    </div>
+    <div class="award-row">
+      <div class="award-card teal"><div style="font-size:24px;margin-bottom:8px;">🏆</div><h4>LinkedIn Top ERP Voice</h4><p>Recognized for thought leadership and ERP insights shared with thousands of followers. In-depth posts on ERP challenges, innovations, and deployment best practices across MENA.</p><div class="award-year">LinkedIn · 2024</div></div>
+      <div class="award-card navy"><div style="font-size:24px;margin-bottom:8px;">🌐</div><h4>Odoo Community — Apprentice Rank</h4><p>Active contributor to the Odoo Community through knowledge sharing, answering questions, and promoting ERP best practices. Progressing toward the Hero rank.</p><div class="award-year">Odoo Community · 2024</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section alt" id="testimonials">
+  <div class="container">
+    <div class="sec-tag">28+ Recommendations</div>
+    <h2 class="sec-title">What Clients & Colleagues <span>Say</span></h2>
+    <div class="test-grid">
+      <div class="test-card"><div class="test-qmark">"</div><div class="test-text">Mohammad was my go-to colleague when I wanted finance and accounting related consulting. He's precise, professional, time sensitive and dependable. Most importantly, I fully trust him. I'd love to work with him again anytime.</div><div class="test-author-row"><div class="test-av">HE</div><div><div class="test-name">Hesham Elmahdy</div><div class="test-role">Co-Founder @ OdooTec</div></div></div></div>
+      <div class="test-card"><div class="test-qmark">"</div><div class="test-text">We had a great experience working with Mohamed on our ERP. His strong technical expertise combined with solid accounting knowledge allowed him to deliver a seamless and tailored Odoo solution that fully met our requirements. We highly recommend Mohamed.</div><div class="test-author-row"><div class="test-av">MK</div><div><div class="test-name">Mohamed Khalil</div><div class="test-role">Founder & CEO @ PlatFarm | MENA Agriculture</div></div></div></div>
+      <div class="test-card"><div class="test-qmark">"</div><div class="test-text">Mohamed is one of the best Odoo Consultants I've worked with. He has the ability to simplify complex requirements and make sure they're done with the best quality. A kind and helpful professional you'd love on your team.</div><div class="test-author-row"><div class="test-av">AE</div><div><div class="test-name">Ahmed Elsayed</div><div class="test-role">Senior Python / Odoo Developer</div></div></div></div>
+      <div class="test-card"><div class="test-qmark">"</div><div class="test-text">Mohamed demonstrated exceptional ability to analyze business processes, design effective solutions, and implement Odoo ERP successfully. His professional approach to project management and effective communication with stakeholders make him invaluable to any project.</div><div class="test-author-row"><div class="test-av">AG</div><div><div class="test-name">Ahmed Galal, PMP® PBA®</div><div class="test-role">Business Consultant & Project Manager</div></div></div></div>
+      <div class="test-card"><div class="test-qmark">"</div><div class="test-text">I had the pleasure of working with Mohamed Issam and highly recommend him. He has exceptional analytical skills, profound expertise in Odoo especially in financial implementation, and is a great team player who consistently delivers results.</div><div class="test-author-row"><div class="test-av">MD</div><div><div class="test-name">Mohsen DIFALLAH</div><div class="test-role">Python / Odoo Developer</div></div></div></div>
+      <div class="test-card"><div class="test-qmark">"</div><div class="test-text">Muhamad is a hardworking, skilled, and dedicated professional whose eagerness to learn is limitless. His expertise and determination make him a remarkable asset to any team he joins. I fully recommend him for any ERP project.</div><div class="test-author-row"><div class="test-av">AG</div><div><div class="test-name">Abdulrahman Gwida</div><div class="test-role">DipIFR · FMVA · Odoo Specialist</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" id="education">
+  <div class="container">
+    <div class="sec-tag">Education</div>
+    <h2 class="sec-title">Academic <span>Background</span></h2>
+    <div class="edu-grid">
+      <div class="edu-card"><div style="font-size:26px;margin-bottom:10px;">🎓</div><div class="edu-deg">Bachelor of Commerce — Accounting & Finance</div><div class="edu-sch">Faculty of Commerce, Cairo University</div><div class="edu-yr">2008–2012 · Grade: Good (77%) · Final Year: Very Good</div><div class="edu-tags"><span class="edu-tag">Financial Accounting</span><span class="edu-tag">Managerial Accounting</span><span class="edu-tag">Auditing</span><span class="edu-tag">Business Law</span><span class="edu-tag">Supply Chain</span><span class="edu-tag">ERP Systems</span></div></div>
+      <div class="edu-card"><div style="font-size:26px;margin-bottom:10px;">🏛️</div><div class="edu-deg">International Professional Diploma in Entrepreneurship (IPDE)</div><div class="edu-sch">Missouri State University, USA</div><div class="edu-yr">May 2025 · Grade: Good</div><div class="edu-tags"><span class="edu-tag">Entrepreneurship</span><span class="edu-tag">Business Strategy</span><span class="edu-tag">Startup Management</span></div></div>
+      <div class="edu-card"><div style="font-size:26px;margin-bottom:10px;">📊</div><div class="edu-deg">Accountant — Financial Management Level 2</div><div class="edu-sch">Professional Certification Program</div><div class="edu-yr">2023–2024</div><div class="edu-tags"><span class="edu-tag">Advanced Financial Accounting</span><span class="edu-tag">Management Accounting</span></div></div>
+      <div class="edu-card"><div style="font-size:26px;margin-bottom:10px;">🏦</div><div class="edu-deg">Summer Internship — Banking Operations</div><div class="edu-sch">Alexandria Bank</div><div class="edu-yr">Summer 2012 · Practical Banking Experience</div><div class="edu-tags"><span class="edu-tag">Banking Operations</span><span class="edu-tag">Customer Service</span><span class="edu-tag">Financial Transactions</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section alt" id="contact">
+  <div class="container">
+    <div class="sec-tag">Get in Touch</div>
+    <h2 class="sec-title">Let's Work <span>Together</span></h2>
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <div style="font-size:16px;font-weight:700;font-family:Sora,sans-serif;margin-bottom:18px;">Contact Information</div>
+        <div class="phone-hl">
+          <span style="font-size:22px;">📞</span>
+          <div>
+            <div style="font-size:10px;color:var(--teal);font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px;">Phone / WhatsApp</div>
+            <div class="phone-num">+20 100 506 1349</div>
           </div>
         </div>
-
-
-         <div class="card">
-          <div class="card-content">
-               <div class="role brown-text text-darken-2">Odoo Trainning</div>
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://abuemira.odoo.com/" target="_blank"><img alt="Odoo Trainning"
-                    src="/assets/img/Trainning.png" class="responsive-img center-block" /></a>
-              </div>
-            </div>
-            <ul>
-              <li>
-the best training path depends on your goals. If you're new to Odoo and want to leverage it for your business processes, functional training is a good starting point. If you're a developer looking to build custom Odoo features, then technical training is the way to go.               </li>
-            </ul>
-          </div>
-        </div>
-
-         <div class="card">
-          <div class="card-content">
-               <div class="role brown-text text-darken-2">Odoo Support</div>
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://besterp.odoo.com/" target="_blank"><img alt="Odoo Support"
-                    src="/assets/img/odoo-support-and-maintenance.jpg" class="responsive-img center-block" /></a>
-              </div>
-            </div>
-            <ul>
-              <li>
-                Certified Odoo partners can provide various levels of support, including implementation assistance, customization,
-                  and ongoing maintenance.If you need more hands-on assistance, consider a paid support            </ul>
-          </div>
-        </div>
- </div>
         
-    </section>
-
-
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container">
-        <p>
-          <a aria-label="Call AbuEmira " data-position="top" data-tooltip="Call Varad"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-              aria-label="Call Varad">+201005061349</a></a>
-        </p>
-        <p>
-          <a aria-label="Email AbuEmira " href="mailto:mohamedabuemira@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Email AbuEmira " class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Varad" href="mailto:mohamedabuemira@gmail.com"
-              class="hoverline">mohamedabuemira@gmail.com</a></a>
-        </p>
-        <p>
-          <a aria-label="View AbuEmira on GitHub" href="http://github.com/mohamedabuemira" target="_blank"
-            data-position="top" data-tooltip="View Varad on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Varad on Github" href="http://github.com/mohamedabuemira" class="hoverline"
-              target="_blank">github.com/mohamedabuemira</a></a>
-        </p>
-           <p>
-          <a aria-label="View AbuEmira on LinkedIn" href="http://linkedin.com/in/abuemira" target="_blank"
-            data-position="top" data-tooltip="View Varad on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="AbuEmira on LinkedIn" href="http://linkedin.com/in/abuemira"
-              class="hoverline" target="_blank">linkedin.com/in/abuemira</a></a>
-        </p>
-        <p>
-            <a aria-label="View AbuEmira on bento.me" href="https://bento.me/abuemira" target="_blank"
-                data-position="top" data-tooltip="View Varad on website bento.me"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped website-contents">
-                <i class="fa fa-globe"></i>
-                </a>
-                <a aria-label="AbuEmira on bento.me" href="https://bento.me/abuemira" class="hoverline website-contents" target="_blank">
-                   https://bento.me/abuemira
-                </a>
-
-        </p>
-          <p>
-          <a aria-label="View AbuEmira on LinkedIn" href="http://linkedin.com/in/abuemira" target="_blank"
-            data-position="top" data-tooltip="View Varad on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="AbuEmira on LinkedIn" href="http://linkedin.com/in/abuemira"
-              class="hoverline" target="_blank">linkedin.com/in/abuemira</a></a>
-        </p>
+        </div>
+        
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
+</section>
 
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Odoo ERP Finance & Operation Consultant","ERP Consultant", "Financial Manager", "Business Analyst","ERP / Odoo Project Manager","Fast Learner"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-text">© 2025 Mohamed Essam Abu Emira · Odoo Expert &amp; ERP Operations Manager · Self-Employed · Egypt &amp; GCC</div>
+    </div>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/abuemira" target="_blank">LinkedIn</a>
+      <a href="https://abuemiraerp.github.io" target="_blank">Portfolio</a>
+      <a href="https://medium.com/@abuemira" target="_blank">Blog</a>
+      <a href="https://calendly.com/abuemira/30min" target="_blank">Book Meeting</a>
+    </div>
+  </div>
+</footer>
 
-
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-  </script>
+<script>
+// Project filter
+const fbtns=document.querySelectorAll(".fbtn"),cards=document.querySelectorAll(".proj-card");
+fbtns.forEach(b=>b.addEventListener("click",()=>{
+  fbtns.forEach(x=>x.classList.remove("active"));b.classList.add("active");
+  const f=b.dataset.filter;
+  cards.forEach(c=>c.style.display=(f==="all"||c.dataset.cat===f)?"":"none");
+}));
+// Skill bars animation on scroll
+const fills=document.querySelectorAll(".sk-fill"),ws=[];
+fills.forEach(el=>{ws.push(el.style.width);el.style.width="0"});
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){fills.forEach((el,i)=>setTimeout(()=>el.style.width=ws[i],i*55));}});
+},{threshold:.2});
+const sc=document.querySelector(".skills-card");
+if(sc)obs.observe(sc);
+// Cert link hover visibility
+document.querySelectorAll(".cert-card").forEach(c=>{
+  c.style.textDecoration="none";c.style.color="inherit";
+  const lk=c.querySelector(".cert-link");
+  if(lk){c.addEventListener("mouseenter",()=>lk.style.opacity="1");c.addEventListener("mouseleave",()=>lk.style.opacity="0");}
+});
+</script>
 </body>
-
 </html>
