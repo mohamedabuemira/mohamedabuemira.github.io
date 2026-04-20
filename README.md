@@ -2,14 +2,15 @@
 
 > **Odoo Expert & ERP Operations Manager** · Self-Employed · Egypt & GCC
 
-[![Deployed on github](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://mohamedabuemira.github.io)
+[![Deployed on GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-181717?logo=github)](https://mohamedabuemira.github.io)
 [![Odoo Certified](https://img.shields.io/badge/Odoo-16%20·%2017%20·%2018%20Certified-017E84)](https://drive.google.com/file/d/1cY163fwb6yT8Gn01GPhkmzEMl1f_Q2A_/view)
 [![LinkedIn Top ERP Voice](https://img.shields.io/badge/LinkedIn-Top%20ERP%20Voice-0A66C2?logo=linkedin)](https://linkedin.com/in/abuemira)
 
 ---
 
 ## 🚀 Live Site
-**[mohamedabuemira.github.io](https://mohamedabuemira.github.io/)**
+**[mohamedabuemira.github.io](https://mohamedabuemira.github.io)**
+
 
 ---
 
@@ -18,7 +19,6 @@
 ```
 abuemira-portfolio/
 ├── index.html
-├── vercel.json
 ├── assets/
 │   ├── css/style.css
 │   ├── js/main.js
