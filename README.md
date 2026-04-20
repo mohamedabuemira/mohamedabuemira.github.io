@@ -1,74 +1,54 @@
-# Personal Portfolio ⚡️ 
-> A clean, beautiful, responsive portfolio template for ERP Functional Consultant  !
+# Mohamed Essam Abu Emira — Portfolio Website
 
-> https://mohamedabuemira.github.io
+> **Odoo Expert & ERP Operations Manager** · Self-Employed · Egypt & GCC
 
-![GitHub stars](https://img.shields.io/github/stars/mohamedabuemira/mohamedabuemira.github.io) 
-![GitHub forks](https://img.shields.io/github/forks/mohamedabuemira/mohamedabuemira.github.io)
-[![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/mohamedabuemira/mohamedabuemira.github.io/commits/master)
-[![Website shields.io](https://img.shields.io/badge/website-up-yellow)](http://mohamedabuemira.github.io/)
-[![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/abuemira/)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://abuemira.vercel.app)
+[![Odoo Certified](https://img.shields.io/badge/Odoo-16%20·%2017%20·%2018%20Certified-017E84)](https://drive.google.com/file/d/1cY163fwb6yT8Gn01GPhkmzEMl1f_Q2A_/view)
+[![LinkedIn Top ERP Voice](https://img.shields.io/badge/LinkedIn-Top%20ERP%20Voice-0A66C2?logo=linkedin)](https://linkedin.com/in/abuemira)
 
-### Website Preview
-<p align="center"> 
-  <kbd>
-    <a href="https://mohamedabuemira.github.io" target="_blank"><img src="examples/preview.gif">
-  </a>
-  </kbd>
-</p>
+---
 
-:star: Star me on GitHub — it helps!
+## 🚀 Live Site
+**[abuemira.vercel.app](https://abuemira.vercel.app)**
 
-## Features 📋
-⚡️ Fully Responsive\
-⚡️ Valid HTML5 & CSS3\
-⚡️ Typing animation using `Typed.js`\
-⚡️ Easy to modify
+---
 
-## Installation & Deployment 📦
-- Clone the repository and modify the content of <b>index.html</b> according to your requirement.
-- Add or remove images from `mohamedabuemira.github.io/assets/img/` directory as per your requirement.
-- I highly recommend to use [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) to deploy the website the EASIEST WAY.
-- To deploy your website, first you need to create github repository with name `<your-github-username>.github.io`. Please don't give any other name.
-- Push the generated code to the `master` branch of this repository.
-- <b>NOTE:</b> Make sure to set `analyticsId` from your Google Analytics account inside the Google Analytics script tag, if you want to use your own Google Analytics account.
+## 📁 Project Structure
 
-## Sections 📚
-✔️ About me\
-✔️ Experience\
-✔️ Projects \
-✔️ Skills \
-✔️ Education\
-✔️ certifications\
-✔️ Services\
-✔️ Contact Info\
-✔️ Resume
+```
+abuemira-portfolio/
+├── index.html
+├── vercel.json
+├── assets/
+│   ├── css/style.css
+│   ├── js/main.js
+│   ├── img/abu-emira.jpg
+│   └── docs/AbuEmira-Resume.pdf
+└── README.md
+```
 
-To view a live example, **[click here](https://mohamedabuemira.github.io/)**
+---
 
-## Tools Used 🛠️
-* [<b>GitHub Pages</b>](https://create-react-app.dev/docs/deployment/#github-pages) - To host my static website (HTML, CSS, JS).
-* [<b>Materialize</b>](https://materializecss.com/) - A CSS framework to get Google's Material Design components.
-* [<b>Typed.js</b>](https://mattboldt.com/demos/typed-js/) - JavaScript Library
+## ✨ Features
+- Filterable Project Grid — 60+ ERP projects across 9 industries
+- Animated Skill Bars — triggered on scroll
+- Stat Counter Animation — numbers count up on view
+- Sticky Navigation with smooth scroll & active link highlight
+- Mobile Hamburger Menu — fully responsive
+- Scroll-to-Top Button
+- Certifications Section — 40+ credentials with direct links
+- One-Click Booking — Calendly integration
 
-## Contributing 💡
-#### Step 1
+---
 
-- **Option 1**
-    - 🍴 Fork this repo!
+## 📞 Contact
 
-- **Option 2**
-    - 👯 Clone this repo to your local machine.
+| Channel | Link |
+|---------|------|
+| 📞 Phone / WhatsApp | +20 100 506 1349 |
+| ✉️ Email | abuemira91@gmail.com |
+| 💼 LinkedIn | [linkedin.com/in/abuemira](https://linkedin.com/in/abuemira) |
+| 🗓 Book Meeting | [calendly.com/abuemira/30min](https://calendly.com/abuemira/30min) |
 
-
-#### Step 2
-
-- **Build your code** 🔨🔨🔨
-
-#### Step 3
-
-- 🔃 Create a new pull request.
-
-## License 📄
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
+---
+© 2025 Mohamed Essam Abu Emira · All rights reserved

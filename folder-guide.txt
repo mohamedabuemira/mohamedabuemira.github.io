@@ -1,0 +1,15 @@
+abuemira-portfolio/          ← ROOT (your repo folder)
+│
+├── 📄 index.html            ← File 1
+├── 📄 vercel.json           ← File 2
+├── 📄 README.md             ← File 3
+│
+└── 📁 assets/
+    ├── 📁 css/
+    │   └── 📄 style.css     ← File 4
+    ├── 📁 js/
+    │   └── 📄 main.js       ← File 5
+    ├── 📁 img/
+    │   └── 🖼️ abu-emira.jpg ← Your PHOTO (saved from chat)
+    └── 📁 docs/
+        └── 📄 AbuEmira-Resume.pdf ← Your CV (optional)
