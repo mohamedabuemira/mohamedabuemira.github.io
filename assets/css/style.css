@@ -79,3 +79,27 @@ img{display:block;max-width:100%}
 .mod-wrap{display:flex;flex-wrap:wrap;gap:7px}
 .mod-chip{font-size:12px;font-weight:500;padding:5px 14px;border-radius:20px;background:var(--white);color:var(--gray-600);border:1px solid var(--gray-200)}
 .mod-chip.
+/* ── AVAILABILITY BADGE ── */
+.avail-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(16,185,129,.15);border:1px solid rgba(16,185,129,.35);color:#34d399;font-size:11px;font-weight:700;padding:5px 13px;border-radius:20px;margin-bottom:16px}
+.avail-dot{width:7px;height:7px;border-radius:50%;background:#34d399;animation:pulse 2s infinite;flex-shrink:0}
+
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ── EDUCATION ── */
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.edu-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:22px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.edu-deg{font-size:14px;font-weight:700;color:var(--text);margin-bottom:5px}
+.edu-sch{font-size:13px;color:var(--teal);font-weight:600;margin-bottom:4px}
+.edu-yr{font-size:11px;color:var(--gray-400);margin-bottom:12px}
+.edu-tags{display:flex;flex-wrap:wrap;gap:6px}
+.edu-tag{font-size:11px;padding:3px 10px;border-radius:10px;background:var(--teal-light);color:var(--teal);border:1px solid rgba(1,126,132,.2)}
+
+/* ── FOOTER BRAND ── */
+.footer-brand{display:flex;align-items:center;gap:10px;font-family:"Sora",sans-serif;font-size:14px;font-weight:700;color:#fff}
+.footer-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0}
+
+@media(max-width:600px){.edu-grid{grid-template-columns:1fr}}
+
+
