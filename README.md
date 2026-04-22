@@ -30,14 +30,17 @@ abuemira-portfolio/
 ---
 
 ## ✨ Features
-- Filterable Project Grid — 60+ ERP projects across 9 industries
-- Animated Skill Bars — triggered on scroll
-- Stat Counter Animation — numbers count up on view
-- Sticky Navigation with smooth scroll & active link highlight
-- Mobile Hamburger Menu — fully responsive
-- Scroll-to-Top Button
-- Certifications Section — 40+ credentials with direct links
-- One-Click Booking — Calendly integration
+- **Industries Served Section** — 12 sectors with visual icon cards
+- **Filterable Project Grid** — 60+ ERP projects across 11 categories (incl. Services)
+- **Animated Skill Bars** — triggered on scroll
+- **Stat Counter Animation** — numbers count up on view
+- **Sticky Navigation** with smooth scroll & active link highlight (incl. Industries)
+- **Mobile Hamburger Menu** — fully responsive
+- **Scroll-to-Top Button**
+- **Certifications Section** — 40+ credentials with direct links
+- **Testimonials** — 10+ client & colleague reviews
+- **One-Click Booking** — Calendly integration
+- **External JS** — clean `assets/js/main.js` (no inline scripts)
 
 ---
 
