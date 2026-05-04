@@ -227,3 +227,8 @@ img{display:block;max-width:100%}
 /* Platform logos */
 .plat-img{width:22px;height:22px;object-fit:contain;border-radius:4px;display:block}
 .soc-btn img{width:18px;height:18px;object-fit:contain;border-radius:3px;flex-shrink:0}
+/* ── EXPERIENCE COMPANY LOGO ── */
+.exp-top-inner{display:flex;align-items:center;gap:12px}
+.exp-top-text{display:flex;flex-direction:column}
+.exp-company-logo{width:40px;height:40px;border-radius:8px;overflow:hidden;border:1px solid var(--gray-200);background:var(--white);flex-shrink:0;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.exp-company-logo img{width:100%;height:100%;object-fit:contain;padding:3px}
