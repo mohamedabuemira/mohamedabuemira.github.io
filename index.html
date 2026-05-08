@@ -241,12 +241,33 @@ img{display:block;max-width:100%}
 .c-lbl{font-size:10px;color:var(--gray-400);font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px}
 .c-val{font-size:13px;font-weight:700;color:var(--text)}
 .c-val a{color:var(--teal)}
-.contact-cta{background:linear-gradient(140deg,var(--navy),var(--navy-700));border-radius:var(--rl);padding:30px;display:flex;flex-direction:column;gap:22px}
-.contact-cta h3{font-size:20px;font-weight:700;color:#fff;margin-bottom:8px}
-.contact-cta p{font-size:13px;color:rgba(255,255,255,.62);line-height:1.7}
-.avail-list{list-style:none;display:flex;flex-direction:column;gap:7px}
-.avail-list li{font-size:13px;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:8px}
-.avail-list li::before{content:"✓";color:var(--gold);font-weight:700}
+.contact-cta{background:#f2f0eb;border-radius:var(--rl);padding:32px;display:flex;flex-direction:column;gap:0}
+.c-form-title{font-size:17px;font-weight:700;font-family:"Sora",sans-serif;color:var(--text);margin-bottom:20px}
+.c-form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.c-form-group label{font-size:13px;font-weight:700;color:var(--text)}
+.c-form-group label span{color:#94a3b8;font-weight:400}
+.c-form-group input,.c-form-group select,.c-form-group textarea{
+  font-family:"Plus Jakarta Sans",sans-serif;font-size:14px;color:var(--text);
+  background:#fff;border:1.5px solid #dde3ee;border-radius:12px;
+  padding:12px 16px;outline:none;transition:border-color .2s,box-shadow .2s;
+  width:100%;resize:vertical;
+}
+.c-form-group input::placeholder,.c-form-group textarea::placeholder{color:#b0b9cc}
+.c-form-group select{appearance:none;-webkit-appearance:none;cursor:pointer;color:#b0b9cc}
+.c-form-group select.filled{color:var(--text)}
+.c-form-group input:focus,.c-form-group select:focus,.c-form-group textarea:focus{
+  border-color:var(--teal);box-shadow:0 0 0 3px rgba(1,126,132,.1);
+}
+.c-form-group textarea{min-height:120px}
+.c-form-select-wrap{position:relative}
+.c-form-select-wrap::after{content:"⌄";position:absolute;right:16px;top:50%;transform:translateY(-50%);pointer-events:none;color:#94a3b8;font-size:16px}
+.c-form-btn{display:flex;align-items:center;justify-content:center;gap:8px;
+  background:#3730a3;color:#fff;font-family:"Plus Jakarta Sans",sans-serif;
+  font-size:15px;font-weight:700;border:none;border-radius:14px;
+  padding:15px 24px;cursor:pointer;width:100%;transition:background .2s,transform .15s;margin-top:4px;
+}
+.c-form-btn:hover{background:#312e81;transform:translateY(-1px)}
+.c-form-success{display:none;background:#e6f4f5;border:1px solid rgba(1,126,132,.3);border-radius:12px;padding:16px;text-align:center;font-size:14px;color:var(--teal);font-weight:600;margin-top:8px}
 .soc-row{display:flex;gap:8px;flex-wrap:wrap}
 .soc-btn{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);color:#fff;font-size:12px;font-weight:600;padding:8px 16px;border-radius:var(--r);border:1px solid rgba(255,255,255,.18);transition:all .2s;text-decoration:none}
 .soc-btn:hover{background:rgba(255,255,255,.2)}
@@ -905,31 +926,42 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offse
         <div class="c-row"><div class="c-ico"><img class="plat-img" src="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2222%22 height%3D%2222%22 viewBox%3D%220 0 22 22%22%3E%3Crect width%3D%2222%22 height%3D%2222%22 rx%3D%224%22 fill%3D%22%23FF6B00%22%2F%3E%3Ctext x%3D%2211%22 y%3D%2216%22 font-size%3D%2213%22 text-anchor%3D%22middle%22 fill%3D%22white%22 font-weight%3D%22bold%22%3EK%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Khamsat"></div><div><div class="c-lbl">خمسات — Khamsat</div><div class="c-val"><a href="https://khamsat.com/user/محمد-عصام-ابوعميرة/services" target="_blank">khamsat.com ↗</a></div></div></div>
       </div>
       <div class="contact-cta">
-        <div>
-          <h3>Available For</h3>
-          <p>Open to consulting engagements, full-time ERP roles, and freelance projects — across Egypt, Saudi Arabia, and the GCC region.</p>
-          <ul class="avail-list">
-            <li>Odoo ERP Full Implementations</li>
-            <li>ERP Operations Management</li>
-            <li>Financial Management Consulting</li>
-            <li>ERP Customization & Integration</li>
-            <li>Data Migration & Upgrade Projects</li>
-            <li>Training & Post-Go-Live Support</li>
-            <li>Business Process Optimization</li>
-            <li>Remote & On-site Engagements</li>
-          </ul>
+        <div class="c-form-title">Send a Message</div>
+        <div class="c-form-group">
+          <label for="cf-name">Full Name <span>*</span></label>
+          <input type="text" id="cf-name" placeholder="e.g. Ahmed Mohamed" required>
         </div>
-        <div>
-          <a href="https://calendly.com/abuemira/30min" target="_blank" class="btn-gold" style="width:100%;justify-content:center;margin-bottom:14px;">📅 Book a Free 30-Min Consultation</a>
-          <div class="soc-row">
-            <a href="https://linkedin.com/in/abuemira" target="_blank" class="soc-btn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAArlBMVEVGdrojTY7///83bbYcSYxVcqMURoqMnr99k7hFdboLQomnts7J1OeDlLg+cbjU3esAPoeWrdIya7UlT5D5+vyNqNLl6/SovNwyXqA8aq20xeBTf79ki8RdhcHt8fhqj8aDoc4vW50+bbB3mMrz9vvFzt7Z4e11jLQyW5lPb6RBZJ2+zeV8msmkuNgeVJzN1eO8xtloga2cq8cpYKmSp8pshK9yjr1HZ5w9YZwAO4j29lKsAAAJj0lEQVR4nO3d+3uaOhgHcG7SJrURAbETRZ3W3ra59pyedf//P3YSr4gEMCTwwuP3Z7vxeXJ5I2CiGRfGD7qj/mwxCUOtyoThZDrrj7qBf+kFa5d8OHjrj4lrEoKQhioFavT/Q4gQ00XjwShQIvS7/YlpMlu9oU6TTAbdwm1ZUNgbIKqrGXcMVaJZT54wGoYuIN42iLjhMJIiDGjzQePtYpJB/pDME0YzAq75jqFzzyzPmC1cDiCNvrTQETlYigtHhNQtKBBCRoLC1RTq+EsEmdOViHBoNqEBtyHm8GJh1JQG3IY2I69ycIQ9rTkNuA3RupcIh41qwG0Qp6emCgcNBDLioKhwYdZ9sYIxF8WE06YNwWPItIiwwcBU4pmw0cA0YlK4aDaQEpNjMSEcNHWSOSY5o54Kh80HUuKQL+w2sg4mg8wuTxhVfgNNTZAWcYQNn0aPOZlQY8JWDMJt4kPxKFy1YhBug8xVinDaHiAlTs+Fo/b0URZzlBQugd9TuzSILBPCQVvm0X3I4FQYtauPspjRiXDWtiakjTiLC4OWjUIWRIKYsHWjkGU3EjfCZe3PPVUEoeggLLNeY8+egT6e2q7dNkLxlw6IqY1/zGaLCcRHACjcC3uu4D9B3B/d7ZzsBz9DeOtat7cTipYKcxp/OunDu1G+mWuo0BebZ87vokcTYF0VIX8j7IrNM+6bkYwP7Ts0u5+hiRZDN+3B63ICq6OS/kYodFX7NVEiwBZHaMKEgUgTIo3zekAfVj+lKzfNeBMZhuRnOtDwRSuPmphvVCg0DAn3LZZbUI1I64VmjAVGDuvfnDz+kn+d4kFjQ/NF5gY2R3GyxN/lX6hwaEXUApGBY57XwsNA/NKlX2eJuIEmVO9NznsPLC/WXPp1isfsaiORmSFbqH+TfqHCISNNqIBl9lJL9+CUfdLXZkIrGl45pDONres6nH6KZprQzXyU8s7DLmuHCvUH6ZcqGLTQJkJ/R7jvdN6wNtR1MCVjooVCY4Zw3wXcAnVP9pUKBoWa2D0aFHJ+DXCHt0Iw/VT4HpSZvqqJdk1IA6hkiMVNLYmdo9Br+k3Y+GPWQ56wfgyckiEYZP5O+PxOHNiCfqr9ejqpGY+erestI3rWzb6rRr87jp4MlJJRIjrGX+83Hx+3HQ9bZ0A4JUM833Tdsm1s22k8loZPpzRzjqw9jYi8bGELRuL3nEas+/ok5CFbCOY7Rolk99M2CLP7aRuErGS0XKjNM4SX/DvsV/7V/9C/SDJKRtFqwfYScFEYTiahRlwTwG9ziRnPP04sx+WN7Ti/zPTEb2EiSpr+fFstl/4my2g96k/cepVk2DvJOpY/e6L9tOpxsjq8HIFMMh6m/sa196POXyFn3fPuHIQ3/A/dbC+emOMh/9fmway+t3TKC9lXR+L+yNn5YTWu663Q8sJf1LcosEfJ0K1nNBYT/pshxJm/MI9lFdbSU4sIvW/8x6jGvZ28ycNNNK6DWED4kPWg2PhdZFeSXfw6XrXKE3oPKPNR+GWpg5gn3Hy1lyY0IrGHKyqFmwW3PKGxrrxo5Ao9ucL9CgGQkN3Slyk0qn5Lp8Bc+k2u8M6udigWEHpyhUur2tcfilT8uVShcWtXSiy0anuQKnx0Kr0lUmxdKlUYWXqVD7NKf7c4JLi7fX+/vVtn79fF8qdSoizhuuNg27JsjPHrR85S9d3aLnebJIze/x5v6ljYecr8PvVk6xUSpQjXyWfGNv7I+Pjt7tPVvB4gQ/iY8tARd/ibdu6F+ryKqiFB2MNnPvY3f7jEg7CSR3blhb6X/tgYv+cLq3i7s7zwM7UJaRze7Y3b+KhVXvtLCx/PX9w4NBCnn54IlRNLC+95TUj76V0RoeraX/5+afLlomOsTiGhYqJKoW6lL26SQrW1X6nQWRcTKq39SoU4fTY9F6okqhWmTzUpQoXLGyhCdbUfjFD3FBVGOEJVtR+SUE1hBCVUQoQltBTUflhCFcsbaEL5tR+cUDoRnlB27QcolEyEKJRb+2EKZRZGoEKJRKhCeYURrFAaEa5QVmEELKREGWUDslDOYw3QQim1H7ZQxq0N4EIJyxvwwtK1H76wLLEBwpK1vwnCcndvmiAst7xphrAMsSHCErW/KUJxYmOEwrW/QULBdXiDhII7AlyFV+FVeBVehVfhVXgVXoVX4VV4FV6FhYTpLyq3SIj+u+fmef9PWy/8D73wNlpkf9dJ/ZM/YkDRPfGQZfMSu1TuZ7g7SWb8nSBQeNe/vN0E4URUmL1LG6QIC7V53ZdeMOJCre5LL5gSwob00xLCvI09gaSMMG8DWhgpI2xEyfDEzw5gacBQ9ATPt9hnXjcgN542LgNswFB8Fjtn5hjw/fRV7KygWICXDKsjdt5TPLD7qX0vdmZXPN8zvwnVHXwndu7aSUD3UyoUOjvvNPO6GRlxVprgacDxoLoZGXF8sTMsEwG8env2Bc8hTRKhTqj2k+hZsslAXdvgD9HzgM+J87oxqXFWwmc6nwdk0fjyxc/lbgTR/ixztvp54K3C2SYiVCihIu4CrmpYy43QmEnbwhZY1bDYxmFM2JN4Wvi8blU8m33DmNCQuZn0vG5WLLaxFw5lbiYNZ0rFNwfhUupxk2CmVBwchNJKIigiK4YHYSD3TBcYVQP3YkKJBWMTCAtxe7fH5E4Yyd64fl43kC2640LJIxEAcTcKj8Kl9NOVaq4aTpQQGiPpByzUOqUetyQ+CI2p9AMWaiRar8a5MDCl719X30Icr1OEctduu9RExLEXzmJCBf20JqL1ZaQLIxVnD87rEAYcodGVPxRp1aj8yc3pdtInQgUlQ6t+SnVOT0M7FRr95hPxp5ElNBYqiFVWDfvFyBYqmVAr/K5hvyY3PD8TqiFq87qAKUJjquQIsEoW4inANKGasVgFEb+k7MmfJqQzqootlpVPqc5TGiZVSOuiCqLi2zd/089wSRcaPU3FfKOyalgW52AMjtCIpkqaURkRf/EOpuUJ2ZcpFc04V+KzMP/3OXyhEShpRhVTKn7N+JVShpBOOEhBM0on2pwppojQ8AcKTjiXWzVs5zP7OLNsIZ1xBkS6UWLVsPF73tHQeUI6HPtI9niUVTVs/JlzdHkhoWEsh6ErtyFlfNewHHxT4OjyQkKa3gDJHZHzsq1ndQqe7F1QSCedbn9CqFIWU3xKtbHz9fk7/0jIS4UswVt/jFxz4ywtvXxKZSdBOs7z08eKf8JeSSGLH3RH/dliEpb6KcqlRM/znl8793d3K/8SHcv/G0wD/XiL+0EAAAAASUVORK5CYII=" alt="LinkedIn"> LinkedIn</a>
-            <a href="https://www.upwork.com/freelancers/~01670332eb77159714" target="_blank" class="soc-btn"><img src="data:image/png;base64,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" alt="Upwork"> Upwork</a>
-            <a href="https://mostaql.com/u/m_abuemira" target="_blank" class="soc-btn"><img src="data:image/png;base64,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eG2dZmWYkFrZNlzCwP00AA5XVwk4QjjlnO2ScY+GmUaElUtxbUYvNnD5tJtwi4RnS85ewIsJt0xYQmdDnG4w3chNWZbVmStMREi2WCfoxJ0N4WZDDBU6y5lqU7TMijacI+HmZxCuboSVybH5NgjDI7axyXAc5gGk4fpKMFdb0AlknWXZMA6hORRQ8OjD/mkDcuRshulv9iMJLZqgpoSxwRPp/pKHG2NWYbo948E11Udzfj2xSYe5NEvpmp27Ly2oLryd01c4fgrhEUcVOhmaqiBPM1x1wNEHxcZlU8D1/ZrLLceW1pEljUicHhM7D08Gl30cl654v23QxblOfOZ3kScDB/LzeFSwfDZhECwwuDJLKnM2VBiGIGlj4+pSi0VDsYlp2hmOttmisSbBaQSC5TJoeOQtqKa9cBHQbNl0sdBy4bbwLE5JdEf8ujczXWrEUVUXWg0JAcDdEf57+DZmzITujSJfFA33DVvu2uj26K/r+d+ghcb/jdkjesF3hM3Ot0D4kF7xLWjzTED9nvd/ICWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyWULyUUr982o2zgd7/xfgAAAABJRU5ErkJggg==" alt="Mostaql"> مستقل</a>
-            <a href="https://khamsat.com/user/محمد-عصام-ابوعميرة/services" target="_blank" class="soc-btn"><img src="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2222%22 height%3D%2222%22 viewBox%3D%220 0 22 22%22%3E%3Crect width%3D%2222%22 height%3D%2222%22 rx%3D%224%22 fill%3D%22%23FF6B00%22%2F%3E%3Ctext x%3D%2211%22 y%3D%2216%22 font-size%3D%2213%22 text-anchor%3D%22middle%22 fill%3D%22white%22 font-weight%3D%22bold%22%3EK%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Khamsat"> خمسات</a>
-            <a href="https://linktr.ee/abuemira" target="_blank" class="soc-btn">🌿 Linktree</a>
-            <a href="https://medium.com/@abuemira" target="_blank" class="soc-btn">✍️ Blog</a>
+        <div class="c-form-group">
+          <label for="cf-email">Email Address <span>*</span></label>
+          <input type="email" id="cf-email" placeholder="your@email.com" required>
+        </div>
+        <div class="c-form-group">
+          <label for="cf-company">Company / Organization <span style="color:#94a3b8;font-weight:400;font-size:12px;">(optional)</span></label>
+          <input type="text" id="cf-company" placeholder="Your company name">
+        </div>
+        <div class="c-form-group">
+          <label for="cf-service">Service Needed</label>
+          <div class="c-form-select-wrap">
+            <select id="cf-service" onchange="this.classList.toggle('filled',this.value!='')">
+              <option value="">— Select a service —</option>
+              <option>Odoo ERP Full Implementation</option>
+              <option>ERP Operations Management</option>
+              <option>Financial Management Consulting</option>
+              <option>ERP Customization &amp; Integration</option>
+              <option>Data Migration &amp; Upgrade</option>
+              <option>Training &amp; Post-Go-Live Support</option>
+              <option>Business Process Optimization</option>
+              <option>Remote / On-site Engagement</option>
+              <option>Other</option>
+            </select>
           </div>
         </div>
+        <div class="c-form-group">
+          <label for="cf-msg">Message <span>*</span></label>
+          <textarea id="cf-msg" placeholder="Tell me about your project, current challenges, timeline, or any questions you have..." required></textarea>
+        </div>
+        <button class="c-form-btn" onclick="submitContactForm()">📨 Send Message</button>
+        <div class="c-form-success" id="cf-success">✅ Message sent! I'll get back to you within 24 hours.</div>
       </div>
     </div>
   </div>
@@ -949,5 +981,39 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offse
 </footer>
 
 <script src="./assets/js/main.js"></script>
+<script>
+async function submitContactForm(){
+  var name=document.getElementById('cf-name').value.trim();
+  var email=document.getElementById('cf-email').value.trim();
+  var msg=document.getElementById('cf-msg').value.trim();
+  if(!name||!email||!msg){alert('Please fill in all required fields.');return;}
+  var service=document.getElementById('cf-service').value;
+  var company=document.getElementById('cf-company').value.trim();
+  var btn=document.querySelector('.c-form-btn');
+  btn.disabled=true;btn.textContent='⏳ Sending...';
+  try{
+    var res=await fetch('https://formspree.io/f/xnjwbeoa',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({name:name,email:email,company:company||'—',service:service||'—',message:msg})
+    });
+    if(res.ok){
+      document.getElementById('cf-success').style.display='block';
+      document.getElementById('cf-name').value='';
+      document.getElementById('cf-email').value='';
+      document.getElementById('cf-company').value='';
+      document.getElementById('cf-service').value='';
+      document.getElementById('cf-msg').value='';
+      btn.textContent='✅ Sent!';
+      setTimeout(function(){btn.disabled=false;btn.textContent='📨 Send Message';},4000);
+    }else{
+      throw new Error('Server error');
+    }
+  }catch(e){
+    alert('Something went wrong. Please email me directly at abuemira91@gmail.com');
+    btn.disabled=false;btn.textContent='📨 Send Message';
+  }
+}
+</script>
 </body>
 </html>
