@@ -177,7 +177,7 @@ body.ar .exp-dot{left:auto;right:-27px}
 .cert-hl{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:18px 20px;display:flex;align-items:center;gap:14px;box-shadow:0 2px 10px rgba(0,0,0,.04);transition:all .2s;text-decoration:none;color:inherit}
 .cert-hl:hover{border-color:var(--teal);transform:translateY(-2px);box-shadow:var(--sh)}
 .cert-hl-icon{width:46px;height:46px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-family:"Sora",sans-serif;font-size:12px;font-weight:800;flex-shrink:0}
-.ci-teal{background:var(--teal-light);color:var(--teal);border:1px solid rgba(1,126,132,.25)}
+.ci-teal{background:var(--teal-light);color:var(--teal-dark);border:1px solid rgba(1,126,132,.25)}
 .ci-gold{background:rgba(212,168,67,.12);color:#8a6a10;border:1px solid rgba(212,168,67,.3)}
 .ci-blue{background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe}
 .ci-ibm{background:#e8f0fe;color:#1a56db;border:1px solid #c5d5f8}
@@ -241,7 +241,7 @@ body.ar .test-qmark{right:auto;left:16px}
 body.ar .c-form-title{font-family:"Cairo",sans-serif}
 .c-form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
 .c-form-group label{font-size:13px;font-weight:700;color:var(--text)}
-.c-form-group label span{color:#94a3b8;font-weight:400}
+.c-form-group label span{color:var(--gray-600);font-weight:600}
 .c-form-group input,.c-form-group select,.c-form-group textarea{
   font-family:"Plus Jakarta Sans",sans-serif;font-size:14px;color:var(--text);
   background:#fff;border:1.5px solid #dde3ee;border-radius:12px;
@@ -249,15 +249,15 @@ body.ar .c-form-title{font-family:"Cairo",sans-serif}
   width:100%;resize:vertical;
 }
 body.ar .c-form-group input,body.ar .c-form-group select,body.ar .c-form-group textarea{font-family:"Cairo",sans-serif}
-.c-form-group input::placeholder,.c-form-group textarea::placeholder{color:#b0b9cc}
-.c-form-group select{appearance:none;-webkit-appearance:none;cursor:pointer;color:#b0b9cc}
+.c-form-group input::placeholder,.c-form-group textarea::placeholder{color:#64748b}
+.c-form-group select{appearance:none;-webkit-appearance:none;cursor:pointer;color:#64748b}
 .c-form-group select.filled{color:var(--text)}
 .c-form-group input:focus,.c-form-group select:focus,.c-form-group textarea:focus{
   border-color:var(--teal);box-shadow:0 0 0 3px rgba(1,126,132,.1);
 }
 .c-form-group textarea{min-height:120px}
 .c-form-select-wrap{position:relative}
-.c-form-select-wrap::after{content:"⌄";position:absolute;right:16px;top:50%;transform:translateY(-50%);pointer-events:none;color:#94a3b8;font-size:16px}
+.c-form-select-wrap::after{content:"⌄";position:absolute;right:16px;top:50%;transform:translateY(-50%);pointer-events:none;color:#64748b;font-size:16px}
 .c-form-btn{display:flex;align-items:center;justify-content:center;gap:8px;
   background:#3730a3;color:#fff;font-family:"Plus Jakarta Sans",sans-serif;
   font-size:15px;font-weight:700;border:none;border-radius:14px;
@@ -273,9 +273,9 @@ body.ar .c-form-btn{font-family:"Cairo",sans-serif}
 /* ── FOOTER ── */
 .footer{background:var(--navy);padding:28px 40px;border-top:1px solid rgba(255,255,255,.06)}
 .footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
-.footer-text{font-size:12px;color:rgba(255,255,255,.4)}
+.footer-text{font-size:12px;color:rgba(255,255,255,.7)}
 .footer-links{display:flex;gap:18px}
-.footer-links a{font-size:11px;color:rgba(255,255,255,.4);transition:color .18s}
+.footer-links a{font-size:12px;color:rgba(255,255,255,.75);transition:color .18s}
 .footer-links a:hover{color:var(--gold)}
 
 /* ── RESPONSIVE ── */
@@ -416,7 +416,7 @@ body.ar .marquee-outer,.body.ar .marquee-track{direction:ltr}
 .test-li-mq:hover{color:var(--teal-dark)}
 .test-badge{display:flex;align-items:center;gap:8px;background:rgba(217,119,6,.1);border:1px solid rgba(217,119,6,.28);border-radius:40px;padding:7px 16px;width:fit-content}
 .test-badge-star{color:#D97706;font-size:.95rem}
-.test-badge-score{font-size:.8rem;font-weight:700;color:#D97706}
+.test-badge-score{font-size:.8rem;font-weight:700;color:#92400e}
 .test-badge-count{font-size:.75rem;color:var(--gray-400);font-weight:600}
 .btn-test-all-mq{display:inline-flex;align-items:center;gap:9px;font-size:.8rem;white-space:nowrap;align-self:flex-end;cursor:pointer;border:1.5px solid rgba(1,126,132,.4);background:none;color:var(--gray-600);padding:12px 26px;border-radius:50px;font-weight:600;transition:border-color .2s,background .2s,color .2s;font-family:"Plus Jakarta Sans",sans-serif}
 .btn-test-all-mq:hover{border-color:var(--teal);color:var(--teal);background:var(--teal-light)}
@@ -442,3 +442,7 @@ body.ar .btn-test-all-mq{font-family:"Cairo",sans-serif}
 
 /* Nav: between tablet and wide desktop keep only the booking button and language toggle */
 @media(max-width:1120px){.nav-links a:not(.nav-cta){display:none}}
+
+/* Small teal text on light-teal chips: darker teal for 4.5:1+ contrast */
+.sec-tag,.proj-ver{color:var(--teal-dark)}
+.test-badge-count{color:var(--gray-600)}
