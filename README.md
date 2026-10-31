@@ -17,7 +17,7 @@
 
 ## 👤 About This Repository
 
-This is the source code for the **personal professional portfolio** of **Mohamed Essam Abu Emira** — Odoo Expert, ERP Operations Manager, Financial Manager, and **LinkedIn Top ERP Voice 2024**.
+This is the source code for the **personal professional portfolio** of **Mohamed Essam Abu Emira** — Odoo Expert & ERP Operations Manager and **LinkedIn Top ERP Voice 2024**.
 
 > ⚡ **Zero-dependency** · Pure HTML + CSS + Vanilla JS · Self-contained single file · No npm · No build tools
 
@@ -50,9 +50,9 @@ https://mohamedabuemira.github.io
 |---|---|
 | 💼 Years of Experience | 8+ years |
 | 📁 Projects Delivered | 82+ ERP projects |
-| 🎓 Certifications | 50+ verified |
+| 🎓 Certifications | 40+ verified |
 | 🌍 Regions | Egypt · Saudi Arabia · GCC · MENA |
-| 🗣 Recommendations | 28+ LinkedIn recommendations |
+| 🗣 Recommendations | 29+ LinkedIn recommendations |
 
 ---
 
@@ -61,7 +61,7 @@ https://mohamedabuemira.github.io
 | # | Section | Details |
 |---|---|---|
 | 1 | 🧑 **Hero** | Photo, title, phone, role badges, Calendly CTA |
-| 2 | 📊 **Stats Bar** | 8+ years · 82+ projects · 50+ certs · 28+ recommendations |
+| 2 | 📊 **Stats Bar** | 8+ years · 82+ projects · 40+ certs · 29+ recommendations |
 | 3 | 🛠 **Services** | ERP implementation, consulting, training & support |
 | 4 | 💼 **Experience** | Full career timeline — 2013 to present |
 | 5 | 🗂 **Projects** | 82+ filterable ERP projects by industry |
