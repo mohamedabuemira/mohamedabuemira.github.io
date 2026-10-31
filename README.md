@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://mohamedabuemira.github.io">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Sora&weight=700&size=26&duration=3000&pause=800&color=017E84&center=true&vCenter=true&width=700&height=60&lines=Mohamed+Essam+Abu+Emira;Odoo+Expert+%26+ERP+Operations+Manager;LinkedIn+Top+ERP+Voice+%F0%9F%8F%86+2024;79%2B+Projects+%C2%B7+8%2B+Years+%C2%B7+Egypt+%26+GCC" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Sora&weight=700&size=26&duration=3000&pause=800&color=017E84&center=true&vCenter=true&width=700&height=60&lines=Mohamed+Essam+Abu+Emira;Odoo+Expert+%26+ERP+Operations+Manager;LinkedIn+Top+ERP+Voice+%F0%9F%8F%86+2024;82%2B+Projects+%C2%B7+8%2B+Years+%C2%B7+Egypt+%26+GCC" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -49,7 +49,7 @@ https://mohamedabuemira.github.io
 | Metric | Value |
 |---|---|
 | 💼 Years of Experience | 8+ years |
-| 📁 Projects Delivered | 79+ ERP projects |
+| 📁 Projects Delivered | 82+ ERP projects |
 | 🎓 Certifications | 50+ verified |
 | 🌍 Regions | Egypt · Saudi Arabia · GCC · MENA |
 | 🗣 Recommendations | 28+ LinkedIn recommendations |
@@ -61,10 +61,10 @@ https://mohamedabuemira.github.io
 | # | Section | Details |
 |---|---|---|
 | 1 | 🧑 **Hero** | Photo, title, phone, role badges, Calendly CTA |
-| 2 | 📊 **Stats Bar** | 8+ years · 79+ projects · 50+ certs · 28+ recommendations |
+| 2 | 📊 **Stats Bar** | 8+ years · 82+ projects · 50+ certs · 28+ recommendations |
 | 3 | 🛠 **Services** | ERP implementation, consulting, training & support |
 | 4 | 💼 **Experience** | Full career timeline — 2013 to present |
-| 5 | 🗂 **Projects** | 79+ filterable ERP projects by industry |
+| 5 | 🗂 **Projects** | 82+ filterable ERP projects by industry |
 | 6 | 🎓 **Certifications** | 14+ verified certifications with live URLs |
 | 7 | 🏆 **Awards** | LinkedIn Top ERP Voice · Odoo Community Contributor |
 | 8 | 💬 **Testimonials** | Real client & peer recommendations (auto-scrolling) |
