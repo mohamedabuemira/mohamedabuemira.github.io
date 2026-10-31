@@ -60,7 +60,6 @@ reps = [
     ('<a class="lang-toggle" href="ar/" hreflang="ar" lang="ar" id="langBtn">',
      '<a class="lang-toggle" href="../" hreflang="en" lang="en" id="langBtn">'),
     ('<span id="langLabel">العربية</span>', '<span id="langLabel">English</span>'),
-    ("let currentLang = 'en';", "let currentLang = 'ar';"),
 ]
 for old, new in reps:
     assert s.count(old) >= 1, old

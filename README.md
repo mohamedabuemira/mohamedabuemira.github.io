@@ -90,22 +90,21 @@ https://mohamedabuemira.github.io
 
 ```
 mohamedabuemira.github.io/
-│
-├── 📄 index.html              ← Complete portfolio (fully self-contained)
-├── 📄 vercel.json             ← Vercel CDN deployment config
-├── 📄 .gitignore              ← Git ignore rules
-├── 📄 README.md               ← This file
-│
-└── 📁 assets/
-    ├── 📁 css/
-    │   └── 📄 style.css       ← Stylesheet (if separated)
-    ├── 📁 js/
-    │   └── 📄 main.js         ← Scripts (if separated)
-    ├── 📁 img/
-    │   └── 🖼️ abu-emira.jpg   ← Profile photo
-    └── 📁 docs/
-        └── 📄 AbuEmira-Resume.pdf  ← CV (optional)
+├── index.html              ← English page (edit this one)
+├── ar/index.html           ← Arabic page, GENERATED from index.html
+├── tools/build-ar.py       ← regenerates ar/index.html
+├── robots.txt, sitemap.xml
+└── assets/
+    ├── css/style.css       ← all styles (shared by both pages)
+    ├── js/main.js          ← all scripts (shared by both pages)
+    └── img/                ← photo, share image, favicons, client logos, avatars
 ```
+
+### Editing content
+
+1. Edit `index.html`. Every translatable element has `data-en` and `data-ar`; keep both in sync.
+2. Regenerate the Arabic page: `python3 tools/build-ar.py`
+3. Commit both `index.html` and `ar/index.html`.
 
 ---
 
@@ -120,22 +119,14 @@ mohamedabuemira.github.io/
 | 3 | Source: **Deploy from branch** · Branch: `main` · Folder: `/root` |
 | 4 | Save → live in **60–90 seconds** |
 
-### Vercel (Mirror — Faster CDN)
-
-```bash
-# 1. Go to vercel.com → Import Git Repository
-# 2. Select this repo
-# 3. Framework: Other | Build Command: (empty) | Output: (empty)
-# 4. Deploy → live in ~30 seconds
-```
-
 ### Auto-Deploy on Update
 
 ```bash
-git add index.html
+python3 tools/build-ar.py
+git add index.html ar/index.html
 git commit -m "Update: added new project / certification"
 git push origin main
-# ✅ GitHub Pages and Vercel both auto-deploy
+# GitHub Pages redeploys automatically
 ```
 
 ---

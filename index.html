@@ -30,391 +30,11 @@
 <meta name="twitter:title" content="Mohamed Abu Emira | Odoo Expert & ERP Operations Manager">
 <meta name="twitter:description" content="Odoo Expert & ERP Operations Manager and former Chief Accountant. 82+ Odoo and ERP projects for companies in Saudi Arabia, UAE, Egypt and Libya.">
 <meta name="twitter:image" content="https://mohamedabuemira.github.io/assets/img/og-image.jpg">
+<link rel="stylesheet" href="./assets/css/style.css">
+<script src="./assets/js/main.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sora:wght@400;600;700;800&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-:root{
-  --teal:#017E84;--teal-dark:#015a5e;--teal-light:#e6f4f5;--teal-mid:#029fa7;
-  --navy:#0d1b2e;--navy-700:#1a2f4a;--navy-600:#1e3a5f;
-  --gold:#d4a843;--gold-lt:#f5d98a;
-  --white:#fff;--gray-50:#f8fafc;--gray-100:#f1f5f9;--gray-200:#e2e8f0;
-  --gray-400:#94a3b8;--gray-600:#475569;--text:#0f172a;
-  --r:12px;--rl:18px;
-  --sh:0 4px 24px rgba(13,27,46,.09);--sh-lg:0 14px 52px rgba(13,27,46,.18);
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:"Plus Jakarta Sans",sans-serif;font-size:15px;color:var(--text);background:var(--gray-50);line-height:1.7}
-body.ar{font-family:"Cairo",sans-serif}
-h1,h2,h3,h4{font-family:"Sora",sans-serif;line-height:1.25}
-body.ar h1,body.ar h2,body.ar h3,body.ar h4{font-family:"Cairo",sans-serif}
-a{color:inherit;text-decoration:none}
-img{display:block;max-width:100%}
-
-/* ── LANG TOGGLE ── */
-.lang-toggle{
-  display:flex;align-items:center;gap:6px;
-  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);
-  border-radius:20px;padding:5px 12px;cursor:pointer;
-  font-size:12px;font-weight:700;color:#fff;transition:all .2s;
-  white-space:nowrap;
-}
-.lang-toggle:hover{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.5)}
-.lang-flag{font-size:14px}
-
-/* ── NAV ── */
-.nav{position:sticky;top:0;z-index:200;background:rgba(13,27,46,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:62px}
-.nav-brand{display:flex;align-items:center;gap:11px;font-family:"Sora",sans-serif;font-size:15px;font-weight:700;color:#fff;letter-spacing:-.2px}
-body.ar .nav-brand{font-family:"Cairo",sans-serif}
-.nav-photo{width:34px;height:34px;border-radius:50%;overflow:hidden;border:2px solid rgba(212,168,67,.55);flex-shrink:0}
-.nav-photo img{width:100%;height:100%;object-fit:cover}
-.nav-links{display:flex;gap:2px}
-.nav-links a{font-size:12px;font-weight:600;color:rgba(255,255,255,.6);padding:6px 13px;border-radius:20px;transition:all .18s}
-.nav-links a:hover{color:#fff;background:rgba(255,255,255,.09)}
-.nav-cta{background:var(--gold)!important;color:var(--navy)!important;font-weight:700!important;border-radius:20px!important}
-.nav-cta:hover{background:var(--gold-lt)!important}
-.nav-right{display:flex;align-items:center;gap:10px}
-
-/* ── HERO ── */
-.hero{background:linear-gradient(140deg,var(--navy) 0%,var(--navy-700) 52%,#0d2a40 100%);padding:72px 40px 58px;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;top:-180px;right:-120px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(1,126,132,.14) 0%,transparent 68%);pointer-events:none}
-.hero::after{content:"";position:absolute;bottom:-100px;left:-80px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(212,168,67,.07) 0%,transparent 70%);pointer-events:none}
-.hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:auto 1fr;gap:52px;align-items:center;position:relative;z-index:1}
-.hero-photo{width:160px;height:160px;border-radius:50%;overflow:hidden;border:4px solid rgba(212,168,67,.52);box-shadow:0 0 0 10px rgba(212,168,67,.07),var(--sh-lg);flex-shrink:0}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
-.hero-name{font-size:40px;font-weight:800;color:#fff;letter-spacing:-.6px;margin-bottom:7px;line-height:1.15}
-.hero-name span{color:var(--gold)}
-.hero-subtitle{font-size:15px;color:rgba(255,255,255,.65);margin-bottom:18px;font-weight:400;line-height:1.55}
-.hero-roles{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
-.role-pill{font-size:11px;font-weight:700;padding:5px 14px;border-radius:20px;background:rgba(1,126,132,.15);color:rgba(255,255,255,.88);border:1px solid rgba(1,126,132,.35)}
-.role-pill.gold{background:rgba(212,168,67,.13);color:var(--gold-lt);border-color:rgba(212,168,67,.35)}
-.hero-badges{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:20px}
-.hbadge{font-size:11px;font-weight:700;letter-spacing:.03em;padding:4px 12px;border-radius:20px;border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.8);background:rgba(255,255,255,.07)}
-.hbadge.gold{border-color:rgba(212,168,67,.42);color:var(--gold-lt);background:rgba(212,168,67,.11)}
-.hero-phone-box{display:inline-flex;align-items:center;gap:11px;background:rgba(1,126,132,.22);border:1px solid rgba(1,126,132,.48);border-radius:10px;padding:11px 20px;margin-bottom:20px}
-.hero-phone-num{font-family:"Sora",sans-serif;font-size:18px;font-weight:800;color:#fff;letter-spacing:.02em}
-.hero-phone-lbl{font-size:10px;color:rgba(255,255,255,.5);margin-top:2px}
-.hero-meta{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:24px}
-.hm{display:flex;align-items:center;gap:6px;font-size:13px;color:rgba(255,255,255,.65)}
-.hm a{color:var(--gold-lt);font-weight:600}
-.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
-.btn-gold{display:inline-flex;align-items:center;gap:7px;background:var(--gold);color:var(--navy);font-family:"Sora",sans-serif;font-size:13px;font-weight:700;padding:12px 24px;border-radius:var(--r);transition:all .2s;border:none;text-decoration:none;cursor:pointer}
-body.ar .btn-gold{font-family:"Cairo",sans-serif}
-.btn-gold:hover{background:var(--gold-lt);transform:translateY(-1px);box-shadow:var(--sh)}
-.btn-ghost{display:inline-flex;align-items:center;gap:7px;background:transparent;color:#fff;font-family:"Sora",sans-serif;font-size:13px;font-weight:600;padding:12px 24px;border-radius:var(--r);border:1px solid rgba(255,255,255,.22);transition:all .2s;text-decoration:none;cursor:pointer}
-body.ar .btn-ghost{font-family:"Cairo",sans-serif}
-.btn-ghost:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.5)}
-
-/* ── STATS ── */
-.stats-bar{background:var(--white);border-bottom:1px solid var(--gray-200);box-shadow:var(--sh)}
-.stats-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr)}
-.stat{padding:22px 16px;text-align:center;border-right:1px solid var(--gray-200)}
-.stat:last-child{border-right:none}
-.stat-n{font-family:"Sora",sans-serif;font-size:28px;font-weight:800;color:var(--teal);line-height:1}
-.stat-l{font-size:11px;color:var(--gray-600);margin-top:5px;font-weight:600}
-
-/* ── LAYOUT ── */
-.container{max-width:1100px;margin:0 auto;padding:0 40px}
-.section{padding:64px 0}
-.alt{background:var(--white)}
-.sec-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);background:var(--teal-light);padding:4px 12px;border-radius:20px;margin-bottom:10px;border:1px solid rgba(1,126,132,.2)}
-.sec-title{font-size:27px;font-weight:800;color:var(--text);letter-spacing:-.3px;margin-bottom:32px}
-.sec-title span{color:var(--teal)}
-
-/* ── ABOUT ── */
-.about-grid{display:grid;grid-template-columns:3fr 2fr;gap:40px;align-items:start}
-.about-text p{font-size:14px;color:var(--gray-600);line-height:1.88}
-.about-text p+p{margin-top:14px}
-.kpi-row{display:flex;gap:12px;margin:24px 0}
-.kpi{flex:1;background:var(--white);border:1px solid var(--gray-200);border-radius:var(--r);padding:16px;text-align:center;border-top:3px solid var(--teal);box-shadow:0 2px 8px rgba(0,0,0,.04)}
-.kpi-n{font-family:"Sora",sans-serif;font-size:24px;font-weight:800;color:var(--teal)}
-.kpi-l{font-size:11px;color:var(--gray-600);margin-top:3px;font-weight:600}
-.hl-list{display:flex;flex-direction:column;gap:10px;margin-top:20px}
-.hl-item{display:flex;align-items:flex-start;gap:11px;padding:13px 16px;background:var(--teal-light);border-radius:var(--r);border-left:3px solid var(--teal)}
-body.ar .hl-item{border-left:none;border-right:3px solid var(--teal)}
-.hl-ico{font-size:17px;flex-shrink:0;margin-top:1px}
-.hl-body strong{font-size:13px;font-weight:700;color:var(--text);display:block;margin-bottom:2px}
-.hl-body span{font-size:12px;color:var(--gray-600);line-height:1.55}
-.mod-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin:24px 0 12px}
-.mod-wrap{display:flex;flex-wrap:wrap;gap:7px}
-.mod-chip{font-size:12px;font-weight:500;padding:5px 14px;border-radius:20px;background:var(--white);color:var(--gray-600);border:1px solid var(--gray-200);transition:all .18s}
-.mod-chip.active{background:var(--teal);color:#fff;border-color:var(--teal)}
-.skills-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:26px;box-shadow:var(--sh)}
-.sk-row{margin-bottom:15px}
-.sk-label{display:flex;justify-content:space-between;font-size:12px;color:var(--gray-600);margin-bottom:6px;font-weight:600}
-.sk-pct{color:var(--teal);font-weight:800}
-.sk-bar{height:5px;background:var(--gray-100);border-radius:3px;overflow:hidden}
-.sk-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--teal-dark),var(--teal-mid));transition:width 1.2s ease}
-.tool-wrap{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
-.tool-chip{font-size:11px;font-weight:500;padding:4px 11px;border-radius:20px;background:var(--gray-100);color:var(--gray-600);border:1px solid var(--gray-200)}
-
-/* ── INDUSTRIES ── */
-.industries-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.ind-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--r);padding:18px 16px;text-align:center;transition:all .22s;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-.ind-card:hover{border-color:var(--teal);transform:translateY(-2px);box-shadow:var(--sh)}
-.ind-icon{font-size:28px;margin-bottom:8px}
-.ind-name{font-size:12px;font-weight:700;color:var(--text);margin-bottom:3px}
-.ind-sub{font-size:11px;color:var(--gray-400)}
-.plat-img{width:22px;height:22px;object-fit:contain;border-radius:4px;display:block}
-.soc-btn img{width:18px;height:18px;object-fit:contain;border-radius:3px;flex-shrink:0}
-
-/* ── SERVICES ── */
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.svc-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:26px;transition:all .22s;box-shadow:0 2px 10px rgba(0,0,0,.04)}
-.svc-card:hover{border-color:var(--teal);transform:translateY(-3px);box-shadow:var(--sh-lg)}
-.svc-icon{width:48px;height:48px;border-radius:12px;background:var(--teal-light);border:1px solid rgba(1,126,132,.22);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px}
-.svc-title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:8px}
-.svc-desc{font-size:12px;color:var(--gray-600);line-height:1.68}
-.svc-link{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:var(--teal);margin-top:14px;transition:gap .18s}
-.svc-card:hover .svc-link{gap:9px}
-
-/* ── EXPERIENCE ── */
-.exp-line{display:flex;flex-direction:column;position:relative;padding-left:30px}
-body.ar .exp-line{padding-left:0;padding-right:30px}
-.exp-line::before{content:"";position:absolute;left:6px;top:14px;bottom:14px;width:2px;background:var(--gray-200)}
-body.ar .exp-line::before{left:auto;right:6px}
-.exp-item{position:relative;padding-bottom:26px}
-.exp-item:last-child{padding-bottom:0}
-.exp-dot{position:absolute;left:-27px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--white);border:3px solid var(--teal);box-shadow:0 0 0 4px var(--teal-light)}
-body.ar .exp-dot{left:auto;right:-27px}
-.exp-dot.cur{background:var(--teal)}
-.exp-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:22px 24px;box-shadow:0 2px 8px rgba(0,0,0,.04);transition:all .2s}
-.exp-card:hover{border-color:rgba(1,126,132,.28);box-shadow:var(--sh)}
-.exp-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:6px;margin-bottom:4px}
-.exp-top-inner{display:flex;align-items:flex-start;gap:14px}
-.exp-top-text{flex:1;min-width:0}
-.exp-company-logo{width:42px;height:42px;border-radius:9px;overflow:hidden;border:1px solid var(--gray-200);flex-shrink:0;background:var(--white);box-shadow:0 1px 4px rgba(0,0,0,.08)}
-.exp-company-logo img{width:100%;height:100%;object-fit:contain}
-.exp-role{font-size:15px;font-weight:700;color:var(--text)}
-.exp-date{font-size:11px;color:var(--teal);font-weight:700;background:var(--teal-light);padding:3px 11px;border-radius:20px;white-space:nowrap;flex-shrink:0}
-.exp-co{font-size:13px;color:var(--teal);font-weight:600;margin-bottom:10px}
-.exp-co a{color:var(--teal)}
-.exp-desc{font-size:13px;color:var(--gray-600);line-height:1.72}
-.exp-bullets{list-style:none;display:flex;flex-direction:column;gap:6px;margin-top:11px}
-.exp-bullets li{font-size:12px;color:var(--gray-600);display:flex;align-items:flex-start;gap:7px;line-height:1.55}
-.exp-bullets li::before{content:"·";color:var(--teal);font-weight:700;font-size:18px;flex-shrink:0;margin-top:-2px}
-.exp-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
-.etag{font-size:10px;padding:2px 9px;border-radius:10px;background:var(--gray-100);color:var(--gray-600);border:1px solid var(--gray-200)}
-.current-badge{display:inline-flex;align-items:center;gap:6px;background:var(--teal-light);border:1px solid rgba(1,126,132,.25);border-radius:6px;padding:4px 10px;margin-bottom:10px;font-size:11px;font-weight:700;color:var(--teal)}
-.current-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--teal);flex-shrink:0;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
-
-/* ── PROJECTS ── */
-.filter-bar{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px}
-.fbtn{font-size:11px;font-weight:700;padding:6px 15px;border-radius:20px;background:var(--white);color:var(--gray-600);border:1px solid var(--gray-200);cursor:pointer;transition:all .18s}
-.fbtn.active,.fbtn:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
-.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.proj-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:18px;transition:all .22s;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-.proj-card:hover{border-color:rgba(1,126,132,.3);transform:translateY(-2px);box-shadow:var(--sh)}
-.proj-cat{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:2px 9px;border-radius:10px;display:inline-block;margin-bottom:8px}
-.c-mfg{background:#fef3c7;color:#92400e}.c-con{background:#fee2e2;color:#991b1b}.c-food{background:#d1fae5;color:#065f46}
-.c-log{background:#ede9fe;color:#4c1d95}.c-ret{background:#fce7f3;color:#9d174d}.c-hot{background:#e0f2fe;color:#0c4a6e}
-.c-gov{background:#f3f4f6;color:#374151}.c-npo{background:#dcfce7;color:#14532d}.c-re{background:#fff7ed;color:#7c2d12}
-.c-hlth{background:#fce7f3;color:#9d174d}.c-svc{background:#f0fdf4;color:#166534}
-.proj-ver{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:6px;background:var(--teal-light);color:var(--teal);border:1px solid rgba(1,126,132,.2);margin-bottom:8px}
-.proj-name{font-size:13px;font-weight:700;color:var(--text);margin-bottom:5px;line-height:1.3}
-.proj-mods{font-size:11px;color:var(--gray-400);line-height:1.55}
-
-/* ── CERTIFICATIONS ── */
-.cert-hl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:36px}
-.cert-hl{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:18px 20px;display:flex;align-items:center;gap:14px;box-shadow:0 2px 10px rgba(0,0,0,.04);transition:all .2s;text-decoration:none;color:inherit}
-.cert-hl:hover{border-color:var(--teal);transform:translateY(-2px);box-shadow:var(--sh)}
-.cert-hl-icon{width:46px;height:46px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-family:"Sora",sans-serif;font-size:12px;font-weight:800;flex-shrink:0}
-.ci-teal{background:var(--teal-light);color:var(--teal);border:1px solid rgba(1,126,132,.25)}
-.ci-gold{background:rgba(212,168,67,.12);color:#8a6a10;border:1px solid rgba(212,168,67,.3)}
-.ci-blue{background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe}
-.ci-ibm{background:#e8f0fe;color:#1a56db;border:1px solid #c5d5f8}
-.ci-green{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0}
-.ci-navy{background:#f0f9ff;color:#0369a1;border:1px solid #bae6fd}
-.cert-hl-name{font-size:13px;font-weight:700;color:var(--text);margin-bottom:2px;line-height:1.3}
-.cert-hl-issuer{font-size:11px;color:var(--gray-400)}
-.certs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.cert-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--r);padding:14px 16px;display:flex;align-items:center;gap:13px;transition:all .2s;box-shadow:0 2px 6px rgba(0,0,0,.03);text-decoration:none;color:inherit}
-.cert-card:hover{border-color:var(--teal);box-shadow:var(--sh)}
-.cert-card:hover .cert-arrow{opacity:1;transform:translateX(0)}
-.cert-logo{width:38px;height:38px;border-radius:9px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:"Sora",sans-serif;font-size:10px;font-weight:800}
-.cert-name{font-size:12px;font-weight:700;color:var(--text);margin-bottom:2px;line-height:1.3}
-.cert-iss{font-size:11px;color:var(--gray-400)}
-.cert-yr{color:var(--teal);font-weight:700}
-.cert-arrow{margin-left:auto;font-size:13px;color:var(--teal);opacity:0;transform:translateX(-4px);transition:all .2s;flex-shrink:0}
-body.ar .cert-arrow{margin-left:0;margin-right:auto;transform:translateX(4px)}
-.award-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
-.award-card{border-radius:var(--rl);padding:26px;color:#fff}
-.award-card.teal{background:linear-gradient(135deg,var(--teal-dark),var(--teal))}
-.award-card.navy{background:linear-gradient(135deg,var(--navy),var(--navy-600))}
-.award-card h3{font-size:16px;font-weight:700;margin-bottom:8px}
-.award-card p{font-size:13px;opacity:.8;line-height:1.65}
-.award-year{font-size:11px;font-weight:700;opacity:.6;margin-top:10px}
-
-/* ── TESTIMONIALS ── */
-.test-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.test-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:26px;position:relative;box-shadow:0 2px 10px rgba(0,0,0,.04);transition:all .22s}
-.test-card:hover{border-color:rgba(1,126,132,.25)!important;box-shadow:var(--sh)!important}
-.test-qmark{font-family:"Sora",sans-serif;font-size:62px;line-height:1;color:var(--teal-light);font-weight:800;position:absolute;top:10px;right:16px}
-body.ar .test-qmark{right:auto;left:16px}
-.test-text{font-size:13px;color:var(--gray-600);line-height:1.76;font-style:italic;margin-bottom:18px;position:relative;z-index:1}
-.test-row{display:flex;align-items:center;gap:11px}
-.test-av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--teal-dark),var(--teal-mid));display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff;flex-shrink:0;font-family:"Sora",sans-serif}
-.test-name{font-size:13px;font-weight:700;color:var(--text)}
-.test-role{font-size:11px;color:var(--gray-400);margin-top:1px}
-
-/* ── EDUCATION ── */
-.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.edu-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:22px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-.edu-deg{font-size:14px;font-weight:700;color:var(--text);margin-bottom:3px}
-.edu-sch{font-size:13px;color:var(--teal);font-weight:600;margin-bottom:4px}
-.edu-yr{font-size:11px;color:var(--gray-400)}
-.edu-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
-.edu-tag{font-size:10px;padding:2px 9px;border-radius:20px;background:var(--gray-100);color:var(--gray-600);border:1px solid var(--gray-200)}
-
-/* ── CONTACT ── */
-.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.contact-info{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--rl);padding:28px;box-shadow:var(--sh)}
-.phone-hl{display:flex;align-items:center;gap:14px;background:var(--teal-light);border:1px solid rgba(1,126,132,.28);border-radius:var(--r);padding:16px 20px;margin-bottom:20px}
-.phone-num{font-family:"Sora",sans-serif;font-size:20px;font-weight:800;color:var(--teal)}
-.c-row{display:flex;align-items:center;gap:13px;padding:13px 8px!important;border-bottom:1px solid var(--gray-100);transition:background .18s;border-radius:8px;margin:0 -8px}
-.c-row:last-child{border-bottom:none}
-.c-row:hover{background:var(--gray-50)}
-.c-ico{width:36px;height:36px;border-radius:9px;background:var(--teal-light);border:1px solid rgba(1,126,132,.2);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
-.c-lbl{font-size:10px;color:var(--gray-400);font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px}
-.c-val{font-size:13px;font-weight:700;color:var(--text)}
-.c-val a{color:var(--teal)}
-.contact-cta{background:#f2f0eb;border-radius:var(--rl);padding:32px;display:flex;flex-direction:column;gap:0}
-.c-form-title{font-size:17px;font-weight:700;font-family:"Sora",sans-serif;color:var(--text);margin-bottom:20px}
-body.ar .c-form-title{font-family:"Cairo",sans-serif}
-.c-form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
-.c-form-group label{font-size:13px;font-weight:700;color:var(--text)}
-.c-form-group label span{color:#94a3b8;font-weight:400}
-.c-form-group input,.c-form-group select,.c-form-group textarea{
-  font-family:"Plus Jakarta Sans",sans-serif;font-size:14px;color:var(--text);
-  background:#fff;border:1.5px solid #dde3ee;border-radius:12px;
-  padding:12px 16px;outline:none;transition:border-color .2s,box-shadow .2s;
-  width:100%;resize:vertical;
-}
-body.ar .c-form-group input,body.ar .c-form-group select,body.ar .c-form-group textarea{font-family:"Cairo",sans-serif}
-.c-form-group input::placeholder,.c-form-group textarea::placeholder{color:#b0b9cc}
-.c-form-group select{appearance:none;-webkit-appearance:none;cursor:pointer;color:#b0b9cc}
-.c-form-group select.filled{color:var(--text)}
-.c-form-group input:focus,.c-form-group select:focus,.c-form-group textarea:focus{
-  border-color:var(--teal);box-shadow:0 0 0 3px rgba(1,126,132,.1);
-}
-.c-form-group textarea{min-height:120px}
-.c-form-select-wrap{position:relative}
-.c-form-select-wrap::after{content:"⌄";position:absolute;right:16px;top:50%;transform:translateY(-50%);pointer-events:none;color:#94a3b8;font-size:16px}
-.c-form-btn{display:flex;align-items:center;justify-content:center;gap:8px;
-  background:#3730a3;color:#fff;font-family:"Plus Jakarta Sans",sans-serif;
-  font-size:15px;font-weight:700;border:none;border-radius:14px;
-  padding:15px 24px;cursor:pointer;width:100%;transition:background .2s,transform .15s;margin-top:4px;
-}
-body.ar .c-form-btn{font-family:"Cairo",sans-serif}
-.c-form-btn:hover{background:#312e81;transform:translateY(-1px)}
-.c-form-success{display:none;background:#e6f4f5;border:1px solid rgba(1,126,132,.3);border-radius:12px;padding:16px;text-align:center;font-size:14px;color:var(--teal);font-weight:600;margin-top:8px}
-.soc-row{display:flex;gap:8px;flex-wrap:wrap}
-.soc-btn{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);color:#fff;font-size:12px;font-weight:600;padding:8px 16px;border-radius:var(--r);border:1px solid rgba(255,255,255,.18);transition:all .2s;text-decoration:none}
-.soc-btn:hover{background:rgba(255,255,255,.2)}
-
-/* ── FOOTER ── */
-.footer{background:var(--navy);padding:28px 40px;border-top:1px solid rgba(255,255,255,.06)}
-.footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
-.footer-text{font-size:12px;color:rgba(255,255,255,.4)}
-.footer-links{display:flex;gap:18px}
-.footer-links a{font-size:11px;color:rgba(255,255,255,.4);transition:color .18s}
-.footer-links a:hover{color:var(--gold)}
-
-/* ── RESPONSIVE ── */
-@media(max-width:900px){
-  .hero-inner{grid-template-columns:1fr;text-align:center}
-  .hero-photo{margin:0 auto}
-  .hero-roles,.hero-badges,.hero-meta,.hero-btns,.hero-phone-box{justify-content:center}
-  .about-grid,.contact-wrap{grid-template-columns:1fr}
-  .svc-grid{grid-template-columns:1fr 1fr}
-  .industries-grid{grid-template-columns:repeat(2,1fr)}
-  .proj-grid{grid-template-columns:1fr 1fr}
-  .certs-grid,.test-grid,.edu-grid{grid-template-columns:1fr}
-  .cert-hl-grid{grid-template-columns:1fr 1fr}
-  .stats-inner{grid-template-columns:repeat(3,1fr)}
-  .award-row{grid-template-columns:1fr}
-  .container,.footer{padding-left:20px;padding-right:20px}
-  .hero{padding:48px 20px}
-  .section{padding:48px 0}
-  .nav-links{display:none}
-}
-@media(max-width:600px){
-  .svc-grid,.proj-grid,.cert-hl-grid{grid-template-columns:1fr}
-  .industries-grid{grid-template-columns:repeat(2,1fr)}
-  .stats-inner{grid-template-columns:repeat(2,1fr)}
-  .kpi-row{flex-direction:column}
-}
-
-/* ── MISC ── */
-.nav-links a.active-link{color:#fff!important;background:rgba(255,255,255,.12)!important}
-@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-::-webkit-scrollbar{width:6px}
-::-webkit-scrollbar-track{background:var(--gray-100)}
-::-webkit-scrollbar-thumb{background:var(--teal);border-radius:3px}
-::selection{background:var(--teal);color:#fff}
-img{transition:opacity .3s ease}
-.hero-photo img{transition:transform .4s ease}
-.hero-photo:hover img{transform:scale(1.04)}
-a:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:4px}
-.nav-links a.active-link::after{content:'';display:block;height:2px;background:var(--gold);border-radius:2px;margin-top:2px}
-.btn-gold{position:relative;overflow:hidden}
-.btn-gold::after{content:'';position:absolute;top:50%;left:50%;width:0;height:0;background:rgba(255,255,255,.2);border-radius:50%;transform:translate(-50%,-50%);transition:width .4s,height .4s}
-.btn-gold:active::after{width:200px;height:200px}
-
-/* ── RTL OVERRIDES ── */
-body.ar{direction:rtl;text-align:right}
-body.ar .nav-links{flex-direction:row-reverse}
-body.ar .stats-inner .stat{border-right:none;border-left:1px solid var(--gray-200)}
-body.ar .stats-inner .stat:last-child{border-left:none}
-body.ar .exp-line{padding-left:0;padding-right:30px}
-body.ar .hl-item{border-left:none;border-right:3px solid var(--teal)}
-body.ar .sk-fill{background:linear-gradient(270deg,var(--teal-dark),var(--teal-mid))}
-body.ar .nav{flex-direction:row-reverse}
-body.ar .nav-right{flex-direction:row-reverse}
-body.ar .hero-inner{direction:rtl}
-body.ar .hero-btns{direction:rtl}
-body.ar .filter-bar{direction:rtl}
-body.ar .mod-wrap{direction:rtl}
-body.ar .hero-meta{direction:rtl}
-body.ar .hero-roles{direction:rtl}
-body.ar .hero-badges{direction:rtl}
-
-/* ── REFRESH: hero, about, services ── */
-.hero-name{font-family:"Sora",sans-serif;font-size:20px;font-weight:700;color:#fff;letter-spacing:-.2px;margin-bottom:4px;line-height:1.3}
-body.ar .hero-name{font-family:"Cairo",sans-serif}
-.hero-subtitle{font-size:14px;margin-bottom:16px}
-.hero-title{font-size:40px;font-weight:800;color:#fff;letter-spacing:-.6px;line-height:1.15;margin-bottom:16px;max-width:20ch}
-.hero-lede{font-size:16px;color:rgba(255,255,255,.8);line-height:1.7;max-width:62ch;margin-bottom:24px}
-.proof-line{margin-top:24px;font-size:13px;font-weight:600;letter-spacing:.01em;color:var(--gold-lt);max-width:70ch;line-height:1.6}
-.hero-meta{margin-top:16px;margin-bottom:0}
-.sec-sub{font-size:15px;color:var(--gray-600);max-width:62ch;margin:-16px 0 32px;line-height:1.7}
-.about-lead{font-size:16px!important;color:var(--text)!important;max-width:65ch}
-.about-more{margin-top:16px}
-.about-more summary{cursor:pointer;font-weight:700;color:var(--teal);font-size:14px;margin-bottom:8px}
-.about-more p{max-width:65ch}
-h3.svc-title{font-size:16px}
-.svc-desc{font-size:14px;line-height:1.7}
-.svc-cta{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:32px;font-weight:600;color:var(--text)}
-@media(max-width:900px){.hero-title,.hero-lede,.proof-line{margin-left:auto;margin-right:auto}}
-@media(max-width:600px){.hero-name{font-size:18px}.hero-title{font-size:30px}.hero-lede{font-size:15px}}
-
-/* ── REFRESH: icons, layout ── */
-.ic{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;vertical-align:-.125em}
-.nav-cta,.btn-gold,.hm,.c-form-title,.c-form-success span{display:inline-flex;align-items:center;gap:8px}
-.svc-icon,.c-ico{color:var(--teal)}
-.ind-icon{font-size:26px;color:var(--teal);line-height:1}
-.hl-ico{color:var(--teal);font-size:18px;margin-top:2px}
-.card-ico{font-size:26px;color:var(--teal);margin-bottom:8px;line-height:1}
-.award-card.navy .card-ico{color:var(--gold-lt)}
-.phone-ic{font-size:22px;color:var(--teal);display:flex}
-.hm .ic{color:rgba(255,255,255,.55)}
-.lang-flag{display:flex;font-size:15px}
-.full-modal-close .ic{font-size:18px}
-.more-list{margin-top:24px}
-.more-list>summary{cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--teal);font-size:14px;padding:8px 16px;border:1.5px solid rgba(1,126,132,.35);border-radius:40px;margin-bottom:16px}
-.more-list[open]>summary{margin-bottom:24px}
-</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -457,6 +77,7 @@ h3.svc-title{font-size:16px}
 </script>
 </head>
 <body>
+<a class="skip-link t" href="#main" data-en="Skip to content" data-ar="تخطَّ إلى المحتوى">Skip to content</a>
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
   <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
@@ -492,7 +113,7 @@ h3.svc-title{font-size:16px}
 <!-- NAV -->
 <nav class="nav">
   <div class="nav-brand">
-    <div class="nav-photo"><img src="./assets/img/abu-emira.jpg" alt="Mohamed Essam Abu Emira"></div>
+    <div class="nav-photo"><img width="280" height="261" src="./assets/img/abu-emira.jpg" alt="Mohamed Essam Abu Emira"></div>
     <span class="t" data-en="Mohamed" data-ar="محمد">Mohamed</span>&nbsp;<span style="color:var(--gold);" class="t" data-en="Abu Emira" data-ar="أبو عميرة">Abu Emira</span>
   </div>
   <div class="nav-right">
@@ -515,11 +136,12 @@ h3.svc-title{font-size:16px}
 </nav>
 
 <!-- HERO -->
+<main id="main">
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-photo">
       <!-- TODO: the portrait is 280x261 px; replace with a higher-resolution photo (640x640 or larger) -->
-      <img src="./assets/img/abu-emira.jpg" alt="Mohamed Essam Abu Emira">
+      <img width="280" height="261" src="./assets/img/abu-emira.jpg" alt="Mohamed Essam Abu Emira" fetchpriority="high">
     </div>
     <div>
       <p class="hero-name"><span class="t" data-en="Mohamed Essam " data-ar="محمد عصام ">Mohamed Essam </span><span class="t" data-en="Abu Emira" data-ar="أبو عميرة">Abu Emira</span></p>
@@ -682,68 +304,6 @@ h3.svc-title{font-size:16px}
 </section>
 
 <!-- ═══ CLIENT LOGOS SECTION ═══ -->
-<style>
-/* ── LOGO STRIP ── */
-.logo-strip-section{padding:60px 0;overflow:hidden;background:#fff;border-top:1px solid var(--gray-200);border-bottom:1px solid var(--gray-200)}
-.logo-strip-header{text-align:center;margin-bottom:36px}
-.logo-strip-header .sec-tag{display:inline-block;margin-bottom:10px}
-.logo-strip-header .sec-title{text-align:center;margin-bottom:10px}
-.logo-strip-header .sec-sub{text-align:center;margin-left:auto;margin-right:auto;font-size:15px;color:var(--gray-600);max-width:520px;margin-bottom:0}
-.logo-strip-outer{overflow:hidden;mask-image:linear-gradient(to right,transparent 0,#000 10%,#000 90%,transparent 100%);-webkit-mask-image:linear-gradient(to right,transparent 0,#000 10%,#000 90%,transparent 100%)}
-.logo-strip-outer+.logo-strip-outer{margin-top:14px}
-.logo-strip-track{display:flex;gap:16px;width:max-content;animation:logo-scroll 40s linear infinite}
-.logo-strip-track.rev{animation:logo-scroll-rev 38s linear infinite}
-.logo-strip-track:hover,.logo-strip-track.rev:hover{animation-play-state:paused}
-@keyframes logo-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@keyframes logo-scroll-rev{from{transform:translateX(-50%)}to{transform:translateX(0)}}
-.logo-item{flex-shrink:0;width:120px;height:64px;border-radius:var(--r);background:var(--gray-50);border:1px solid var(--gray-200);display:flex;align-items:center;justify-content:center;padding:10px 12px;transition:border-color .25s,box-shadow .25s;overflow:hidden}
-.logo-item:hover{border-color:var(--teal);box-shadow:var(--sh)}
-.logo-item img{width:100%;height:100%;object-fit:contain;object-position:center;filter:grayscale(30%);transition:filter .3s;display:block}
-.logo-item:hover img{filter:grayscale(0%)}
-
-/* ── TESTIMONIALS MARQUEE ── */
-.test-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:44px;flex-wrap:wrap;gap:16px}
-.marquee-outer{overflow:hidden;direction:ltr;margin:0 -24px}
-.marquee-track{display:flex;gap:20px;width:max-content;animation:scroll-left 54s linear infinite;direction:ltr}
-.marquee-track:hover{animation-play-state:paused}
-@keyframes scroll-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-body.ar .marquee-outer,.body.ar .marquee-track{direction:ltr}
-.test-card-mq{width:320px;flex-shrink:0;background:#fff;border:1px solid var(--gray-200);border-radius:18px;padding:26px 24px;transition:border-color .2s,box-shadow .2s;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-.test-card-mq:hover{border-color:rgba(1,126,132,.3);box-shadow:var(--sh)}
-.test-stars-mq{color:#D97706;font-size:.9rem;letter-spacing:1px;margin-bottom:13px}
-.test-q-mq{font-size:.84rem;color:var(--gray-600);line-height:1.72;margin-bottom:18px;font-style:italic}
-.test-author-mq{display:flex;align-items:center;gap:11px}
-.test-av-mq{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid rgba(1,126,132,.3);flex-shrink:0;background:var(--gray-100)}
-.test-name-mq{font-size:.86rem;font-weight:700;color:var(--text)}
-.test-role-mq{font-size:.71rem;color:var(--gray-400)}
-.test-li-mq{display:inline-block;margin-top:4px;font-size:.68rem;font-weight:700;color:var(--teal);transition:color .2s}
-.test-li-mq:hover{color:var(--teal-dark)}
-.test-badge{display:flex;align-items:center;gap:8px;background:rgba(217,119,6,.1);border:1px solid rgba(217,119,6,.28);border-radius:40px;padding:7px 16px;width:fit-content}
-.test-badge-star{color:#D97706;font-size:.95rem}
-.test-badge-score{font-size:.8rem;font-weight:700;color:#D97706}
-.test-badge-count{font-size:.75rem;color:var(--gray-400);font-weight:600}
-.btn-test-all-mq{display:inline-flex;align-items:center;gap:9px;font-size:.8rem;white-space:nowrap;align-self:flex-end;cursor:pointer;border:1.5px solid rgba(1,126,132,.4);background:none;color:var(--gray-600);padding:12px 26px;border-radius:50px;font-weight:600;transition:border-color .2s,background .2s,color .2s;font-family:"Plus Jakarta Sans",sans-serif}
-.btn-test-all-mq:hover{border-color:var(--teal);color:var(--teal);background:var(--teal-light)}
-body.ar .btn-test-all-mq{font-family:"Cairo",sans-serif}
-
-/* ── REC MODAL ── */
-.full-modal-overlay{display:none;position:fixed;inset:0;z-index:9998;background:rgba(0,0,0,.6);backdrop-filter:blur(8px);overflow-y:auto;padding:24px 16px;-webkit-overflow-scrolling:touch}
-.full-modal-overlay.open{display:block}
-.full-modal-box{background:#fff;border:1px solid var(--gray-200);border-radius:var(--rl);max-width:1100px;width:100%;margin:0 auto;overflow:hidden;box-shadow:var(--sh-lg)}
-.full-modal-hdr{background:linear-gradient(135deg,var(--navy),var(--navy-600));padding:26px 30px 20px;display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
-.full-modal-tag{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:7px}
-.full-modal-title{font-family:"Sora",sans-serif;font-size:clamp(20px,3vw,28px);font-weight:700;color:#fff;line-height:1.2}
-.full-modal-title span{color:var(--gold)}
-.full-modal-close{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.12);border:none;cursor:pointer;color:#fff;font-size:17px;font-weight:700;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:background .2s;line-height:1}
-.full-modal-close:hover{background:rgba(255,255,255,.25)}
-.full-modal-body{padding:28px 30px;background:var(--gray-50)}
-.recs-filter-row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:0 0 24px}
-.recs-filter-btn{padding:6px 16px;border-radius:40px;font-size:.76rem;font-weight:700;cursor:pointer;transition:all .2s;border:1.5px solid var(--gray-200);background:#fff;color:var(--gray-600);font-family:"Plus Jakarta Sans",sans-serif}
-.recs-filter-btn.active{background:var(--teal);color:#fff;border-color:var(--teal)}
-#recsGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
-@media(max-width:600px){#recsGrid{grid-template-columns:1fr}}
-@media(max-width:680px){#recModal .full-modal-hdr{flex-direction:column}.full-modal-close{align-self:flex-end}}
-</style>
 
 <section class="logo-strip-section" id="clients">
   <div class="container logo-strip-header">
@@ -752,10 +312,10 @@ body.ar .btn-test-all-mq{font-family:"Cairo",sans-serif}
     <p class="sec-sub t" data-en="From startups to enterprise groups — across Egypt, Saudi Arabia &amp; the GCC." data-ar="من الشركات الناشئة إلى المجموعات الكبرى — في مصر والسعودية والخليج.">From startups to enterprise groups — across Egypt, Saudi Arabia &amp; the GCC.</p>
   </div>
   <div class="logo-strip-outer">
-    <div class="logo-strip-track"><div class="logo-item"><img src="./assets/img/projects/12cups.jpg" alt="12Cups" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/abdelhameedkhoory.jpg" alt="Abdelhameedkhoory" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/advancedenergy.jpeg" alt="Advancedenergy" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/alamanahcare.png" alt="Alamanahcare" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/alaqalezdehar.png" alt="Alaqalezdehar" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/albadertrading.jpg" alt="Albadertrading" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/almarai_alarabia.jpeg" alt="Almarai Alarabia" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/almodhy.jpg" alt="Almodhy" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/alrajhiekhwan.jpg" alt="Alrajhiekhwan" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/alsahlygroup.jpg" alt="Alsahlygroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/ambiancefurniture.png" alt="Ambiancefurniture" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/amoudigroup.jpg" alt="Amoudigroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/anasir_alghidha_for_food_products.jpeg" alt="Anasir Alghidha" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/arabianpioneer.jpg" alt="Arabianpioneer" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/aroma-sense.jpeg" alt="Aroma Sense" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/bazar.png" alt="Bazar" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/beamconsolidated_logo.jpeg" alt="Beamconsolidated" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/binladin.jpg" alt="Binladin" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/caryoka.jpg" alt="Caryoka" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/cashprime.png" alt="Cashprime" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/cavalero.jpg" alt="Cavalero" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/charactermen.png" alt="Charactermen" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/construction_engineering_systems.jpg" alt="Construction Engineering" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/cuisineart.jpg" alt="Cuisineart" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/easternyields.jpg" alt="Easternyields" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/emirogroup.png" alt="Emirogroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/ensan.jpg" alt="Ensan" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/eralighting.jpg" alt="Eralighting" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/etqan.png" alt="Etqan" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/famfood.png" alt="Famfood" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/fastforwardlogistics.png" alt="Fastforwardlogistics" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/filterpure.png" alt="Filterpure" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/greena.png" alt="Greena" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/hemicoffee.jpg" alt="Hemicoffee" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/hittin.png" alt="Hittin" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/infinitymd.png" alt="Infinitymd" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/12cups.jpg" alt="12Cups" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/abdelhameedkhoory.jpg" alt="Abdelhameedkhoory" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/advancedenergy.jpeg" alt="Advancedenergy" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/alamanahcare.png" alt="Alamanahcare" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/alaqalezdehar.png" alt="Alaqalezdehar" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/albadertrading.jpg" alt="Albadertrading" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/almarai_alarabia.jpeg" alt="Almarai Alarabia" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/almodhy.jpg" alt="Almodhy" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/alrajhiekhwan.jpg" alt="Alrajhiekhwan" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/alsahlygroup.jpg" alt="Alsahlygroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/ambiancefurniture.png" alt="Ambiancefurniture" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/amoudigroup.jpg" alt="Amoudigroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/anasir_alghidha_for_food_products.jpeg" alt="Anasir Alghidha" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/arabianpioneer.jpg" alt="Arabianpioneer" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/aroma-sense.jpeg" alt="Aroma Sense" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/bazar.png" alt="Bazar" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/beamconsolidated_logo.jpeg" alt="Beamconsolidated" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/binladin.jpg" alt="Binladin" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/caryoka.jpg" alt="Caryoka" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/cashprime.png" alt="Cashprime" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/cavalero.jpg" alt="Cavalero" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/charactermen.png" alt="Charactermen" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/construction_engineering_systems.jpg" alt="Construction Engineering" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/cuisineart.jpg" alt="Cuisineart" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/easternyields.jpg" alt="Easternyields" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/emirogroup.png" alt="Emirogroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/ensan.jpg" alt="Ensan" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/eralighting.jpg" alt="Eralighting" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/etqan.png" alt="Etqan" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/famfood.png" alt="Famfood" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/fastforwardlogistics.png" alt="Fastforwardlogistics" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/filterpure.png" alt="Filterpure" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/greena.png" alt="Greena" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/hemicoffee.jpg" alt="Hemicoffee" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/hittin.png" alt="Hittin" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/infinitymd.png" alt="Infinitymd" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div></div>
+    <div class="logo-strip-track"><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/12cups.jpg" alt="12Cups" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="120" height="90" src="./assets/img/projects/abdelhameedkhoory.jpg" alt="Abdelhameedkhoory" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="200" height="200" src="./assets/img/projects/advancedenergy.jpeg" alt="Advancedenergy" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="166" src="./assets/img/projects/alamanahcare.png" alt="Alamanahcare" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="60" src="./assets/img/projects/alaqalezdehar.png" alt="Alaqalezdehar" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="51" src="./assets/img/projects/albadertrading.jpg" alt="Albadertrading" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="212" src="./assets/img/projects/almarai_alarabia.jpeg" alt="Almarai Alarabia" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="66" src="./assets/img/projects/almodhy.jpg" alt="Almodhy" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="65" src="./assets/img/projects/alrajhiekhwan.jpg" alt="Alrajhiekhwan" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/alsahlygroup.jpg" alt="Alsahlygroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="180" height="90" src="./assets/img/projects/ambiancefurniture.png" alt="Ambiancefurniture" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="71" src="./assets/img/projects/amoudigroup.jpg" alt="Amoudigroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="200" height="200" src="./assets/img/projects/anasir_alghidha_for_food_products.jpeg" alt="Anasir Alghidha" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="140" src="./assets/img/projects/arabianpioneer.jpg" alt="Arabianpioneer" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="158" src="./assets/img/projects/aroma-sense.jpeg" alt="Aroma Sense" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="112" height="90" src="./assets/img/projects/bazar.png" alt="Bazar" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="200" height="200" src="./assets/img/projects/beamconsolidated_logo.jpeg" alt="Beamconsolidated" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="50" src="./assets/img/projects/binladin.jpg" alt="Binladin" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="155" height="90" src="./assets/img/projects/caryoka.jpg" alt="Caryoka" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="240" src="./assets/img/projects/cashprime.png" alt="Cashprime" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="72" src="./assets/img/projects/cavalero.jpg" alt="Cavalero" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="63" src="./assets/img/projects/charactermen.png" alt="Charactermen" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="158" height="50" src="./assets/img/projects/construction_engineering_systems.jpg" alt="Construction Engineering" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="82" height="90" src="./assets/img/projects/cuisineart.jpg" alt="Cuisineart" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="56" src="./assets/img/projects/easternyields.jpg" alt="Easternyields" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="89" src="./assets/img/projects/emirogroup.png" alt="Emirogroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/ensan.jpg" alt="Ensan" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="151" src="./assets/img/projects/eralighting.jpg" alt="Eralighting" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="231" height="82" src="./assets/img/projects/etqan.png" alt="Etqan" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="180" height="90" src="./assets/img/projects/famfood.png" alt="Famfood" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="80" src="./assets/img/projects/fastforwardlogistics.png" alt="Fastforwardlogistics" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="147" height="240" src="./assets/img/projects/filterpure.png" alt="Filterpure" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/greena.png" alt="Greena" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="76" src="./assets/img/projects/hemicoffee.jpg" alt="Hemicoffee" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="50" src="./assets/img/projects/hittin.png" alt="Hittin" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="84" src="./assets/img/projects/infinitymd.png" alt="Infinitymd" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/12cups.jpg" alt="12Cups" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="120" height="90" src="./assets/img/projects/abdelhameedkhoory.jpg" alt="Abdelhameedkhoory" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="200" height="200" src="./assets/img/projects/advancedenergy.jpeg" alt="Advancedenergy" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="166" src="./assets/img/projects/alamanahcare.png" alt="Alamanahcare" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="60" src="./assets/img/projects/alaqalezdehar.png" alt="Alaqalezdehar" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="51" src="./assets/img/projects/albadertrading.jpg" alt="Albadertrading" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="212" src="./assets/img/projects/almarai_alarabia.jpeg" alt="Almarai Alarabia" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="66" src="./assets/img/projects/almodhy.jpg" alt="Almodhy" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="65" src="./assets/img/projects/alrajhiekhwan.jpg" alt="Alrajhiekhwan" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/alsahlygroup.jpg" alt="Alsahlygroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="180" height="90" src="./assets/img/projects/ambiancefurniture.png" alt="Ambiancefurniture" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="71" src="./assets/img/projects/amoudigroup.jpg" alt="Amoudigroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="200" height="200" src="./assets/img/projects/anasir_alghidha_for_food_products.jpeg" alt="Anasir Alghidha" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="140" src="./assets/img/projects/arabianpioneer.jpg" alt="Arabianpioneer" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="158" src="./assets/img/projects/aroma-sense.jpeg" alt="Aroma Sense" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="112" height="90" src="./assets/img/projects/bazar.png" alt="Bazar" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="200" height="200" src="./assets/img/projects/beamconsolidated_logo.jpeg" alt="Beamconsolidated" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="50" src="./assets/img/projects/binladin.jpg" alt="Binladin" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="155" height="90" src="./assets/img/projects/caryoka.jpg" alt="Caryoka" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="240" src="./assets/img/projects/cashprime.png" alt="Cashprime" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="72" src="./assets/img/projects/cavalero.jpg" alt="Cavalero" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="63" src="./assets/img/projects/charactermen.png" alt="Charactermen" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="158" height="50" src="./assets/img/projects/construction_engineering_systems.jpg" alt="Construction Engineering" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="82" height="90" src="./assets/img/projects/cuisineart.jpg" alt="Cuisineart" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="56" src="./assets/img/projects/easternyields.jpg" alt="Easternyields" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="89" src="./assets/img/projects/emirogroup.png" alt="Emirogroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/ensan.jpg" alt="Ensan" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="151" src="./assets/img/projects/eralighting.jpg" alt="Eralighting" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="231" height="82" src="./assets/img/projects/etqan.png" alt="Etqan" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="180" height="90" src="./assets/img/projects/famfood.png" alt="Famfood" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="80" src="./assets/img/projects/fastforwardlogistics.png" alt="Fastforwardlogistics" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="147" height="240" src="./assets/img/projects/filterpure.png" alt="Filterpure" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/greena.png" alt="Greena" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="76" src="./assets/img/projects/hemicoffee.jpg" alt="Hemicoffee" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="50" src="./assets/img/projects/hittin.png" alt="Hittin" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="84" src="./assets/img/projects/infinitymd.png" alt="Infinitymd" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div></div>
   </div>
   <div class="logo-strip-outer" style="margin-top:14px">
-    <div class="logo-strip-track rev"><div class="logo-item"><img src="./assets/img/projects/inmart_store.jpg" alt="Inmart Store" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/iya.jpg" alt="Iya" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/jedoudna.jpg" alt="Jedoudna" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/jefegypt.png" alt="Jefegypt" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/kapl.png" alt="King Abdulaziz Public Library" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/kotobia.jpg" alt="Kotobia" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/krmh.jpg" alt="KRMH" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/makkiyoon.jpg" alt="Makkiyoon" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/masnaf.jpg" alt="Masnaf" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/msjsecurity.jpg" alt="MSJ Security Systems" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/mylittlehome.jpg" alt="My Little Home" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/konafacoffee.png" alt="Konafa Coffee" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/nadi.png" alt="Nadi" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/onevision.jpeg" alt="Onevision" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/orninatw.jpg" alt="Orninatw" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/qafa-arabia.jpg" alt="Qafa Arabia" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/reuof_alsham.jpg" alt="Reuof Alsham" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/ricracshop.jpeg" alt="Ricracshop" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/rosekid.png" alt="Rosekid" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/royatgroup.jpg" alt="Royatgroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/sabtrd.png" alt="Sabtrd" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/salon-iamlbrazilian.jpg" alt="Salon Brazilian" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/sammakieh.png" alt="Sammakieh" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/seet.png" alt="Seet" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/shahbandar.png" alt="Shahbandar" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/selatyalmuhaseel.avif" alt="Selatyalmuhaseel" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/shararco.jpg" alt="Shararco" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/silver_tex.jpg" alt="Silver Tex" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/sindam.jpg" alt="Sindam" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/sir_albina_foundation.jpg" alt="Sir Albina" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/slim_fit_nutrition.png" alt="Slim Fit" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/smartshelf.jpeg" alt="Smartshelf" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/sogac.png" alt="Sogac" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/sulbaljazeera.jpg" alt="Sulbaljazeera" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/tamakkon.jpg" alt="Tamakkon" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/tarahem.png" alt="Tarahem" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/tarek.jpg" alt="Tarek" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/tiba2000.png" alt="Tiba2000" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/trans_emirates_property.png" alt="Trans Emirates" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/ultramade.png" alt="Ultramade" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/villa_musk.jpg" alt="Villa Musk" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/visionplast.png" alt="Vision Plast" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/wahatalahsa.jpg" alt="Wahatalahsa" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/zinati.jpg" alt="Zinati" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/zuhairfayez.png" alt="Zuhairfayez" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/inmart_store.jpg" alt="Inmart Store" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/iya.jpg" alt="Iya" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/jedoudna.jpg" alt="Jedoudna" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/jefegypt.png" alt="Jefegypt" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/kapl.png" alt="King Abdulaziz Public Library" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/kotobia.jpg" alt="Kotobia" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/krmh.jpg" alt="KRMH" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/makkiyoon.jpg" alt="Makkiyoon" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/masnaf.jpg" alt="Masnaf" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/msjsecurity.jpg" alt="MSJ Security Systems" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/mylittlehome.jpg" alt="My Little Home" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/konafacoffee.png" alt="Konafa Coffee" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/nadi.png" alt="Nadi" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/onevision.jpeg" alt="Onevision" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/orninatw.jpg" alt="Orninatw" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/qafa-arabia.jpg" alt="Qafa Arabia" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/reuof_alsham.jpg" alt="Reuof Alsham" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/ricracshop.jpeg" alt="Ricracshop" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/rosekid.png" alt="Rosekid" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/royatgroup.jpg" alt="Royatgroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/sabtrd.png" alt="Sabtrd" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/salon-iamlbrazilian.jpg" alt="Salon Brazilian" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/sammakieh.png" alt="Sammakieh" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/seet.png" alt="Seet" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/shahbandar.png" alt="Shahbandar" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/selatyalmuhaseel.avif" alt="Selatyalmuhaseel" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/shararco.jpg" alt="Shararco" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/silver_tex.jpg" alt="Silver Tex" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/sindam.jpg" alt="Sindam" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/sir_albina_foundation.jpg" alt="Sir Albina" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/slim_fit_nutrition.png" alt="Slim Fit" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/smartshelf.jpeg" alt="Smartshelf" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/sogac.png" alt="Sogac" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/sulbaljazeera.jpg" alt="Sulbaljazeera" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/tamakkon.jpg" alt="Tamakkon" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/tarahem.png" alt="Tarahem" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/tarek.jpg" alt="Tarek" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/tiba2000.png" alt="Tiba2000" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/trans_emirates_property.png" alt="Trans Emirates" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/ultramade.png" alt="Ultramade" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/villa_musk.jpg" alt="Villa Musk" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/visionplast.png" alt="Vision Plast" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/wahatalahsa.jpg" alt="Wahatalahsa" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/zinati.jpg" alt="Zinati" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img src="./assets/img/projects/zuhairfayez.png" alt="Zuhairfayez" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div></div>
+    <div class="logo-strip-track rev"><div class="logo-item"><img width="240" height="240" src="./assets/img/projects/inmart_store.jpg" alt="Inmart Store" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="66" src="./assets/img/projects/iya.jpg" alt="Iya" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="239" src="./assets/img/projects/jedoudna.jpg" alt="Jedoudna" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="150" height="150" src="./assets/img/projects/jefegypt.png" alt="Jefegypt" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="210" height="176" src="./assets/img/projects/kapl.png" alt="King Abdulaziz Public Library" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="233" src="./assets/img/projects/kotobia.jpg" alt="Kotobia" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="199" src="./assets/img/projects/krmh.jpg" alt="KRMH" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="66" src="./assets/img/projects/makkiyoon.jpg" alt="Makkiyoon" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/masnaf.jpg" alt="Masnaf" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="71" src="./assets/img/projects/msjsecurity.jpg" alt="MSJ Security Systems" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="66" src="./assets/img/projects/mylittlehome.jpg" alt="My Little Home" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="144" src="./assets/img/projects/konafacoffee.png" alt="Konafa Coffee" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="200" height="200" src="./assets/img/projects/nadi.png" alt="Nadi" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="200" height="200" src="./assets/img/projects/onevision.jpeg" alt="Onevision" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/orninatw.jpg" alt="Orninatw" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="80" src="./assets/img/projects/qafa-arabia.jpg" alt="Qafa Arabia" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="123" src="./assets/img/projects/reuof_alsham.jpg" alt="Reuof Alsham" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="200" height="200" src="./assets/img/projects/ricracshop.jpeg" alt="Ricracshop" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="70" src="./assets/img/projects/rosekid.png" alt="Rosekid" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="240" src="./assets/img/projects/royatgroup.jpg" alt="Royatgroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="86" src="./assets/img/projects/sabtrd.png" alt="Sabtrd" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="240" src="./assets/img/projects/salon-iamlbrazilian.jpg" alt="Salon Brazilian" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="228" src="./assets/img/projects/sammakieh.png" alt="Sammakieh" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="199" src="./assets/img/projects/seet.png" alt="Seet" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="180" height="180" src="./assets/img/projects/shahbandar.png" alt="Shahbandar" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="381" height="400" src="./assets/img/projects/selatyalmuhaseel.avif" alt="Selatyalmuhaseel" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="240" src="./assets/img/projects/shararco.jpg" alt="Shararco" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="198" src="./assets/img/projects/silver_tex.jpg" alt="Silver Tex" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="44" src="./assets/img/projects/sindam.jpg" alt="Sindam" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="162" height="90" src="./assets/img/projects/sir_albina_foundation.jpg" alt="Sir Albina" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="178" src="./assets/img/projects/slim_fit_nutrition.png" alt="Slim Fit" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="160" src="./assets/img/projects/smartshelf.jpeg" alt="Smartshelf" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/sogac.png" alt="Sogac" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="66" src="./assets/img/projects/sulbaljazeera.jpg" alt="Sulbaljazeera" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="225" height="225" src="./assets/img/projects/tamakkon.jpg" alt="Tamakkon" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="114" src="./assets/img/projects/tarahem.png" alt="Tarahem" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="68" src="./assets/img/projects/tarek.jpg" alt="Tarek" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="109" height="90" src="./assets/img/projects/tiba2000.png" alt="Tiba2000" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="80" src="./assets/img/projects/trans_emirates_property.png" alt="Trans Emirates" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="172" height="90" src="./assets/img/projects/ultramade.png" alt="Ultramade" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="135" src="./assets/img/projects/villa_musk.jpg" alt="Villa Musk" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="159" src="./assets/img/projects/visionplast.png" alt="Vision Plast" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="219" src="./assets/img/projects/wahatalahsa.jpg" alt="Wahatalahsa" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="49" src="./assets/img/projects/zinati.jpg" alt="Zinati" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/zuhairfayez.png" alt="Zuhairfayez" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="240" src="./assets/img/projects/inmart_store.jpg" alt="Inmart Store" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="66" src="./assets/img/projects/iya.jpg" alt="Iya" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="239" src="./assets/img/projects/jedoudna.jpg" alt="Jedoudna" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="150" height="150" src="./assets/img/projects/jefegypt.png" alt="Jefegypt" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="210" height="176" src="./assets/img/projects/kapl.png" alt="King Abdulaziz Public Library" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="233" src="./assets/img/projects/kotobia.jpg" alt="Kotobia" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="199" src="./assets/img/projects/krmh.jpg" alt="KRMH" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="66" src="./assets/img/projects/makkiyoon.jpg" alt="Makkiyoon" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/masnaf.jpg" alt="Masnaf" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="71" src="./assets/img/projects/msjsecurity.jpg" alt="MSJ Security Systems" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="66" src="./assets/img/projects/mylittlehome.jpg" alt="My Little Home" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="144" src="./assets/img/projects/konafacoffee.png" alt="Konafa Coffee" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="200" height="200" src="./assets/img/projects/nadi.png" alt="Nadi" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="200" height="200" src="./assets/img/projects/onevision.jpeg" alt="Onevision" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/orninatw.jpg" alt="Orninatw" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="80" src="./assets/img/projects/qafa-arabia.jpg" alt="Qafa Arabia" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="123" src="./assets/img/projects/reuof_alsham.jpg" alt="Reuof Alsham" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="200" height="200" src="./assets/img/projects/ricracshop.jpeg" alt="Ricracshop" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="70" src="./assets/img/projects/rosekid.png" alt="Rosekid" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="240" src="./assets/img/projects/royatgroup.jpg" alt="Royatgroup" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="86" src="./assets/img/projects/sabtrd.png" alt="Sabtrd" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="240" src="./assets/img/projects/salon-iamlbrazilian.jpg" alt="Salon Brazilian" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="228" src="./assets/img/projects/sammakieh.png" alt="Sammakieh" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="199" src="./assets/img/projects/seet.png" alt="Seet" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="180" height="180" src="./assets/img/projects/shahbandar.png" alt="Shahbandar" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="381" height="400" src="./assets/img/projects/selatyalmuhaseel.avif" alt="Selatyalmuhaseel" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="240" src="./assets/img/projects/shararco.jpg" alt="Shararco" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="198" src="./assets/img/projects/silver_tex.jpg" alt="Silver Tex" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="44" src="./assets/img/projects/sindam.jpg" alt="Sindam" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="162" height="90" src="./assets/img/projects/sir_albina_foundation.jpg" alt="Sir Albina" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="178" src="./assets/img/projects/slim_fit_nutrition.png" alt="Slim Fit" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="160" src="./assets/img/projects/smartshelf.jpeg" alt="Smartshelf" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/sogac.png" alt="Sogac" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="66" src="./assets/img/projects/sulbaljazeera.jpg" alt="Sulbaljazeera" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="225" height="225" src="./assets/img/projects/tamakkon.jpg" alt="Tamakkon" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="114" src="./assets/img/projects/tarahem.png" alt="Tarahem" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="68" src="./assets/img/projects/tarek.jpg" alt="Tarek" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="109" height="90" src="./assets/img/projects/tiba2000.png" alt="Tiba2000" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="80" src="./assets/img/projects/trans_emirates_property.png" alt="Trans Emirates" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="172" height="90" src="./assets/img/projects/ultramade.png" alt="Ultramade" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="135" src="./assets/img/projects/villa_musk.jpg" alt="Villa Musk" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="159" src="./assets/img/projects/visionplast.png" alt="Vision Plast" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="219" src="./assets/img/projects/wahatalahsa.jpg" alt="Wahatalahsa" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="240" height="49" src="./assets/img/projects/zinati.jpg" alt="Zinati" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div><div class="logo-item"><img width="90" height="90" src="./assets/img/projects/zuhairfayez.png" alt="Zuhairfayez" loading="lazy" onerror="this.parentElement.style.opacity='0.3'"></div></div>
   </div>
 </section>
 
@@ -775,7 +335,7 @@ body.ar .btn-test-all-mq{font-family:"Cairo",sans-serif}
           <div style="font-size:.78rem;color:var(--gray-400);"><span class="t" data-en="Verified on" data-ar="موثّق على">Verified on</span> <a href="https://www.linkedin.com/in/abuemira" target="_blank" style="color:var(--teal);font-weight:700;">LinkedIn ↗</a></div>
         </div>
       </div>
-      <button onclick="openRecModal()" class="btn-test-all-mq t" data-en="All Recommendations →" data-ar="← جميع التوصيات">All Recommendations →</button>
+      <button type="button" onclick="openRecModal()" aria-haspopup="dialog" class="btn-test-all-mq t" data-en="All Recommendations →" data-ar="← جميع التوصيات">All Recommendations →</button>
     </div>
   </div>
   <div class="marquee-outer">
@@ -784,12 +344,12 @@ body.ar .btn-test-all-mq{font-family:"Cairo",sans-serif}
 </section>
 
 <!-- ═══ REC MODAL ═══ -->
-<div id="recModal" class="full-modal-overlay" onclick="if(this===event.target)closeRecModal()">
+<div id="recModal" class="full-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="recModalTitle" onclick="if(this===event.target)closeRecModal()">
   <div class="full-modal-box">
     <div class="full-modal-hdr">
       <div>
         <div class="full-modal-tag t" data-en="ALL RECOMMENDATIONS" data-ar="جميع التوصيات">ALL RECOMMENDATIONS</div>
-        <h2 class="full-modal-title"><span class="t" data-en="All LinkedIn " data-ar="جميع توصيات ">All LinkedIn </span><span class="t" data-en="Recommendations" data-ar="LinkedIn">Recommendations</span></h2>
+        <h2 class="full-modal-title" id="recModalTitle"><span class="t" data-en="All LinkedIn " data-ar="جميع توصيات ">All LinkedIn </span><span class="t" data-en="Recommendations" data-ar="LinkedIn">Recommendations</span></h2>
         <div style="display:flex;align-items:center;gap:12px;margin-top:10px;flex-wrap:wrap;">
           <div style="display:flex;align-items:center;gap:6px;background:rgba(217,119,6,.12);border:1px solid rgba(217,119,6,.3);border-radius:40px;padding:6px 14px;">
             <span style="color:#D97706;">★★★★★</span>
@@ -807,169 +367,6 @@ body.ar .btn-test-all-mq{font-family:"Cairo",sans-serif}
   </div>
 </div>
 
-<script>
-/* ── TESTIMONIALS DATA ── */
-const TESTIMONIALS = [
-  {cat:"client",name:"Faical Hafiane",role:"CEO @ FAMFOOD | Expert in International Trade",img:"./assets/img/recommendations/Faical.jpeg",linkedin:"https://www.linkedin.com/in/faical-hafiane/",q:"Excellent and professional.",q_ar:"ممتاز ومحترف.",role_ar:"الرئيس التنفيذي @ FAMFOOD | خبير في التجارة الدولية"},
-  {cat:"client",name:"Mohamed Khalil",role:"Founder & CEO @PlatFarm | Digitizing Agriculture in MENA",img:"./assets/img/recommendations/MohamedKhalil.jpeg",linkedin:"https://www.linkedin.com/in/mohamed-khalil-a0ba2515/",q:"We had a great experience working with Mohamed on the implementation of our company's ERP system. His strong technical expertise combined with solid accounting knowledge allowed him to deliver a seamless and tailored Odoo solution that fully met our requirements.",q_ar:"تجربتنا مع محمد في تطبيق نظام ERP كانت ممتازة. جمع بين خبرة تقنية عالية ومعرفة محاسبية راسخة مما أتاح له تقديم حل Odoo سلس ومخصص تماماً لاحتياجاتنا.",role_ar:"مؤسس ورئيس تنفيذي @ PlatFarm | رقمنة القطاع الزراعي في MENA"},
-  {cat:"finance",name:"Ahmed Malik",role:"CFO",img:"./assets/img/recommendations/ahmed_malik.jpeg",linkedin:"https://www.linkedin.com/in/ahmed-malik-a4462a143/",q:"Mohamed Essam is one of the hardworking individuals. I worked with him personally, and he knows what he is doing according to professional principles.",q_ar:"محمد عصام من الأفراد المجتهدين. عملت معه شخصياً وهو يعرف ما يقوم به وفق مبادئ احترافية راسخة.",role_ar:"مدير مالي CFO"},
-  {cat:"odoo",name:"Hesham Elmahdy",role:"Co-Founder @OdooTec",img:"./assets/img/recommendations/hesham.jpeg",linkedin:"https://www.linkedin.com/in/heshamelmahdy/",q:"Mohammad was my go-to colleague when I wanted finance and accounting related consulting. He's precise, professional, time sensitive and dependable. Most importantly, I fully trust him. I'd love to work with him again anytime.",q_ar:"كان محمد مرجعي الأول دائماً حين أحتاج استشارة في المالية والمحاسبة. دقيق، محترف، يلتزم بالمواعيد وجدير بالثقة التامة. أتمنى العمل معه مجدداً في أي وقت.",role_ar:"شريك مؤسس @ OdooTec"},
-  {cat:"odoo",name:"Ahmed Hassan Algammal",role:"Vice President of Sales @ Absolute ERP",img:"./assets/img/recommendations/ahmedhassan.jpeg",linkedin:"#",q:"Mohamed has been an integral part of my team as a senior Odoo Implementer for the past five years. He has consistently demonstrated a deep technical understanding of the Odoo ecosystem and a unique ability to translate complex business requirements into functional, scalable solutions. His dedication and consistency over the years make him a rare find in the ERP space.",q_ar:"كان محمد جزءاً لا يتجزأ من فريقي بصفته مطبّق Odoo أول لمدة خمس سنوات، وأثبت باستمرار فهماً تقنياً عميقاً لمنظومة Odoo وقدرةً فريدة على ترجمة المتطلبات المعقدة إلى حلول وظيفية قابلة للتوسع.",role_ar:"نائب رئيس المبيعات @ Absolute ERP"},
-  {cat:"odoo",name:"Mohammad Nasab",role:"Regional Partner Manager @Odoo | ERP Growth Strategist",img:"./assets/img/recommendations/MohammadNasab.jpeg",linkedin:"https://www.linkedin.com/in/mohammad-nasab97/",q:"One of the most dedicated technical guys that I worked with before, your deep understanding of what you're doing, reflects in the success of your projects.",q_ar:"من أكثر الأشخاص تفانياً في العمل التقني الذين عملت معهم؛ فهمك العميق لما تقوم به ينعكس جلياً في نجاح مشاريعك.",role_ar:"مدير شراكات إقليمية @ Odoo | استراتيجي نمو ERP"},
-  {cat:"client",name:"Yasser A. AL Samhouri",role:"Finance Manager | Budgeting & Forecasting",img:"./assets/img/recommendations/Yasser.jpg",linkedin:"https://www.linkedin.com/in/yasser-arafat-al-samhouri/",q:"Mohamed Essam Abu Emira is a very dedicated person to his work and his customers. His professionalism and expertise were evident throughout our collaboration.",q_ar:"محمد عصام أبو عميرة شخص متفانٍ جداً في عمله وعملائه. احترافيته وخبرته كانت جلية طوال فترة تعاوننا.",role_ar:"مدير مالي | الميزانية والتوقعات المالية"},
-  {cat:"pm",name:"Aya Mohsen",role:"Strategy & Corporate Development Senior Manager",img:"./assets/img/recommendations/aya.jpeg",linkedin:"https://www.linkedin.com/in/aya-mohsen-cma-fmva-3919a875/",q:"Essam is a very hard-working person, he is also very dedicated and ambitious. I enjoyed teaching him.",q_ar:"عصام شخص مجتهد جداً، كما أنه متفانٍ وطموح. استمتعت بتعليمه.",role_ar:"مدير أول للاستراتيجية والتطوير المؤسسي"},
-  {cat:"pm",name:"Ahmed Rashad",role:"ERP / Odoo Project Manager",img:"./assets/img/recommendations/rashed.jpeg",linkedin:"https://www.linkedin.com/in/ahmedrashad11/",q:"Mohamed is very talented — he is a professional accountant & Odoo implementer, has the ability to handle customers well by building great relationships with them that will help the project.",q_ar:"محمد موهوب للغاية — محاسب محترف ومطبّق Odoo متمكن، يتعامل مع العملاء ببراعة ويبني معهم علاقات قوية تدعم المشروع.",role_ar:"مدير مشاريع ERP / Odoo"},
-  {cat:"pm",name:"Ahmed Galal, PMP®, PBA®",role:"Business Consultant & Project Manager | Odoo ERP",img:"./assets/img/recommendations/galal.jpeg",linkedin:"https://www.linkedin.com/in/ahmed-galal-pmp%C2%AE-pba%C2%AE-29b170169/",q:"I was consistently impressed by his strong technical skills and deep understanding of ERP systems, particularly Odoo. Mohamed's expertise in financial accounting and supply chain management was invaluable to our team.",q_ar:"أبهرني باستمرار بمهاراته التقنية القوية وفهمه العميق لأنظمة ERP ولا سيما Odoo. خبرته في المحاسبة المالية وإدارة سلاسل التوريد كانت ذات قيمة لا تُقدَّر لفريقنا.",role_ar:"مستشار أعمال ومدير مشاريع | خبير Odoo ERP"},
-  {cat:"odoo",name:"Ahmed Abdelhak",role:"SAP FI/CO/SD | Odoo ERP Consultant | Business Analyst",img:"./assets/img/recommendations/abdelhak.jpeg",linkedin:"https://www.linkedin.com/in/ahmed-abdelhak-23855566/",q:"Mohamed demonstrated an exceptional ability to analyze business processes, design effective solutions, and successfully implement Odoo ERP projects. He stands out with his strong analytical skills, deep understanding of business needs, and ability to optimize operations using Odoo systems.",q_ar:"أثبت محمد قدرة استثنائية في تحليل العمليات التجارية وتصميم الحلول الفعّالة وتطبيق مشاريع Odoo ERP بنجاح. يتميز بمهاراته التحليلية القوية وفهمه العميق لاحتياجات الأعمال.",role_ar:"SAP FI/CO/SD | مستشار Odoo ERP | محلل أعمال"},
-  {cat:"odoo",name:"Mohsen DIFALLAH",role:"Python / Odoo Developer",img:"./assets/img/recommendations/difallah.jpeg",linkedin:"https://www.linkedin.com/in/mohsen-difallah-496b35a4/",q:"He has exceptional analytical skills, a talent for solving complex challenges, and profound expertise in ERP systems, especially Odoo, with a focus on accounting and financial implementation. Mohamed is not only technically brilliant but also a great team player who consistently delivers results.",q_ar:"يتمتع بمهارات تحليلية استثنائية وموهبة في حل التحديات المعقدة وخبرة عميقة في أنظمة ERP ولا سيما Odoo مع تركيز على التطبيق المحاسبي والمالي.",role_ar:"مطور Python / Odoo"},
-  {cat:"odoo",name:"Muhammad Mahmoud",role:"Sr. Odoo Functional Consultant | Certified v15,v16 | PM",img:"./assets/img/recommendations/muhammad_mahmoud.jpeg",linkedin:"https://www.linkedin.com/in/muhammad-m-abod/",q:"I have worked with Muhammad Abu Amira for nearly two years, and I recommend him to any company that needs a reliable person who has experience as a functional consultant, systems analyst, problem solver, multi-skilled, works under pressure, and also an expert in accounting.",q_ar:"عملت مع محمد أبو عميرة قرابة عامين، وأوصي به لأي شركة تحتاج شخصاً موثوقاً يمتلك خبرة المستشار الوظيفي ومحلل الأنظمة وحل المشكلات.",role_ar:"مستشار Odoo الوظيفي الأول | معتمد v15, v16 | مدير مشاريع"},
-  {cat:"finance",name:"Abdulrahman Gwida",role:"DipIFR | FMVA | Odoo Specialist | Financial Modeling",img:"./assets/img/recommendations/gwida.jpeg",linkedin:"https://www.linkedin.com/in/abdelrahman-gwida/",q:"Muhamad is a hardworking, skilled, and dedicated professional whose eagerness to learn is limitless. His expertise and determination make him a remarkable asset to any team.",q_ar:"محمد محترف مجتهد وماهر ومتفانٍ، ولهفته للتعلم لا حدود لها. خبرته وعزيمته يجعلانه إضافة استثنائية لأي فريق.",role_ar:"دبلوم IFRS | FMVA | متخصص Odoo | النمذجة المالية"},
-  {cat:"odoo",name:"Ahmed Elsayed",role:"Senior Python | Odoo Developer",img:"./assets/img/recommendations/ahmed.jpeg",linkedin:"https://www.linkedin.com/in/damhogy/",q:"Mohamed is one of the best Odoo Consultants I worked with. He has the ability to simplify any complex requirements and make sure it will be done with the best way and quality.",q_ar:"محمد من أفضل مستشاري Odoo الذين عملت معهم. يمتلك قدرة نادرة على تبسيط أي متطلبات معقدة وضمان تنفيذها بأفضل طريقة وأعلى جودة.",role_ar:"مطور Python / Odoo أول"},
-  {cat:"odoo",name:"Nourhan Hazim",role:"Software Testing Engineer at Celfocus | Advansys",img:"./assets/img/recommendations/nourhan_hazim.jpeg",linkedin:"https://www.linkedin.com/in/nourhan-hazim/",q:"One of the best functional consultants I've ever worked with. Great co-worker and mentor.",q_ar:"من أفضل المستشارين الوظيفيين الذين عملت معهم على الإطلاق. زميل رائع ومرشد ممتاز.",role_ar:"مهندسة اختبار برمجيات @ Celfocus | Advansys"},
-  {cat:"odoo",name:"Ayman Tobbala",role:"Senior Odoo Functional Consultant",img:"./assets/img/recommendations/ayman_tobbala.jpeg",linkedin:"https://www.linkedin.com/in/aymantobbala/",q:"Abu Emira is specialized in Accounting, performed Odoo implementation, support, and training for end users. He worked for clients in Egypt, Saudi Arabia, and Canada.",q_ar:"أبو عميرة متخصص في المحاسبة، ونفّذ تطبيق Odoo ودعمه وتدريب المستخدمين عليه. عمل مع عملاء في مصر والمملكة العربية السعودية وكندا.",role_ar:"مستشار Odoo الوظيفي الأول"},
-  {cat:"odoo",name:"Ahmed Saeed",role:"Python Developer | Backend | AWS Cloud | Odoo Technical",img:"./assets/img/recommendations/ahmed_saeed.jpeg",linkedin:"https://www.linkedin.com/in/ahmed-saeed-75a2938b/",q:"Mohamed was one of the colleagues who helped me understand Odoo and business practices in general, and he is also one of the most dedicated coworkers.",q_ar:"كان محمد من الزملاء الذين ساعدوني في فهم Odoo وممارسات الأعمال بشكل عام، وهو أيضاً من أكثر زملاء العمل تفانياً.",role_ar:"مطور Python | Backend | AWS Cloud | مستشار Odoo التقني"},
-  {cat:"odoo",name:"Bassant Hossam",role:"SAI and Automation Engineer",img:"./assets/img/recommendations/bassant_hossam.jpeg",linkedin:"https://www.linkedin.com/in/bassant-hossam-366403208/",q:"I highly recommend Mohamed Essam Abu Emira as an exceptional Odoo Functional Consultant. His expertise in Odoo, ability to analyze complex requirements, and bridge the gap between functional and technical aspects make him a valuable asset.",q_ar:"أوصي بشدة بمحمد عصام أبو عميرة بصفته مستشار Odoo الوظيفي المتميز.",role_ar:"مهندسة أتمتة SAI"},
-  {cat:"odoo",name:"Muhammed Abdelfatah",role:"AI Track Supervisor at ITI",img:"./assets/img/recommendations/muhammed_abdelfatah.jpeg",linkedin:"https://www.linkedin.com/in/muhammed-abdelfatah-a45ab9104/",q:"During the time we worked together, Mohamed was highly professional, efficient, and an excellent Odoo consultant. He always aspired to improve himself in all aspects and went beyond expectations.",q_ar:"خلال فترة عملنا معاً كان محمد محترفاً وكفؤاً ومستشار Odoo متميزاً. كان يسعى دائماً لتطوير نفسه في جميع الجوانب ويتخطى التوقعات.",role_ar:"مشرف مسار الذكاء الاصطناعي @ ITI"},
-  {cat:"odoo",name:"Mohamed Salah Helal",role:"Odoo Developer | Data Scientist | Session Lead",img:"./assets/img/recommendations/mohamed_salah_helal.jpeg",linkedin:"https://www.linkedin.com/in/mohamed-salah-helal/",q:"Mohamed and I worked together on several projects at Odootec, and I was lucky to call him my coworker. He consistently gave 100 percent effort to the team and played a significant role in ensuring we completed all tasks on time.",q_ar:"عمل محمد وأنا معاً على عدة مشاريع في OdooTec، وكنت محظوظاً أن أسميه زميلي. كان يعطي 100% من جهده للفريق.",role_ar:"مطور Odoo | عالم بيانات | قائد جلسات"},
-  {cat:"odoo",name:"Mohamed Nayel",role:"Software Test Engineer @ Transflo",img:"./assets/img/recommendations/mohamed_nayel.jpeg",linkedin:"https://www.linkedin.com/in/momagdinayel/",q:"I'm thrilled that I had worked with Mohamed on several projects. He is one of the best people I had as a coworker. I highly recommend his expertise; he is a person who can tackle any problem remarkably with hard and smart work.",q_ar:"يسعدني أنني عملت مع محمد على عدة مشاريع. هو من أفضل الأشخاص الذين عملت معهم. أوصي بخبرته بشدة.",role_ar:"مهندس اختبار برمجيات @ Transflo"},
-  {cat:"finance",name:"Mostafa Rohaim",role:"JDE Specialist at Exact Fabrication Services",img:"./assets/img/recommendations/avatar-1.png",linkedin:"#",q:"بشمهندس محمد واحد من أكثر الناس اللي قابلتهم تركيزا و تفانيا في الشغل و رغبة في تعلم الجديد و تطوير الذات دا بجانب خبرته الكبيرة في الحسابات و أودو طبعا.",q_ar:"محمد واحد من أكثر الناس اللي قابلتهم تركيزاً وتفانياً في الشغل، ورغبةً في تعلم الجديد وتطوير الذات، دا بجانب خبرته الكبيرة في الحسابات وأودو.",role_ar:"متخصص JDE @ Exact Fabrication Services"},
-  {cat:"pm",name:"Heba Allam",role:"HR & Administration Manager at Nutriti Pharma",img:"./assets/img/recommendations/heba_allam.jpeg",linkedin:"https://www.linkedin.com/in/heba-allam-2194231b/",q:"Mohamed is a very dedicated, loyal person. He is always ready to take over all the work responsibility.",q_ar:"محمد شخص متفانٍ ومخلص جداً. دائماً مستعد لتحمّل مسؤولية جميع مهام العمل.",role_ar:"مدير موارد بشرية وإدارة @ Nutriti Pharma"},
-  {cat:"odoo",name:"Yousef Ashraf",role:"Odoo Developer at Intalio-Everteam GS",img:"./assets/img/recommendations/yousef_ashraf.jpeg",linkedin:"https://www.linkedin.com/in/yousef-a-luka/",q:"I have worked with Mohamed for a while, he is so helpful in teamwork, and has never hesitated to share his knowledge with others.",q_ar:"عملت مع محمد لفترة؛ هو متعاون جداً في العمل الجماعي ولم يتردد يوماً في مشاركة معرفته مع الآخرين.",role_ar:"مطور Odoo @ Intalio-Everteam GS"},
-  {cat:"client",name:"Caroline Farid",role:"EX Dentist, A Marketer",img:"./assets/img/recommendations/caroline_farid.jpeg",linkedin:"https://www.linkedin.com/in/caroline-farid-a39546221/",q:"Professional and can handle clients very well.",q_ar:"محترف ويتعامل مع العملاء باحترافية عالية.",role_ar:"طبيبة أسنان سابقة، متخصصة تسويق"},
-  {cat:"odoo",name:"Mohamed Eldabbas",role:"Marketing and Technical Writer",img:"./assets/img/recommendations/avatar-1.png",linkedin:"https://www.linkedin.com/in/mohamed-eldabbas-6a1679151/",q:"I wholeheartedly recommend Mohamed Essam Abu Emira for any Odoo-related project. His expertise and dedication make him an asset to any team.",q_ar:"أوصي بمحمد عصام أبو عميرة من كل قلبي لأي مشروع متعلق بـ Odoo. خبرته وتفانيه يجعلانه أصلاً قيماً لأي فريق.",role_ar:"كاتب تسويقي وتقني"},
-  {cat:"odoo",name:"Amr Farouk",role:"ERP Technical Support Manager",img:"./assets/img/recommendations/amr_farouk.jpeg",linkedin:"#",q:"Mr. Mohamed is one of the best colleagues I've worked with.",q_ar:"السيد محمد من أفضل الزملاء الذين عملت معهم.",role_ar:"مدير الدعم التقني ERP"},
-  {cat:"finance",name:"Ahmed Ezzat Embaby",role:"Financial Analyst at Ebny Real Estate Development",img:"./assets/img/recommendations/ahmed_ezzat_embaby.jpeg",linkedin:"https://www.linkedin.com/in/ahmed-ezzat-embaby-11607645/",q:"He is a hard worker.",q_ar:"مجتهد في عمله.",role_ar:"محلل مالي @ Ebny Real Estate Development"}
-];
-
-/* ── RENDER MARQUEE ── */
-function buildMarquee() {
-  const track = document.getElementById('marqueeTrack');
-  if(!track) return;
-  const ar = document.documentElement.lang === 'ar';
-  const all = [...TESTIMONIALS, ...TESTIMONIALS];
-  track.innerHTML = all.map(t => {
-    const q    = (ar && t.q_ar)    ? t.q_ar    : t.q;
-    const role = (ar && t.role_ar) ? t.role_ar : t.role;
-    return `
-    <div class="test-card-mq">
-      <div class="test-stars-mq">★★★★★</div>
-      <p class="test-q-mq">"${q}"</p>
-      <div class="test-author-mq">
-        <img src="${t.img}" alt="${t.name}" class="test-av-mq" loading="lazy" onerror="this.style.opacity='0'">
-        <div>
-          <div class="test-name-mq">${t.name}</div>
-          <div class="test-role-mq">${role}</div>
-          ${t.linkedin && t.linkedin !== '#' ? `<a href="${t.linkedin}" target="_blank" class="test-li-mq">LinkedIn ↗</a>` : ''}
-        </div>
-      </div>
-    </div>`;
-  }).join('');
-  const countEl = document.getElementById('testCount');
-  if(countEl) {
-    const arText = `· ${TESTIMONIALS.length}+ توصية على LinkedIn`;
-    const enText = `· ${TESTIMONIALS.length}+ LinkedIn Recommendations`;
-    countEl.textContent = ar ? arText : enText;
-  }
-}
-
-/* ── REC MODAL ── */
-const REC_CATEGORIES = {
-  all:     { label: "All",             labelAr: "الكل",          icon: "" },
-  odoo:    { label: "Odoo / ERP",      labelAr: "أودو / ERP",    icon: "" },
-  finance: { label: "Finance",         labelAr: "المالية",       icon: "" },
-  pm:      { label: "PM / Management", labelAr: "إدارة مشاريع", icon: "" },
-  client:  { label: "Clients",         labelAr: "العملاء",       icon: "" }
-};
-
-let REC_ANNOTATED = null;
-function buildRecAnnotated() {
-  return TESTIMONIALS.map(t => ({ cat: t.cat || "odoo", ...t }));
-}
-
-let recsLoaded = false;
-let recsActiveFilter = 'all';
-
-function openRecModal(){
-  document.getElementById('recModal').classList.add('open');
-  document.body.style.overflow='hidden';
-  if (!recsLoaded) {
-    recsLoaded = true;
-    REC_ANNOTATED = buildRecAnnotated();
-    const filterRow = document.getElementById('recsFilterRow');
-    if(filterRow) {
-      Object.entries(REC_CATEGORIES).forEach(([key, val]) => {
-        const btn = document.createElement('button');
-        btn.dataset.cat = key;
-        btn.className = 'recs-filter-btn' + (key==='all'?' active':'');
-        const AR = document.documentElement.dir === 'rtl';
-        btn.textContent = AR ? val.labelAr : val.label;
-        btn.addEventListener('click', () => {
-          recsActiveFilter = key;
-          filterRow.querySelectorAll('.recs-filter-btn').forEach(b => {
-            b.classList.toggle('active', b.dataset.cat === key);
-          });
-          renderRecsGrid();
-        });
-        filterRow.appendChild(btn);
-      });
-    }
-    renderRecsGrid();
-  }
-}
-
-function renderRecsGrid() {
-  const grid = document.getElementById('recsGrid');
-  if(!grid) return;
-  const list = recsActiveFilter === 'all'
-    ? REC_ANNOTATED
-    : REC_ANNOTATED.filter(r => r.cat === recsActiveFilter);
-  grid.style.opacity = '0';
-  setTimeout(() => {
-    grid.innerHTML = list.map((r, i) => `
-      <div style="background:#fff;border:1px solid var(--gray-200);border-radius:var(--rl);padding:22px;display:flex;flex-direction:column;gap:14px;opacity:0;transform:translateY(16px);transition:opacity .35s ${i*30}ms ease,transform .35s ${i*30}ms ease;box-shadow:0 2px 8px rgba(0,0,0,.04);" class="rec-card-anim">
-        <div style="color:#D97706;font-size:1rem;">★★★★★</div>
-        <p style="font-size:.84rem;color:var(--gray-600);line-height:1.7;font-style:italic;flex:1;">"${r.q}"</p>
-        <div style="display:flex;align-items:center;gap:12px;padding-top:10px;border-top:1px solid var(--gray-200);">
-          <img src="${r.img}" alt="${r.name}" style="width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid rgba(1,126,132,.3);" onerror="this.style.opacity='0'">
-          <div style="min-width:0;">
-            <div style="font-size:.85rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${r.name}</div>
-            <div style="font-size:.72rem;color:var(--gray-400);line-height:1.4;margin-top:1px;">${r.role}</div>
-            ${r.linkedin && r.linkedin !== '#' ? `<a href="${r.linkedin}" target="_blank" style="font-size:.72rem;color:var(--teal);font-weight:700;margin-top:3px;display:inline-block;">LinkedIn ↗</a>` : ''}
-          </div>
-        </div>
-      </div>`).join('');
-    requestAnimationFrame(() => {
-      grid.style.opacity = '1';
-      grid.querySelectorAll('.rec-card-anim').forEach(card => {
-        requestAnimationFrame(() => {
-          card.style.opacity = '1';
-          card.style.transform = 'translateY(0)';
-        });
-      });
-    });
-  }, 120);
-}
-
-function closeRecModal(){
-  document.getElementById('recModal').classList.remove('open');
-  document.body.style.overflow='';
-}
-document.addEventListener('keydown', function(e){
-  if(e.key==='Escape') closeRecModal();
-});
-
-/* ── HOOK INTO LANG TOGGLE TO REBUILD MARQUEE ── */
-const _origApplyLang = typeof applyLang === 'function' ? applyLang : null;
-document.addEventListener('DOMContentLoaded', () => {
-  buildMarquee();
-  // Patch toggleLang to also rebuild the marquee
-  const origToggle = window.toggleLang;
-  window.toggleLang = function() {
-    if(origToggle) origToggle();
-    setTimeout(buildMarquee, 50);
-  };
-});
-</script>
 
 
 <!-- ABOUT -->
@@ -1043,7 +440,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="current-badge t" data-en="● Current Position" data-ar="● المنصب الحالي">● Current Position</div>
           <div class="exp-top">
             <div class="exp-top-inner">
-              <div class="exp-company-logo"><img src="./assets/img/selfemployed.jpeg" alt="Self-Employed"></div>
+              <div class="exp-company-logo"><img width="96" height="96" src="./assets/img/selfemployed.jpeg" alt="Self-Employed" loading="lazy"></div>
               <div class="exp-top-text">
                 <div class="exp-role t" data-en="Odoo Expert &amp; ERP Operations Manager" data-ar="خبير Odoo ومدير عمليات ERP">Odoo Expert &amp; ERP Operations Manager</div>
                 <div class="exp-co t" data-en="Self-Employed · Egypt & GCC" data-ar="عمل مستقل · مصر ودول الخليج">Self-Employed · Egypt & GCC</div>
@@ -1068,7 +465,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="exp-card">
           <div class="exp-top">
             <div class="exp-top-inner">
-              <div class="exp-company-logo"><img src="./assets/img/expert.jpeg" alt="Expert"></div>
+              <div class="exp-company-logo"><img width="96" height="96" src="./assets/img/expert.jpeg" alt="Expert" loading="lazy"></div>
               <div class="exp-top-text">
                 <div class="exp-role t" data-en="ERP Consultant | Product Owner" data-ar="مستشار ERP | مالك المنتج">ERP Consultant | Product Owner</div>
                 <div class="exp-co"><a href="https://exp-sa.com" target="_blank" class="t" data-en="Expert Company (شركة خبير)" data-ar="شركة خبير">Expert Company (شركة خبير)</a> · <span class="t" data-en="Riyadh, Saudi Arabia" data-ar="الرياض، المملكة العربية السعودية">Riyadh, Saudi Arabia</span></div>
@@ -1091,7 +488,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="exp-card">
           <div class="exp-top">
             <div class="exp-top-inner">
-              <div class="exp-company-logo"><img src="./assets/img/odootec.jpg" alt="OdooTec"></div>
+              <div class="exp-company-logo"><img width="96" height="36" src="./assets/img/odootec.jpg" alt="OdooTec" loading="lazy"></div>
               <div class="exp-top-text">
                 <div class="exp-role t" data-en="Odoo Functional Consultant" data-ar="مستشار Odoo الوظيفي">Odoo Functional Consultant</div>
                 <div class="exp-co"><a href="https://www.odootec.com" target="_blank">OdooTec</a></div>
@@ -1109,7 +506,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="exp-card">
           <div class="exp-top">
             <div class="exp-top-inner">
-              <div class="exp-company-logo"><img src="./assets/img/Ultimate.jpg" alt="Ultimate Solutions"></div>
+              <div class="exp-company-logo"><img width="96" height="96" src="./assets/img/Ultimate.jpg" alt="Ultimate Solutions" loading="lazy"></div>
               <div class="exp-top-text">
                 <div class="exp-role t" data-en="ERP Implementation Consultant" data-ar="مستشار تطبيق ERP">ERP Implementation Consultant</div>
                 <div class="exp-co"><a href="https://ultimate-eg.net/" target="_blank" class="t" data-en="Ultimate Solutions (Yemen Soft)" data-ar="الحلول المتكاملة (Yemen Soft)">Ultimate Solutions (Yemen Soft)</a> · <span class="t" data-en="Cairo, Egypt" data-ar="القاهرة، مصر">Cairo, Egypt</span></div>
@@ -1127,7 +524,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="exp-card">
           <div class="exp-top">
             <div class="exp-top-inner">
-              <div class="exp-company-logo"><img src="./assets/img/hmto.png" alt="HMTO"></div>
+              <div class="exp-company-logo"><img width="95" height="96" src="./assets/img/hmto.png" alt="HMTO" loading="lazy"></div>
               <div class="exp-top-text">
                 <div class="exp-role t" data-en="Accountant Manager" data-ar="مدير الحسابات">Accountant Manager</div>
                 <div class="exp-co"><a href="https://www.hmto-hnas.com/" target="_blank" class="t" data-en="HMTO for Import, Export, Manufacturing &amp; Packaging" data-ar="شركة HMTO للاستيراد والتصدير والتصنيع والتعبئة">HMTO for Import, Export, Manufacturing &amp; Packaging</a> · <span class="t" data-en="Egypt" data-ar="مصر">Egypt</span></div>
@@ -1145,7 +542,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="exp-card">
           <div class="exp-top">
             <div class="exp-top-inner">
-              <div class="exp-company-logo"><img src="./assets/img/nile.jpeg" alt="Nile for Plastic Industries"></div>
+              <div class="exp-company-logo"><img width="96" height="74" src="./assets/img/nile.jpeg" alt="Nile for Plastic Industries" loading="lazy"></div>
               <div class="exp-top-text">
                 <div class="exp-role t" data-en="Chief Accountant" data-ar="كبير المحاسبين">Chief Accountant</div>
                 <div class="exp-co t" data-en="Nile for Plastic Industries · Cairo, Egypt" data-ar="شركة النيل للصناعات البلاستيكية · القاهرة، مصر">Nile for Plastic Industries · Cairo, Egypt</div>
@@ -1163,7 +560,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="exp-card">
           <div class="exp-top">
             <div class="exp-top-inner">
-              <div class="exp-company-logo"><img src="./assets/img/nile.jpeg" alt="Nile for Plastic Industries"></div>
+              <div class="exp-company-logo"><img width="96" height="74" src="./assets/img/nile.jpeg" alt="Nile for Plastic Industries" loading="lazy"></div>
               <div class="exp-top-text">
                 <div class="exp-role t" data-en="General Accountant" data-ar="محاسب عام">General Accountant</div>
                 <div class="exp-co t" data-en="Nile for Plastic Industries · Cairo, Egypt" data-ar="شركة النيل للصناعات البلاستيكية · القاهرة، مصر">Nile for Plastic Industries · Cairo, Egypt</div>
@@ -1321,17 +718,17 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="c-form-title"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg><span class="t" data-en="Send a Message" data-ar="أرسل رسالة">Send a Message</span></div>
 
         <div class="c-form-group">
-          <label><span class="t" data-en="Full Name" data-ar="الاسم الكامل">Full Name</span></label>
+          <label for="cf-name"><span class="t" data-en="Full Name" data-ar="الاسم الكامل">Full Name</span></label>
           <input type="text" id="cf-name" class="t-ph" data-ph-en="Your full name" data-ph-ar="اسمك الكامل" placeholder="Your full name">
         </div>
 
         <div class="c-form-group">
-          <label><span class="t" data-en="Email" data-ar="البريد الإلكتروني">Email</span></label>
+          <label for="cf-email"><span class="t" data-en="Email" data-ar="البريد الإلكتروني">Email</span></label>
           <input type="email" id="cf-email" class="t-ph" data-ph-en="your@email.com" data-ph-ar="بريدك الإلكتروني" placeholder="your@email.com">
         </div>
 
         <div class="c-form-group">
-          <label><span class="t" data-en="Service Needed" data-ar="الخدمة المطلوبة">Service Needed</span></label>
+          <label for="cf-service"><span class="t" data-en="Service Needed" data-ar="الخدمة المطلوبة">Service Needed</span></label>
           <div class="c-form-select-wrap">
             <select id="cf-service" onchange="this.classList.add('filled')">
               <option value="" class="t" data-en="Select a service..." data-ar="اختر الخدمة...">Select a service...</option>
@@ -1346,7 +743,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
 
         <div class="c-form-group">
-          <label><span class="t" data-en="Message" data-ar="الرسالة">Message</span></label>
+          <label for="cf-msg"><span class="t" data-en="Message" data-ar="الرسالة">Message</span></label>
           <textarea id="cf-msg" class="t-ph" data-ph-en="Tell me about your project..." data-ph-ar="أخبرني عن مشروعك..." placeholder="Tell me about your project..."></textarea>
         </div>
 
@@ -1362,6 +759,8 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-inner">
@@ -1374,154 +773,5 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </footer>
 
-<script>
-// ─── LANGUAGE SYSTEM ──────────────────────────────────────────────
-let currentLang = 'en'; // Always default to English
-
-function applyLang(lang, save) {
-  currentLang = lang;
-  const isAr = lang === 'ar';
-
-  // Body class & document direction
-  document.body.classList.toggle('ar', isAr);
-  document.documentElement.lang = lang;
-  document.documentElement.dir = isAr ? 'rtl' : 'ltr';
-
-  // Translate all .t elements
-  document.querySelectorAll('.t[data-ar]').forEach(el => {
-    el.innerHTML = isAr ? el.getAttribute('data-ar') : el.getAttribute('data-en');
-  });
-
-  // Translate placeholders
-  document.querySelectorAll('.t-ph[data-ph-ar]').forEach(el => {
-    el.placeholder = isAr ? el.getAttribute('data-ph-ar') : el.getAttribute('data-ph-en');
-  });
-
-  // Translate select options
-  document.querySelectorAll('select option.t[data-ar]').forEach(opt => {
-    opt.textContent = isAr ? opt.getAttribute('data-ar') : opt.getAttribute('data-en');
-  });
-
-  // Update toggle button
-  const flag = document.querySelector('.lang-flag');
-  const label = document.getElementById('langLabel');
-  if (label) label.textContent = isAr ? 'English' : 'العربية';
-
-
-  // Re-render pagination labels if projects are paginated
-  if (typeof renderProjects === 'function') renderProjects();
-}
-
-function toggleLang() {
-  location.href = document.getElementById('langBtn').getAttribute('href');
-}
-
-// ─── PROJECT FILTER + PAGINATION ─────────────────────────────────
-const PAGE_SIZE = 9;
-let currentCat = 'all';
-let currentPage = 1;
-
-function filterProj(btn, cat) {
-  document.querySelectorAll('#fb .fbtn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  currentCat = cat;
-  currentPage = 1;
-  renderProjects();
-}
-
-function renderProjects() {
-  const allCards = Array.from(document.querySelectorAll('#pg .proj-card'));
-  const filtered = allCards.filter(c => currentCat === 'all' || c.dataset.cat === currentCat);
-  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
-  const start = (currentPage - 1) * PAGE_SIZE;
-  const end = start + PAGE_SIZE;
-
-  // Show/hide cards
-  allCards.forEach(c => c.style.display = 'none');
-  filtered.slice(start, end).forEach(c => c.style.display = '');
-
-  // Render pagination
-  let pag = document.getElementById('proj-pagination');
-  if (!pag) {
-    pag = document.createElement('div');
-    pag.id = 'proj-pagination';
-    pag.style.cssText = 'display:flex;align-items:center;justify-content:center;gap:8px;margin-top:28px;flex-wrap:wrap;';
-    document.getElementById('pg').after(pag);
-  }
-  pag.innerHTML = '';
-
-  if (totalPages <= 1) return;
-
-  // Prev button
-  const prev = document.createElement('button');
-  prev.className = 'fbtn' + (currentPage === 1 ? '' : '');
-  prev.style.cssText = 'min-width:36px;';
-  prev.textContent = currentLang === 'ar' ? '→' : '←';
-  prev.disabled = currentPage === 1;
-  prev.style.opacity = currentPage === 1 ? '0.4' : '1';
-  prev.onclick = () => { currentPage--; renderProjects(); };
-  pag.appendChild(prev);
-
-  // Page numbers
-  for (let i = 1; i <= totalPages; i++) {
-    const btn = document.createElement('button');
-    btn.className = 'fbtn' + (i === currentPage ? ' active' : '');
-    btn.style.cssText = 'min-width:36px;';
-    btn.textContent = i;
-    btn.onclick = ((page) => () => { currentPage = page; renderProjects(); })(i);
-    pag.appendChild(btn);
-  }
-
-  // Next button
-  const next = document.createElement('button');
-  next.className = 'fbtn';
-  next.style.cssText = 'min-width:36px;';
-  next.textContent = currentLang === 'ar' ? '←' : '→';
-  next.disabled = currentPage === totalPages;
-  next.style.opacity = currentPage === totalPages ? '0.4' : '1';
-  next.onclick = () => { currentPage++; renderProjects(); };
-  pag.appendChild(next);
-
-  // Count label
-  const lbl = document.createElement('span');
-  lbl.style.cssText = 'font-size:11px;color:var(--gray-400);margin-right:4px;margin-left:4px;';
-  const showing = Math.min(end, filtered.length);
-  lbl.textContent = currentLang === 'ar'
-    ? `عرض ${start+1}–${showing} من ${filtered.length}`
-    : `${start+1}–${showing} of ${filtered.length}`;
-  pag.appendChild(lbl);
-}
-
-// ─── CONTACT FORM ─────────────────────────────────────────────────
-function submitForm() {
-  const name = document.getElementById('cf-name').value.trim();
-  const email = document.getElementById('cf-email').value.trim();
-  const msg = document.getElementById('cf-msg').value.trim();
-  if (!name || !email || !msg) {
-    alert(currentLang === 'ar' ? 'يرجى ملء جميع الحقول المطلوبة' : 'Please fill in all required fields');
-    return;
-  }
-  const mailto = `mailto:abuemira91@gmail.com?subject=Portfolio Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(msg + '\n\nFrom: ' + email)}`;
-  window.open(mailto);
-  document.getElementById('formSuccess').style.display = 'block';
-  setTimeout(() => { document.getElementById('formSuccess').style.display = 'none'; }, 5000);
-}
-
-// ─── SCROLL ACTIVE NAV ────────────────────────────────────────────
-window.addEventListener('scroll', () => {
-  const sections = document.querySelectorAll('section[id]');
-  let current = '';
-  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 90) current = s.id; });
-  document.querySelectorAll('.nav-links a[href^="#"]').forEach(a => {
-    a.classList.toggle('active-link', a.getAttribute('href') === '#' + current);
-  });
-});
-
-// ─── INIT ─────────────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', () => {
-  applyLang(currentLang, false);
-  renderProjects();
-});
-</script>
 </body>
 </html>
